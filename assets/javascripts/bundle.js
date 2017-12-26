@@ -26025,7 +26025,8 @@ var Trie = function (_React$Component) {
       searchQuery: "",
       inspecting: null,
       disabled: false,
-      checked: 0
+      checked: 0,
+      found: "Enter a word to search!"
     };
     return _this;
   }
@@ -26033,13 +26034,13 @@ var Trie = function (_React$Component) {
   _createClass(Trie, [{
     key: 'handleInput',
     value: function handleInput(e) {
-      this.setState({ searchQuery: e.target.value, checked: 0 });
+      this.setState({ searchQuery: e.target.value, checked: 0, found: "Enter a word to search!" });
     }
   }, {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString());
-      this.setState({ disabled: true });
+      this.setState({ disabled: true, found: "Searching..." });
     }
   }, {
     key: 'trieSearch',
@@ -26048,28 +26049,39 @@ var Trie = function (_React$Component) {
 
       var funcue = [];
       var searching = true;
-      var inspecting = trie;
       var i = 1;
-      var checked = 0;
+      var checked = 1;
+      var inspecting = trie.children[target.slice(0, i)];
 
       var _loop = function _loop() {
-        var val = inspecting.val;
-        var checkedWords = checked;
-        funcue.push(function () {
-          _this2.setState({ inspecting: val, checked: checkedWords });
-        });
-        if (inspecting.isLeaf() || inspecting.val === target) searching = false;
-        inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
-        if (!inspecting && searching) {
+        var val = void 0;
+        var numChecked = void 0;
+        var found = "Searching...";
+        if (!inspecting) {
           searching = false;
-          var _checkedWords = checked + 1;
-          funcue.push(function () {
-            _this2.setState({ inspecting: val, checked: _checkedWords });
-          });
-        } else if (searching) {
+          val = null;
+          numChecked = checked;
+          found = "Not Found!";
+        } else if (inspecting.val === target) {
+          searching = false;
+          val = inspecting.val;
+          numChecked = checked;
+          if (inspecting.isLeaf()) {
+            found = "Found!";
+          } else {
+            found = "Not Found!";
+          }
+        } else {
+          val = inspecting.val;
+          numChecked = checked;
           i++;
           checked++;
+          inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
         }
+
+        funcue.push(function () {
+          _this2.setState({ inspecting: val, checked: numChecked, found: found });
+        });
       };
 
       while (searching) {
@@ -26135,7 +26147,7 @@ var Trie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys. Searching for a word is done in O(m) time where m is the length of the target string.'
+          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys. Searching for a word is done in O(m) time where m is the length of the target string, though it can be much quicker if there are few other words with the same starting letters.'
         ),
         _react2.default.createElement('input', {
           disabled: this.state.disabled,
@@ -26151,6 +26163,11 @@ var Trie = function (_React$Component) {
             disabled: this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Start!'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          this.state.found
         ),
         _react2.default.createElement(
           'h4',
@@ -26256,7 +26273,9 @@ var Node = function () {
             parent.addChild(newChild);
             queue = [];
           } else {
-            if (queue[0].slice(0, segLength + 1) !== queue[1].slice(0, segLength + 1)) {
+            if (queue.some(function (word) {
+              return word.slice(0, segLength + 1) !== queue[0].slice(0, segLength + 1);
+            })) {
               newParent = new Node(words[i].slice(0, segLength));
               parent.addChild(newParent);
             } else {

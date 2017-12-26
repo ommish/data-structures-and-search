@@ -54,7 +54,7 @@ class Node {
           parent.addChild(newChild);
           queue = [];
         } else {
-          if (queue[0].slice(0, segLength + 1) !== queue[1].slice(0, segLength + 1)) {
+          if (queue.some((word) => word.slice(0, segLength + 1) !== queue[0].slice(0, segLength + 1))) {
             newParent = new Node(words[i].slice(0, segLength));
             parent.addChild(newParent);
           } else {

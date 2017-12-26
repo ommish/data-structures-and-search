@@ -14,44 +14,56 @@ class Trie extends React.Component {
       inspecting: null,
       disabled: false,
       checked: 0,
+      found: "Enter a word to search!",
     };
   }
 
   handleInput(e) {
-    this.setState({searchQuery: e.target.value, checked: 0});
+    this.setState({searchQuery: e.target.value, checked: 0, found: "Enter a word to search!"});
   }
 
   handleSubmit() {
     this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString());
-    this.setState({disabled: true});
+    this.setState({disabled: true, found: "Searching..."});
   }
 
   trieSearch(trie, target) {
     const funcue = [];
     let searching = true;
-    let inspecting = trie;
     let i = 1;
-    let checked = 0;
+    let checked = 1;
+    let inspecting = trie.children[target.slice(0, i)];
 
     while (searching) {
-      let val = inspecting.val
-      let checkedWords = checked
-      funcue.push(() => {
-        this.setState({inspecting: val, checked: checkedWords});
-      });
-      if (inspecting.isLeaf() || inspecting.val === target) searching = false;
-      inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
-      if (!inspecting && searching) {
+      let val;
+      let numChecked;
+      let found = "Searching...";
+      if (!inspecting) {
         searching = false;
-        let checkedWords = checked + 1;
-        funcue.push(() => {
-          this.setState({inspecting: val, checked: checkedWords});
-        });
-      } else if (searching) {
+        val = null;
+        numChecked = checked;
+        found = "Not Found!"
+      } else if (inspecting.val === target) {
+        searching = false;
+        val = inspecting.val;
+        numChecked = checked;
+        if (inspecting.isLeaf()) {
+          found = "Found!";
+        } else {
+          found = "Not Found!";
+        }
+      } else {
+        val = inspecting.val;
+        numChecked = checked;
         i++;
         checked++;
-
+        inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
       }
+
+      funcue.push(() => {
+        this.setState({inspecting: val, checked: numChecked, found})
+      });
+
     }
     this.startTrieSearchAnimation(funcue);
   }
@@ -86,7 +98,7 @@ class Trie extends React.Component {
         <Link to="/">Return</Link>
         <h3>Trie</h3>
         <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys.
-        Searching for a word is done in O(m) time where m is the length of the target string.</p>
+        Searching for a word is done in O(m) time where m is the length of the target string, though it can be much quicker if there are few other words with the same starting letters.</p>
         <input
           disabled={this.state.disabled}
           type="text"
@@ -98,6 +110,7 @@ class Trie extends React.Component {
           onClick={this.handleSubmit.bind(this)}>
           Start!
         </button>
+        <h4>{this.state.found}</h4>
         <h4>{this.state.checked} / {this.props.dictionaryLength} words checked</h4>
         <section className="trie-list">{this.toJSX(this.root)}</section>
       </section>

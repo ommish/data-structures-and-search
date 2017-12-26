@@ -5,6 +5,12 @@ html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, butto
 }
 
 ul, ol {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  padding: 0;
 }
 
 main {

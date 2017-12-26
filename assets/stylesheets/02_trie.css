@@ -2,6 +2,11 @@
   width: 40%;
 }
 
+.trie-list:first-child {
+  margin: 0;
+  padding: 0;
+}
+
 .node {
   border: 1px solid black;
   background: white;

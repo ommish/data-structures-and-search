@@ -5,6 +5,7 @@ import { receiveDictionary } from '../actions/dictionary_actions';
 const mapStateToProps= (state) => {
   return {
     dictionaryTrie: state.dictionary.trie,
+    dictionaryLength: state.dictionary.length,
   };
 };
 

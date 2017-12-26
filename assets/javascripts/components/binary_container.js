@@ -5,6 +5,7 @@ import Binary from './binary';
 const mapStateToProps = (state) => {
   return {
     dictionary: state.dictionary.array || [],
+    dictionaryLength: state.dictionary.length,
   };
 };
 

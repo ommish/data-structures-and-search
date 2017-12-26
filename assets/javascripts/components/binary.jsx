@@ -11,11 +11,12 @@ class Binary extends React.Component {
       searchQuery: "",
       inspecting: null,
       disabled: false,
+      checked: 0,
     };
   }
 
   handleInput(e) {
-    this.setState({searchQuery: e.target.value});
+    this.setState({searchQuery: e.target.value, checked: 0});
   }
 
   handleSubmit() {
@@ -28,12 +29,14 @@ class Binary extends React.Component {
     let startIdx = 0;
     let endIdx = arr.length - 1;
     let probeIdx = Math.floor(arr.length / 2);
+    let checked = 1;
 
     while (startIdx <= endIdx) {
 
       const idx = probeIdx;
+      const checkedWords = checked;
       funcue.push(() => {
-        this.setState({inspecting: idx});
+        this.setState({inspecting: idx, checked: checkedWords});
       });
 
       if (target === arr[probeIdx]) {
@@ -46,6 +49,7 @@ class Binary extends React.Component {
         startIdx = probeIdx + 1;
         probeIdx = startIdx +  Math.floor((endIdx - startIdx) / 2);
       }
+      checked++;
     }
     funcue.push(() => {
       this.setState({inspecting: null});
@@ -56,15 +60,14 @@ class Binary extends React.Component {
 
   startBSearchAnimation(queue) {
     const bSearchInterval = window.setInterval(() => {
-      if (typeof queue[0] === "function") {
-        queue.shift()();
-      } else if (queue.length < 1) {
+      queue.shift()();
+      if (queue.length < 1) {
         window.clearInterval(bSearchInterval)
         this.setState({disabled: false})
       }
     }, 1000)
   }
-  
+
   componentDidMount() {
     this.props.receiveDictionary(dictionary, "array");
   }
@@ -81,6 +84,7 @@ class Binary extends React.Component {
         onClick={this.handleSubmit.bind(this)}>
         Start!
         </button>
+        <h4>{this.state.checked} / {this.props.dictionaryLength} words checked</h4>
         <ul className="word-list">
           {words}
         </ul>

@@ -1,9 +1,9 @@
 
 class Node {
-  constructor(val = null) {
+  constructor(val = "") {
     this.val = val;
     this.parent = null;
-    this.children = [];
+    this.children = {};
   }
 
   setParent(parent) {
@@ -11,45 +11,44 @@ class Node {
       return;
     }
 
-    if (this.parent) this.parent.children = this.parent.children.filter((child) => child !== this);
+    if (this.parent) delete this.parent.children[this.val]
     this.parent = parent;
-    if (this.parent) this.parent.children.push(this);
+    if (this.parent) this.parent.children[this.val] = this;
   }
 
   addChild(child) {
     child.setParent(this);
   }
 
-  removeChild(child) {
-    if (this.children.includes(child)) child.setParent(null);
+  removeChild(val) {
+    const child = this.children[val];
+    if (child) child.setParent(null);
   }
 
   isLeaf() {
-    return this.children.length < 1;
+    return Object.keys(this.children).length < 1;
   }
 
   isRoot() {
     return !this.parent;
   }
 
-  toObject() {
-    const res = {};
-    if (!this.isRoot()) res.val = this.val;
-    res.children = this.isLeaf() ? [] : this.children.map((child) => child.toObject());
-    return res;
-  }
-
-  static addWord(parent, word, segLength) {
-    if (segLength > word.length) return;
-    const child = new Node(word.slice(0, segLength));
-    parent.addChild(child);
-    this.addWord(child, word, segLength + 1);
+  numChildren() {
+    return Object.keys(this.children).length;
   }
 
   static buildTrie(parent, words, segLength) {
 
     if (words.length < 2) {
-      this.addWord(parent, words[0], segLength);
+      if (segLength <= words[0].length) {
+        const newChild = new Node(words[0].slice(0));
+        if (parent.numChildren() < 2) {
+          parent.parent.addChild(newChild);
+          parent.parent.removeChild(words[0].slice(0, segLength - 1));
+        } else {
+          parent.addChild(newChild);
+        }
+      }
       return;
     }
 
@@ -65,11 +64,11 @@ class Node {
         let newParent = new Node(words[i].slice(0, segLength));
         parent.addChild(newParent);
         this.buildTrie(newParent, queue, segLength + 1);
+
         queue = [];
       }
     }
   }
-
 }
 
 export default Node;

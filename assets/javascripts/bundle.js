@@ -25781,7 +25781,8 @@ var Binary = function (_React$Component) {
       searchQuery: "",
       inspecting: null,
       disabled: false,
-      checked: 0
+      checked: 0,
+      searching: "Enter a word to search!"
     };
     return _this;
   }
@@ -25795,7 +25796,7 @@ var Binary = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.binarySearch(this.props.dictionary, this.state.searchQuery.toString());
-      this.setState({ disabled: true });
+      this.setState({ disabled: true, searching: "Searching..." });
     }
   }, {
     key: 'binarySearch',
@@ -25812,8 +25813,9 @@ var Binary = function (_React$Component) {
 
         var idx = probeIdx;
         var checkedWords = checked;
+        var searching = target === arr[probeIdx] ? "Found!" : "Searching...";
         funcue.push(function () {
-          _this2.setState({ inspecting: idx, checked: checkedWords });
+          _this2.setState({ inspecting: idx, checked: checkedWords, searching: searching });
         });
 
         if (target === arr[probeIdx]) {
@@ -25837,7 +25839,7 @@ var Binary = function (_React$Component) {
         if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
       }
       funcue.push(function () {
-        _this2.setState({ inspecting: null });
+        _this2.setState({ inspecting: null, searching: "Not found!" });
       });
       this.startBSearchAnimation(funcue);
       return null;
@@ -25890,6 +25892,11 @@ var Binary = function (_React$Component) {
             disabled: this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Start!'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          this.state.searching
         ),
         _react2.default.createElement(
           'h4',
@@ -26147,7 +26154,7 @@ var Trie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys. Searching for a word is done in O(m) time where m is the length of the target string, though it can be much quicker if there are few other words with the same starting letters.'
+          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys. Searching for a word is done in O(m) time where m is the length of the target string.'
         ),
         _react2.default.createElement('input', {
           disabled: this.state.disabled,

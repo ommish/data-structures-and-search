@@ -98,7 +98,7 @@ class Trie extends React.Component {
         <Link to="/">Return</Link>
         <h3>Trie</h3>
         <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys.
-        Searching for a word is done in O(m) time where m is the length of the target string, though it can be much quicker if there are few other words with the same starting letters.</p>
+        Searching for a word is done in O(m) time where m is the length of the target string.</p>
         <input
           disabled={this.state.disabled}
           type="text"

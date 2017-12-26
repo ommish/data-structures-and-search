@@ -12,6 +12,7 @@ class Binary extends React.Component {
       inspecting: null,
       disabled: false,
       checked: 0,
+      searching: "Enter a word to search!"
     };
   }
 
@@ -21,7 +22,7 @@ class Binary extends React.Component {
 
   handleSubmit() {
     this.binarySearch(this.props.dictionary, this.state.searchQuery.toString());
-    this.setState({disabled: true});
+    this.setState({disabled: true, searching: "Searching..."});
   }
 
   binarySearch(arr, target) {
@@ -35,8 +36,9 @@ class Binary extends React.Component {
 
       const idx = probeIdx;
       const checkedWords = checked;
+      const searching = target === arr[probeIdx] ? "Found!" : "Searching..."
       funcue.push(() => {
-        this.setState({inspecting: idx, checked: checkedWords});
+        this.setState({inspecting: idx, checked: checkedWords, searching});
       });
 
       if (target === arr[probeIdx]) {
@@ -52,7 +54,7 @@ class Binary extends React.Component {
       checked++;
     }
     funcue.push(() => {
-      this.setState({inspecting: null});
+      this.setState({inspecting: null, searching: "Not found!"});
     });
     this.startBSearchAnimation(funcue);
     return null;
@@ -84,6 +86,7 @@ class Binary extends React.Component {
         onClick={this.handleSubmit.bind(this)}>
         Start!
         </button>
+        <h4>{this.state.searching}</h4>
         <h4>{this.state.checked} / {this.props.dictionaryLength} words checked</h4>
         <ul className="word-list">
           {words}

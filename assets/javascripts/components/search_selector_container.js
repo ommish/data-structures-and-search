@@ -12,7 +12,6 @@ const mapDispatchToProps = (dispatch) => {
 
   return {
     receiveSelection: (selection) => dispatch(receiveSelection(selection)),
-    receiveDictionary: ()
   };
 };
 

@@ -1,0 +1,18 @@
+.word-list {
+  width: 20%;
+  margin: 10px 0;
+}
+
+.word {
+  padding: 0 5px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.word.active {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 5px 10px;
+  box-shadow: 5px 5px #A0A0A0;
+}

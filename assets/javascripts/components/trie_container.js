@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
+import Trie from './trie';
 import { receiveDictionary } from '../actions/dictionary_actions';
-import Binary from './binary';
 
-const mapStateToProps = (state) => {
+const mapStateToProps= (state) => {
   return {
-    dictionary: state.dictionary.array || [],
+    dictionaryTrie: state.dictionary.trie,
   };
 };
 
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Binary);
+export default connect(mapStateToProps, mapDispatchToProps)(Trie);

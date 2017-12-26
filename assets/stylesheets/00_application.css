@@ -1,6 +1,4 @@
-html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, button {
-  height: 100%;
-  width: 100%;
+html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, button, main {
   font-family: 'Cormorant Garamond', serif;
   font-size: inherit;
   background: transparent;
@@ -10,4 +8,8 @@ html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, butto
 
 ul, ol {
   list-style: none;
+}
+
+main {
+  padding: 20px;
 }

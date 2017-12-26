@@ -31,19 +31,27 @@ class Trie extends React.Component {
     let searching = true;
     let inspecting = trie;
     let i = 1;
-    let checked = 1;
+    let checked = 0;
 
     while (searching) {
-      const val = inspecting.val
-      const checkedWords = checked
+      let val = inspecting.val
+      let checkedWords = checked
       funcue.push(() => {
         this.setState({inspecting: val, checked: checkedWords});
       });
       if (inspecting.isLeaf() || inspecting.val === target) searching = false;
       inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
-      if (!inspecting) searching = false;
-      i++;
-      checked++;
+      if (!inspecting && searching) {
+        searching = false;
+        let checkedWords = checked + 1;
+        funcue.push(() => {
+          this.setState({inspecting: val, checked: checkedWords});
+        });
+      } else if (searching) {
+        i++;
+        checked++;
+
+      }
     }
     this.startTrieSearchAnimation(funcue);
   }
@@ -66,7 +74,7 @@ class Trie extends React.Component {
   toJSX(node) {
     return (
       <ul key={node.val} className={this.state.inspecting === node.val ? "node active" : "node"}>
-        <li>value: {node.val}</li>
+        {node.isRoot() ? "" : <li>{node.val}</li>}
         {node.isLeaf() ? "" : Object.values(node.children).map((child) => this.toJSX(child))}
       </ul>
     );

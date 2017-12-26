@@ -39,20 +39,8 @@ class Node {
 
   static buildTrie(parent, words, segLength) {
 
-    if (words.length < 2) {
-      if (segLength <= words[0].length) {
-        const newChild = new Node(words[0].slice(0));
-        if (parent.numChildren() < 2) {
-          parent.parent.addChild(newChild);
-          parent.parent.removeChild(words[0].slice(0, segLength - 1));
-        } else {
-          parent.addChild(newChild);
-        }
-      }
-      return;
-    }
-
     let queue = [];
+    let newParent;
 
     for (let i = 0; i < words.length; i++) {
 
@@ -61,11 +49,20 @@ class Node {
       }
 
       if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
-        let newParent = new Node(words[i].slice(0, segLength));
-        parent.addChild(newParent);
-        this.buildTrie(newParent, queue, segLength + 1);
-
-        queue = [];
+        if (queue.length < 2) {
+          const newChild = new Node(queue[0].slice(0));
+          parent.addChild(newChild);
+          queue = [];
+        } else {
+          if (queue[0].slice(0, segLength + 1) !== queue[1].slice(0, segLength + 1)) {
+            newParent = new Node(words[i].slice(0, segLength));
+            parent.addChild(newParent);
+          } else {
+            newParent = parent;
+          }
+          this.buildTrie(newParent, queue, segLength + 1);
+          queue = [];
+        }
       }
     }
   }

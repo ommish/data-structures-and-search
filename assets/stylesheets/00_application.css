@@ -2,12 +2,9 @@ html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, butto
   font-family: 'Cormorant Garamond', serif;
   font-size: inherit;
   background: transparent;
-  margin: 0;
-  padding: 0;
 }
 
 ul, ol {
-  list-style: none;
 }
 
 main {

@@ -25758,6 +25758,8 @@ var _word = __webpack_require__(121);
 
 var _word2 = _interopRequireDefault(_word);
 
+var _reactRouterDom = __webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25779,7 +25781,6 @@ var Binary = function (_React$Component) {
       inspecting: null,
       disabled: false
     };
-    _this.binarySearch = _this.binarySearch.bind(_this);
     return _this;
   }
 
@@ -25866,6 +25867,11 @@ var Binary = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { className: 'binary' },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/' },
+          'Return'
+        ),
         _react2.default.createElement(
           'h3',
           null,
@@ -25982,6 +25988,8 @@ var _node = __webpack_require__(124);
 
 var _node2 = _interopRequireDefault(_node);
 
+var _reactRouterDom = __webpack_require__(17);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25999,67 +26007,95 @@ var Trie = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Trie.__proto__ || Object.getPrototypeOf(Trie)).call(this, props));
 
     _this.root = new _node2.default();
-    _this.dictionary = Array.from(_test_dictionary.dictionary);
 
+    _this.state = {
+      searchQuery: "",
+      inspecting: null,
+      disabled: false
+    };
     return _this;
   }
 
   _createClass(Trie, [{
-    key: 'addWord',
-    value: function addWord(parent, word, segLength) {
-      if (segLength > word.length) return;
-      var child = new _node2.default(word.slice(0, segLength));
-      parent.addChild(child);
-      this.addWord(child, word, segLength + 1);
+    key: 'handleInput',
+    value: function handleInput(e) {
+      this.setState({ searchQuery: e.target.value });
     }
   }, {
-    key: 'buildTrie',
-    value: function buildTrie() {
-      var parent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.root;
-      var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.dictionary;
-      var segLength = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
-
-
-      if (words.length < 2) {
-        this.addWord(parent, words[0], segLength);
-        return;
-      }
-
-      var queue = [];
-
-      for (var i = 0; i < words.length; i++) {
-
-        if (queue.length < 1 || words[i].slice(0, segLength) === words[i - 1].slice(0, segLength)) {
-          queue.push(words[i]);
-        }
-
-        if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
-          var newParent = new _node2.default(words[i].slice(0, segLength));
-          parent.addChild(newParent);
-          this.buildTrie(newParent, queue, segLength + 1);
-          queue = [];
-        }
-      }
+    key: 'handleSubmit',
+    value: function handleSubmit() {
+      this.trieSearch(this.props.dictionary, this.state.searchQuery.toString());
+      this.setState({ disabled: true });
+    }
+  }, {
+    key: 'trieSearch',
+    value: function trieSearch(trie, target) {
+      var funcue = [];
     }
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.buildTrie();
+      _node2.default.buildTrie(this.root, _test_dictionary.dictionary, 1);
       this.props.receiveDictionary(this.root, "trie");
+    }
+  }, {
+    key: 'toJSX',
+    value: function toJSX(node) {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        'ul',
+        { key: node.val, className: 'node' },
+        _react2.default.createElement(
+          'li',
+          null,
+          'value: ',
+          node.val
+        ),
+        _react2.default.createElement(
+          'li',
+          null,
+          'children: ',
+          node.isLeaf() ? "none" : node.children.map(function (child) {
+            return _this2.toJSX(child);
+          })
+        )
+      );
     }
   }, {
     key: 'render',
     value: function render() {
-      window.rootNode = this.root;
+      var _this3 = this;
+
       return _react2.default.createElement(
         'section',
         { className: 'trie' },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/' },
+          'Return'
+        ),
         _react2.default.createElement(
           'h3',
           null,
           'Trie'
         ),
-        JSON.stringify(this.root.toObject())
+        _react2.default.createElement('input', {
+          disabled: this.state.disabled,
+          type: 'text',
+          value: this.state.searchQuery,
+          onKeyPress: function onKeyPress(e) {
+            if (e.key === "Enter") _this3.handleSubmit();
+          },
+          onChange: this.handleInput.bind(this) }),
+        _react2.default.createElement(
+          'button',
+          {
+            disabled: this.state.disabled,
+            onClick: this.handleSubmit.bind(this) },
+          'Start!'
+        ),
+        this.toJSX(this.root)
       );
     }
   }]);
@@ -26140,15 +26176,45 @@ var Node = function () {
       });
       return res;
     }
+  }], [{
+    key: "addWord",
+    value: function addWord(parent, word, segLength) {
+      if (segLength > word.length) return;
+      var child = new Node(word.slice(0, segLength));
+      parent.addChild(child);
+      this.addWord(child, word, segLength + 1);
+    }
+  }, {
+    key: "buildTrie",
+    value: function buildTrie(parent, words, segLength) {
+
+      if (words.length < 2) {
+        this.addWord(parent, words[0], segLength);
+        return;
+      }
+
+      var queue = [];
+
+      for (var i = 0; i < words.length; i++) {
+
+        if (queue.length < 1 || words[i].slice(0, segLength) === words[i - 1].slice(0, segLength)) {
+          queue.push(words[i]);
+        }
+
+        if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
+          var newParent = new Node(words[i].slice(0, segLength));
+          parent.addChild(newParent);
+          this.buildTrie(newParent, queue, segLength + 1);
+          queue = [];
+        }
+      }
+    }
   }]);
 
   return Node;
 }();
 
 exports.default = Node;
-
-
-window.Node = Node;
 
 /***/ }),
 /* 125 */

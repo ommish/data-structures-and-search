@@ -1,3 +1,4 @@
+
 class Node {
   constructor(val = null) {
     this.val = val;
@@ -38,8 +39,37 @@ class Node {
     return res;
   }
 
+  static addWord(parent, word, segLength) {
+    if (segLength > word.length) return;
+    const child = new Node(word.slice(0, segLength));
+    parent.addChild(child);
+    this.addWord(child, word, segLength + 1);
+  }
+
+  static buildTrie(parent, words, segLength) {
+
+    if (words.length < 2) {
+      this.addWord(parent, words[0], segLength);
+      return;
+    }
+
+    let queue = [];
+
+    for (let i = 0; i < words.length; i++) {
+
+      if (queue.length < 1 || words[i].slice(0, segLength) === words[i - 1].slice(0, segLength)) {
+        queue.push(words[i]);
+      }
+
+      if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
+        let newParent = new Node(words[i].slice(0, segLength));
+        parent.addChild(newParent);
+        this.buildTrie(newParent, queue, segLength + 1);
+        queue = [];
+      }
+    }
+  }
+
 }
 
 export default Node;
-
-window.Node = Node;

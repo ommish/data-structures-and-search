@@ -1,6 +1,7 @@
 import React from 'react';
 import { dictionary } from '../dictionary';
 import Word from './word';
+import { Link } from 'react-router-dom';
 
 class Binary extends React.Component {
 
@@ -11,7 +12,6 @@ class Binary extends React.Component {
       inspecting: null,
       disabled: false,
     };
-    this.binarySearch = this.binarySearch.bind(this);
   }
 
   handleInput(e) {
@@ -64,7 +64,7 @@ class Binary extends React.Component {
       }
     }, 1000)
   }
-
+  
   componentDidMount() {
     this.props.receiveDictionary(dictionary, "array");
   }
@@ -73,6 +73,7 @@ class Binary extends React.Component {
     const words = this.props.dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting}/>);
     return (
     <section className="binary">
+    <Link to="/">Return</Link>
       <h3>Binary Search</h3>
       <input disabled={this.state.disabled} type="text" value={this.state.searchQuery} onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}} onChange={this.handleInput.bind(this)}/>
       <button

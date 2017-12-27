@@ -1,5 +1,5 @@
 
-class Node {
+class TreeNode {
   constructor(val = "") {
     this.val = val;
     this.parent = null;
@@ -50,12 +50,12 @@ class Node {
 
       if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
         if (queue.length < 2) {
-          const newChild = new Node(queue[0].slice(0));
+          const newChild = new TreeNode(queue[0].slice(0));
           parent.addChild(newChild);
           queue = [];
         } else {
           if (queue.some((word) => word.slice(0, segLength + 1) !== queue[0].slice(0, segLength + 1))) {
-            newParent = new Node(words[i].slice(0, segLength));
+            newParent = new TreeNode(words[i].slice(0, segLength));
             parent.addChild(newParent);
           } else {
             newParent = parent;
@@ -68,4 +68,4 @@ class Node {
   }
 }
 
-export default Node;
+export default TreeNode;

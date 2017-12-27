@@ -21,7 +21,7 @@ class Binary extends React.Component {
   }
 
   handleSubmit() {
-    this.binarySearch(this.props.dictionary, this.state.searchQuery.toString());
+    this.binarySearch(this.props.dictionary, this.state.searchQuery.toString().toLowerCase());
     this.setState({disabled: true, searching: "Searching..."});
   }
 

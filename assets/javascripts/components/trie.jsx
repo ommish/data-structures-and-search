@@ -1,13 +1,13 @@
 import React from 'react';
 import { dictionary } from '../dictionary';
-import Node from '../util/node';
+import TreeNode from '../util/tree_node';
 import { Link } from 'react-router-dom';
 
 class Trie extends React.Component {
 
   constructor(props) {
     super(props);
-    this.root = new Node();
+    this.root = new TreeNode();
 
     this.state = {
       searchQuery: "",
@@ -23,7 +23,7 @@ class Trie extends React.Component {
   }
 
   handleSubmit() {
-    this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString());
+    this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString().toLowerCase());
     this.setState({disabled: true, found: "Searching..."});
   }
 
@@ -43,15 +43,11 @@ class Trie extends React.Component {
         val = null;
         numChecked = checked;
         found = "Not Found!"
-      } else if (inspecting.val === target) {
+      } else if (inspecting.val === target && inspecting.isLeaf()) {
         searching = false;
         val = inspecting.val;
         numChecked = checked;
-        if (inspecting.isLeaf()) {
-          found = "Found!";
-        } else {
-          found = "Not Found!";
-        }
+        found = "Found!";
       } else {
         val = inspecting.val;
         numChecked = checked;
@@ -79,7 +75,7 @@ class Trie extends React.Component {
   }
 
   componentDidMount() {
-    Node.buildTrie(this.root, dictionary, 1);
+    TreeNode.buildTrie(this.root, dictionary, 1);
     this.props.receiveDictionary(this.root, "trie");
   }
 
@@ -97,8 +93,11 @@ class Trie extends React.Component {
       <section className="trie">
         <Link to="/">Return</Link>
         <h3>Trie</h3>
-        <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing its children with their values as keys.
-        Searching for a word is done in O(m) time where m is the length of the target string.</p>
+        <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
+        Searching for a word is done in O(m) time where m is the length of the target string.
+        Building a trie can be costly (O(n*m) time), but one reason you might want to use a trie is if you need to know all the words
+        that a word fragment could lead to.
+        (Please note that this isn't a complete dictionary so many words are missing!)</p>
         <input
           disabled={this.state.disabled}
           type="text"

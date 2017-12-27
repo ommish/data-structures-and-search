@@ -1,7 +1,8 @@
 html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, button, main {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Crimson Text', serif;
   font-size: inherit;
   background: transparent;
+  font-weight: inherit;
 }
 
 ul, ol {

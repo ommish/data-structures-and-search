@@ -25790,7 +25790,7 @@ var Binary = function (_React$Component) {
   _createClass(Binary, [{
     key: 'handleInput',
     value: function handleInput(e) {
-      this.setState({ searchQuery: e.target.value, checked: 0 });
+      this.setState({ searchQuery: e.target.value, checked: 0, inspecting: null, searching: "Enter a word to search!" });
     }
   }, {
     key: 'handleSubmit',
@@ -25882,6 +25882,11 @@ var Binary = function (_React$Component) {
           'h3',
           null,
           'Binary Search'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'You will see the word at the probe index highlighted as the array is traversed.'
         ),
         _react2.default.createElement('input', { disabled: this.state.disabled, type: 'text', value: this.state.searchQuery, onKeyPress: function onKeyPress(e) {
             if (e.key === "Enter") _this4.handleSubmit();
@@ -26038,10 +26043,12 @@ var Trie = function (_React$Component) {
     return _this;
   }
 
+  // TODO: Add autocomplete to search input using the trie!
+
   _createClass(Trie, [{
     key: 'handleInput',
     value: function handleInput(e) {
-      this.setState({ searchQuery: e.target.value, checked: 0, found: "Enter a word to search!" });
+      this.setState({ searchQuery: e.target.value, inspecting: null, checked: 0, found: "Enter a word to search!" });
     }
   }, {
     key: 'handleSubmit',
@@ -26150,7 +26157,12 @@ var Trie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. Searching for a word is done in O(m) time where m is the length of the target string. Building a trie can be costly (O(n*m) time), but one reason you might want to use a trie is if you need to know all the words that a word fragment could lead to. (Please note that this isn\'t a complete dictionary so many words are missing!)'
+          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. Searching for a word is done in O(m) time where m is the length of the target string. Building a trie can be costly (generally O(n*m) time), but one reason you might want to use a trie is if you need to know all the words that a word fragment could lead to (such as in autocomplete).'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This is a demonstration of how a trie would be traversed to locate a word. Complete words are found in the leaf nodes. (Please note that this dictionary is missing many words!)'
         ),
         _react2.default.createElement('input', {
           disabled: this.state.disabled,

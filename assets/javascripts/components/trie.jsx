@@ -18,8 +18,10 @@ class Trie extends React.Component {
     };
   }
 
+// TODO: Add autocomplete to search input using the trie!
+
   handleInput(e) {
-    this.setState({searchQuery: e.target.value, checked: 0, found: "Enter a word to search!"});
+    this.setState({searchQuery: e.target.value, inspecting: null, checked: 0, found: "Enter a word to search!"});
   }
 
   handleSubmit() {
@@ -69,7 +71,7 @@ class Trie extends React.Component {
       queue.shift()();
       if (queue.length < 1) {
         window.clearInterval(trieSearchInterval);
-        this.setState({disabled: false})
+        this.setState({disabled: false});
       }
     }, 1000);
   }
@@ -95,9 +97,10 @@ class Trie extends React.Component {
         <h3>Trie</h3>
         <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
         Searching for a word is done in O(m) time where m is the length of the target string.
-        Building a trie can be costly (O(n*m) time), but one reason you might want to use a trie is if you need to know all the words
-        that a word fragment could lead to.
-        (Please note that this isn't a complete dictionary so many words are missing!)</p>
+        Building a trie can be costly (generally O(n*m) time), but one reason you might want to use a trie is if you need to know all the words
+        that a word fragment could lead to (such as in autocomplete).</p>
+        <p>This is a demonstration of how a trie would be traversed to locate a word. Complete words are found in the leaf nodes.
+        (Please note that this dictionary is missing many words!)</p>
         <input
           disabled={this.state.disabled}
           type="text"

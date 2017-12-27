@@ -17,7 +17,7 @@ class Binary extends React.Component {
   }
 
   handleInput(e) {
-    this.setState({searchQuery: e.target.value, checked: 0});
+    this.setState({searchQuery: e.target.value, checked: 0, inspecting: null, searching: "Enter a word to search!"});
   }
 
   handleSubmit() {
@@ -80,6 +80,7 @@ class Binary extends React.Component {
     <section className="binary">
     <Link to="/">Return</Link>
       <h3>Binary Search</h3>
+      <p>You will see the word at the probe index highlighted as the array is traversed.</p>
       <input disabled={this.state.disabled} type="text" value={this.state.searchQuery} onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}} onChange={this.handleInput.bind(this)}/>
       <button
         disabled={this.state.disabled}

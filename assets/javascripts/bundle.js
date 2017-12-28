@@ -26038,7 +26038,8 @@ var Trie = function (_React$Component) {
       inspecting: null,
       disabled: false,
       checked: 0,
-      found: "Enter a word to search!"
+      found: "Enter a word to search!",
+      inspectingSeg: null
     };
     return _this;
   }
@@ -26065,32 +26066,36 @@ var Trie = function (_React$Component) {
       var searching = true;
       var i = 1;
       var checked = 1;
-      var inspecting = trie.children[target.slice(0, i)];
+      var currentParent = trie;
+      var inspecting = currentParent.children[target.slice(0, i)];
 
       var _loop = function _loop() {
         var val = void 0;
         var numChecked = void 0;
         var found = "Searching...";
-        if (!inspecting) {
+        var inspectingSeg = target.slice(0, i);
+        if (i < target.length) {
+          if (inspecting) {
+            val = inspecting.val;
+            currentParent = inspecting;
+          }
+          i++;
+          numChecked = checked;
+          checked++;
+          inspecting = currentParent.children[target.slice(0, i)];
+        } else if (!inspecting) {
           searching = false;
           val = null;
           numChecked = checked;
           found = "Not Found!";
-        } else if (inspecting.val === target && inspecting.isLeaf()) {
+        } else {
           searching = false;
           val = inspecting.val;
           numChecked = checked;
           found = "Found!";
-        } else {
-          val = inspecting.val;
-          numChecked = checked;
-          i++;
-          checked++;
-          inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
         }
-
         funcue.push(function () {
-          _this2.setState({ inspecting: val, checked: numChecked, found: found });
+          _this2.setState({ inspecting: val, checked: numChecked, found: found, inspectingSeg: inspectingSeg });
         });
       };
 
@@ -26188,9 +26193,13 @@ var Trie = function (_React$Component) {
           'h4',
           null,
           this.state.checked,
-          ' / ',
-          this.props.dictionaryLength,
-          ' words checked'
+          ' nodes checked'
+        ),
+        _react2.default.createElement(
+          'h4',
+          null,
+          'Looking for ',
+          this.state.inspectingSeg
         ),
         _react2.default.createElement(
           'section',

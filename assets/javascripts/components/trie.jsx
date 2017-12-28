@@ -15,6 +15,7 @@ class Trie extends React.Component {
       disabled: false,
       checked: 0,
       found: "Enter a word to search!",
+      inspectingSeg: null,
     };
   }
 
@@ -34,32 +35,36 @@ class Trie extends React.Component {
     let searching = true;
     let i = 1;
     let checked = 1;
-    let inspecting = trie.children[target.slice(0, i)];
+    let currentParent = trie;
+    let inspecting = currentParent.children[target.slice(0, i)];
 
     while (searching) {
       let val;
       let numChecked;
       let found = "Searching...";
-      if (!inspecting) {
+      let inspectingSeg = target.slice(0, i);
+      if (i < target.length) {
+        if (inspecting) {
+          val = inspecting.val;
+          currentParent = inspecting;
+        }
+        i++;
+        numChecked = checked;
+        checked++;
+        inspecting = currentParent.children[target.slice(0, i)]
+      } else if (!inspecting) {
         searching = false;
         val = null;
         numChecked = checked;
         found = "Not Found!"
-      } else if (inspecting.val === target && inspecting.isLeaf()) {
+      } else {
         searching = false;
         val = inspecting.val;
         numChecked = checked;
         found = "Found!";
-      } else {
-        val = inspecting.val;
-        numChecked = checked;
-        i++;
-        checked++;
-        inspecting = inspecting.children[target.slice(0, i)] || inspecting.children[target];
       }
-
       funcue.push(() => {
-        this.setState({inspecting: val, checked: numChecked, found})
+        this.setState({inspecting: val, checked: numChecked, found, inspectingSeg})
       });
 
     }
@@ -113,7 +118,9 @@ class Trie extends React.Component {
           Start!
         </button>
         <h4>{this.state.found}</h4>
-        <h4>{this.state.checked} / {this.props.dictionaryLength} words checked</h4>
+        <h4>{this.state.checked} nodes checked</h4>
+        <h4>Looking for {this.state.inspectingSeg}</h4>
+
         <section className="trie-list">{this.toJSX(this.root)}</section>
       </section>
     );  }

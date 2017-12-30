@@ -102,7 +102,7 @@ class Trie extends React.Component {
         <h3>Trie</h3>
         <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
         Searching for a word is done in O(m) time where m is the length of the target string.
-        Building a trie can be costly (generally O(n*m) time), but one reason you might want to use a trie is if you need to know all the words
+        Building a trie can be costly (at least O(n*m) time), but one reason you might want to use a trie is if you need to know all the words
         that a word fragment could lead to (such as in autocomplete).</p>
         <p>This is a demonstration of how a trie would be traversed to locate a word. Complete words are found in the leaf nodes.
         (Please note that this dictionary is missing many words!)</p>
@@ -119,7 +119,7 @@ class Trie extends React.Component {
         </button>
         <h4>{this.state.found}</h4>
         <h4>{this.state.checked} nodes checked</h4>
-        <h4>Looking for {this.state.inspectingSeg}</h4>
+        <h4>Looking for: {this.state.inspectingSeg}</h4>
 
         <section className="trie-list">{this.toJSX(this.root)}</section>
       </section>

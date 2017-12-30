@@ -1,9 +1,12 @@
 import LinkedList from '../util/linked_list';
-import { hash } from 'string-hash';
+import hash from 'hash-string';
 
-class HashMap {
+class Hashmap {
   constructor(numLists = 10) {
-    this.lists = new Array(numLists).map((el) => new LinkedList())
+    this.lists = new Array(numLists);
+    for (let i = 0; i < numLists; i++) {
+      this.lists[i] = new LinkedList();
+    }
     this.numElements = 0;
   }
 
@@ -23,7 +26,10 @@ class HashMap {
 
   resize() {
     const oldLists = this.lists;
-    this.lists = new Array(this.numLists() * 2).map((el) => new LinkedList());
+    this.lists = new Array(this.numLists() * 2);
+    for (let i = 0; i < this.numLists(); i++) {
+      this.lists[i] = new LinkedList();
+    }
     oldLists.forEach((list) => {
       list.eachNode((node) => {
         this.list(node.key).appendNode(node.key, node.val);
@@ -31,9 +37,9 @@ class HashMap {
     });
   }
 
-  eachBucket(callback) {
+  eachNode(callback) {
     this.lists.forEach((list) => {
-      callback(list);
+      list.eachNode(callback);
     });
   }
 
@@ -42,6 +48,8 @@ class HashMap {
   }
 
   list(key) {
-    this.lists[hash(key) % this.numLists()]
+    return this.lists[hash(key) % this.numLists()];
   }
 }
+
+export default Hashmap;

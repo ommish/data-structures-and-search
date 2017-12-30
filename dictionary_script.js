@@ -3,7 +3,6 @@ const fs = require('fs');
 const include = (word, n) => {
   for (let i = 2; i < n; i++) {
     if (n % i === 0) return false;
-    if (word.length < 3 || word.length > 8) return false;
   }
   return true;
 }

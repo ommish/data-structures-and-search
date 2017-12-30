@@ -15,7 +15,7 @@ class LinkedList {
   }
 
   appendNode(key, val) {
-    newNode = new ListNode(key, val);
+    const newNode = new ListNode(key, val);
 
     newNode.prev = this.tail.prev;
     this.tail.prev.next = newNode;
@@ -66,7 +66,7 @@ class LinkedList {
 }
 
 class ListNode {
-  constructor(val = null, key = null) {
+  constructor(key = null, val = null) {
     this.val = val;
     this.key = key;
     this.prev = null;

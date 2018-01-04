@@ -10,6 +10,7 @@ class SearchSelector extends React.Component {
       <ul>
         <li><Link to="/binary">Array Binary Search</Link></li>
         <li><Link to="/trie">Trie</Link></li>
+        <li><Link to="/compressed-trie">Compressed Trie</Link></li>
         <li><Link to="/hashmap">Hashmap</Link></li>
       </ul>
       </section>

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 56);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(56);
-} else {
   module.exports = __webpack_require__(57);
+} else {
+  module.exports = __webpack_require__(58);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -362,11 +362,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(69)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(70)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(70)();
+  module.exports = __webpack_require__(71)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -478,31 +478,31 @@ module.exports = emptyFunction;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(69);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(73);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(39);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(75);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(78);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(81);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(83);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(40);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(23);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(89);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(91);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(93);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(94);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
 
 
@@ -533,6 +533,25 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(98);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -629,7 +648,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -689,7 +708,7 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -756,7 +775,7 @@ var createPath = exports.createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -827,26 +846,39 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(97);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var RECEIVE_DICTIONARY = exports.RECEIVE_DICTIONARY = 'RECEIVE_DICTIONARY';
 
-
-
+var receiveDictionary = exports.receiveDictionary = function receiveDictionary(dictionary, structure) {
+  return {
+    type: RECEIVE_DICTIONARY,
+    dictionary: dictionary,
+    structure: structure
+  };
+};
 
 /***/ }),
-/* 12 */
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var dictionary = exports.dictionary = ["aardvark", "abaci", "aback", "abacus", "abalone", "abandoned", "abash", "abashedly", "abattoir", "abbess", "abbreviated", "abduct", "abductor", "abet", "abhor", "abhorrent", "abiding", "abjectness", "ablation", "ablaze", "abnegate", "abnormally", "abode", "abominably", "aborigine", "abound", "abrasively", "abridgement", "abroad", "abrupt", "abruptness", "abscissa", "absinthe", "absolution", "absorbency", "absorbing", "abstinence", "abstract", "abstractness", "absurdly", "abundantly", "abutment", "acacia", "academia", "accelerator", "accented", "accept", "acceptable", "accident", "accommodate", "accommodations", "accompanist", "accomplished", "accordingly", "accordionist", "accouterments", "accretion", "accumulation", "accurateness", "accursedness", "accuser", "ace", "acerbic", "achene", "acidulous", "acknowledgment", "acne", "acoustic", "acquirement", "acquittal", "acrimony", "acrobatic", "acrophobia", "acting", "actively", "actress", "actuarial", "actuator", "acute", "adapt", "adapter", "adder", "addressee", "adenine", "adequateness", "adherence", "adieux", "adjacent", "adjoining", "adjudicatory", "adjust", "adjuster", "adman", "admire", "admissions", "admix", "adolescence", "adopted", "adorably", "adroit", "adroitness", "advance", "advantageously", "adventurousness", "adverse", "advertisement", "advertising", "advise", "adze", "aerial", "aerobic", "aerobics", "aeronautics", "aestheticism", "affable", "affair", "affiance", "afflatus", "affliction", "afford", "afghan", "aflutter", "aforementioned", "afterglow", "aftermarket", "afterthought", "agate", "agenda", "aggrandize", "aggressive", "agilely", "agitator", "agnosticism", "agonized", "agree", "agribusiness", "agriculture", "ahead", "aide", "airbrush", "airiness", "airport", "airship", "airworthiness", "airy", "akin", "alack", "albatross", "alcove", "ale", "alehouse", "alertness", "alibi", "alienated", "alienist", "alignment", "allegedly", "allegorically", "allergenic", "allied", "allocation", "allow", "allude", "allusive", "aloha", "alongside", "alpaca", "alphabetization", "alright", "alteration", "altogether", "altruistically", "alumni", "always", "amateurish", "amateurishness", "amazing", "ambidexterity", "ambidextrously", "ambivalence", "ambivalently", "ambulant", "amendable", "amenity", "amercement", "amiable", "amide", "ammeter", "amniocentesis", "amok", "amorally", "amphorae", "amplification", "amputee", "anabolism", "anagram", "analogically", "analogy", "analyzable", "anathematize", "anatomist", "ancestress", "anchorperson", "anchovy", "and", "anemically", "anesthetize", "angling", "angrily", "anguished", "animadvert", "animalcule", "animism", "animus", "anionic", "ankh", "annihilator", "annotate", "announcer", "ant", "antagonize", "antecedent", "anterior", "anthropomorphism", "anticancer", "anticyclone", "antidote", "antifreeze", "antihero", "antimalarial", "antipasti", "antipersonnel", "antiphon", "antipollution", "antisepsis", "antitheses", "antithetical", "antivenin", "antivivisectionist", "antonym", "anxiously", "anywise", "ape", "aphelion", "apish", "apocrypha", "apolitical", "apologize", "apostleship", "apothegm", "appaloosa", "apparently", "append", "appendicitis", "appetizingly", "applauder", "applesauce", "applicant", "applicator", "appointed", "appositeness", "apprenticeship", "appropriately", "approval", "approving", "aquatically", "aqueous", "aquifer", "arbitrament", "arbutus", "arcade", "archaist", "archduke", "archetypal", "architect", "architrave", "arena", "arguably", "argumentation", "argumentatively", "aristocratic", "armament", "armorer", "aromatherapist", "array", "arrowhead", "arsonist", "arteriole", "artery", "arthritic", "arthropod", "articulation", "artiste", "artlessness", "asbestos", "ascription", "aseptically", "asinine", "asininity", "aspirate", "assail", "assembly", "assertive", "assessment", "asset", "assiduity", "assignment", "assistant", "assortment", "assumable", "astatine", "astonishment", "astringent", "astrologist", "astrophysicist", "astute", "asylum", "asymmetrical", "atelier", "atlas", "atmospheric", "atrial", "atrocious", "attach", "attacker", "attainability", "attention", "attestation", "attributively", "audiotape", "audition", "augment", "augustness", "auspicious", "auspiciousness", "austral", "authoritarian", "autobiographical", "autobiography", "autocratic", "automatic", "automobile", "autopilot", "autumnal", "avaunt", "avenger", "avoidable", "avowal", "avowedly", "award", "away", "awesomeness", "awoken", "axiom", "axle", "axolotl", "azure", "babel", "babysat", "bacilli", "backbiter", "backdate", "backlash", "backpacker", "backside", "backstop", "backwardness", "backyard", "bactericidal", "bagful", "baize", "balcony", "bale", "balefulness", "balladeer", "ballast", "ballistic", "ban", "bandeaux", "banditry", "banisters", "banking", "bankruptcy", "banzai", "barbarity", "barbershop", "barcarole", "bareback", "barely", "bargeman", "barkeeper", "barman", "barnacle", "barnyard", "baroness", "barracks", "barred", "barreled", "barring", "basally", "basaltic", "bases", "basics", "basin", "basswood", "bate", "bathtub", "bathyscaphe", "battalion", "batterer", "battery", "bawdily", "beacon", "beady", "bean", "beard", "bearish", "bearskin", "beautician", "bebop", "becomingly", "bedclothes", "bedim", "bedrock", "beech", "beep", "befog", "befoul", "began", "begin", "beginning", "behindhand", "beholden", "belay", "believe", "bell", "bellow", "bellyache", "belted", "bendable", "benefaction", "benevolent", "benign", "benumb", "beryl", "besides", "besieger", "bestiary", "betrothal", "bettor", "betwixt", "bewilderingly", "bewitchment", "biannual", "bibliophile", "bicentenary", "bicuspid", "bid", "bidirectional", "bigoted", "bigwig", "bilabial", "bilaterally", "billboard", "binocular", "binomial", "biodegradability", "biographer", "biologically", "bionic", "biopic", "biorhythm", "bipolarity", "birdbath", "birthplace", "birthright", "bismuth", "bisque", "bitty", "bituminous", "blackboard", "blackjack", "blamelessness", "blase", "blaster", "blatantly", "blaze", "bleach", "bleachers", "blessedness", "blindfold", "blintz", "blissfulness", "blithesome", "blitzkrieg", "blob", "blockbuster", "blocker", "blondness", "bloodletting", "bloodmobile", "bloom", "blotched", "blotter", "blowtorch", "bluegill", "bluenose", "bluestocking", "bluffness", "bluntly", "blurry", "blusterous", "boater", "bobsled", "bobtail", "bod", "boffo", "bogie", "bohemian", "boisterously", "boll", "bombard", "bombed", "bond", "bony", "boogieman", "bookbinder", "booklet", "boomerang", "boondoggle", "boorishness", "borax", "border", "boron", "bossism", "botanical", "botanist", "bottler", "bounce", "bouncing", "boundlessness", "bow", "bowels", "bowlful", "bowling", "bowstring", "boxing", "boxwood", "bracelet", "bracing", "brainless", "brash", "bravado", "bravely", "bravura", "bray", "brazier", "bread", "breadfruit", "breastwork", "breathable", "breathlessly", "brethren", "brewer", "bridal", "bridegroom", "bridle", "brigand", "brimless", "brindle", "bringer", "brioche", "broad", "broadcasting", "broaden", "broken", "brooding", "brotherhood", "brow", "browbeaten", "bruin", "bruised", "brushoff", "brushwork", "brutish", "bubbly", "buccaneer", "bucksaw", "buckskin", "buddy", "buff", "bug", "bullfighter", "bullishly", "bullock", "bumblebee", "bumpkin", "bunch", "bungler", "burbs", "bureaucrat", "burglar", "burliness", "burnable", "bursitis", "busgirl", "bushiness", "bushy", "businesswoman", "butch", "butchery", "buttermilk", "buyout", "bygone", "bypass", "byplay", "byte", "caboodle", "cabriolet", "cad", "caddishness", "caffeine", "cahoots", "cajolement", "calaboose", "calculatingly", "calico", "caliper", "calisthenic", "caller", "calligraphic", "callous", "callus", "calumniation", "calyces", "camelhair", "campaigner", "canard", "canasta", "candelabra", "candidate", "cannabis", "cannibalize", "cantankerousness", "canticle", "cantilevered", "cantonment", "canyon", "capability", "caper", "capital", "cappuccino", "caramelize", "carbohydrate", "carboniferous", "cardamom", "cardsharp", "carefree", "caretaker", "carjack", "carjacking", "carnal", "carnivore", "caroller", "carousel", "carpetbagger", "carpi", "carrel", "cartel", "cartographer", "cartridge", "carving", "caseharden", "caseload", "casino", "casket", "castigator", "casuistic", "catafalque", "catastrophic", "catbird", "catching", "category", "catercorner", "catharses", "cathode", "catnap", "causeway", "caution", "cavernous", "cavil", "cayman", "cedar", "celebrated", "cell", "censor", "censoriousness", "censurable", "cent", "centrifugal", "ceramist", "cerebral", "cerebration", "certifiably", "cerulean", "cessation", "chairmanship", "chalky", "chamomile", "championship", "chantey", "chaparral", "chaperonage", "chaps", "characterless", "chardonnay", "charily", "chariot", "charmed", "charter", "chary", "chaser", "chasteness", "cheap", "cheater", "checkbook", "checkered", "cheerful", "cheerfulness", "cheerless", "chef", "chemically", "chemotherapy", "cheroot", "chicanery", "chickenpox", "chid", "chief", "chignon", "childishness", "chip", "chitinous", "chitterlings", "chives", "chloride", "chlorinated", "chloroform", "chloroplast", "choke", "chopper", "chopstick", "chorally", "choreographic", "chosen", "chromatic", "chub", "chuckhole", "chug", "chump", "cilium", "cinder", "cinnamon", "circuitousness", "circularly", "circumference", "circumscription", "circumstantial", "cite", "citizenship", "city", "civic", "civilize", "clack", "claimer", "clairvoyant", "clamp", "clan", "claque", "clarinettist", "classroom", "clausal", "cleaner", "clearly", "clew", "clientele", "clingy", "clinician", "cloaca", "clockwork", "clogged", "cloistral", "close", "clothes", "cloture", "clout", "cloy", "club", "clumpy", "coach", "coalesce", "coastal", "coastline", "cobalt", "coca", "cockatrice", "cockpit", "codify", "coed", "coelenterate", "coevally", "coffeecake", "cofferdam", "cogitation", "cohabitation", "cohesiveness", "coin", "coincidentally", "coinsurance", "coldblooded", "collaboration", "collateralize", "collation", "collectively", "colleen", "collie", "colloid", "collude", "colonelcy", "colonnaded", "colorblind", "colorfast", "colorization", "colossal", "colt", "comb", "combined", "comfortable", "comfy", "commend", "commendably", "commiseration", "commissary", "committeeman", "commonly", "compact", "companionship", "compatibility", "compeer", "compelling", "competency", "competitiveness", "compilation", "complacently", "complaint", "compliant", "compliment", "compositely", "compressible", "compute", "comradely", "con", "conceit", "conceive", "conceptualization", "conceptually", "concertmaster", "concession", "conciliate", "conclusion", "concretely", "concubine", "condition", "conditionally", "conductible", "conductive", "confectioner", "confederacy", "confess", "confine", "confirm", "confirmed", "confiscatory", "confluent", "confuse", "confutation", "congeniality", "congenital", "congratulation", "congruently", "conjectural", "conjoint", "conjunct", "connubial", "conquerable", "conscientiously", "conscious", "consecration", "consensus", "consequently", "conservatively", "considerately", "consignee", "consistence", "consolingly", "consortia", "conspiratorially", "constituency", "constitutional", "constructionist", "consultancy", "consummate", "contemplative", "contemptible", "contentious", "conterminous", "contest", "continuity", "contraband", "contraption", "contravene", "contributory", "controversially", "contumacious", "contumacy", "conurbation", "convenient", "conventionally", "conversational", "conversely", "convertor", "cookbook", "coonskin", "coordinate", "coordination", "copious", "copula", "copulative", "cordiality", "cordillera", "cornball", "coronae", "corpulent", "correctable", "corroborate", "corsair", "cortisone", "coruscate", "cosmologist", "cosmopolitanism", "costliness", "costs", "cottage", "cottony", "councilman", "counsellor", "counter", "counterculture", "counterfoil", "counteroffensive", "counterpane", "counterspy", "countertenor", "coupe", "coupon", "course", "courtesan", "courthouse", "coven", "coverall", "cow", "coworker", "cowrie", "coyness", "crackhead", "crackly", "craftsmanship", "cram", "cramping", "crank", "crankshaft", "crave", "crawdad", "crawlspace", "creamer", "creativeness", "creche", "credential", "crematory", "crenelation", "crib", "cried", "criminology", "crises", "critically", "crocodile", "crook", "crookneck", "crooner", "croquet", "crossness", "crosstown", "crouton", "crowning", "crucifixion", "cruddy", "cruiser", "crumb", "crupper", "crystallize", "cuddle", "cudgel", "cull", "culvert", "cunningly", "cupidity", "curator", "curiae", "curiousness", "curl", "curliness", "currently", "cursively", "curtail", "curtsey", "customization", "cutler", "cutter", "cuttlefish", "cyberspace", "cyclopedia", "cytoplasm", "dace", "dachshund", "daffiness", "daffy", "dagger", "daintiness", "damask", "damning", "damper", "dandruff", "dangerous", "dangle", "dankly", "darkener", "darned", "dastard", "davit", "daylight", "dazedly", "deactivation", "deadwood", "deafen", "debarment", "debate", "debauchery", "debilitate", "debtor", "debutante", "decanter", "decease", "decimeter", "declamatory", "declassify", "decode", "decompression", "deconstruction", "decor", "decriminalize", "deductible", "deepen", "defamer", "defaulter", "defectiveness", "defer", "deferment", "defiance", "definite", "deflate", "deform", "defray", "defunct", "degeneracy", "degree", "dehumidifier", "dehydrogenate", "deistic", "delay", "delegate", "deliberative", "delicious", "delighted", "delineate", "deliquescent", "delivery", "demagogic", "demand", "demitasse", "democracy", "demography", "demolition", "demonstrate", "demoralization", "demoralized", "demurral", "denigrate", "denim", "denomination", "dentistry", "denude", "depletion", "depolarization", "depopulate", "depositor", "depreciate", "deprivation", "deputation", "deputize", "derogate", "derogatorily", "desalinate", "desalt", "descend", "desensitization", "desiccant", "desiccation", "designation", "desk", "despairingly", "destabilization", "destruction", "detach", "deteriorate", "determination", "determiner", "detox", "detriment", "deuce", "developer", "deviate", "devilishness", "devote", "devotion", "devoutness", "dextrose", "diabolic", "diagnostically", "diagnostics", "diameter", "diatomic", "dibs", "dicey", "dictation", "diesel", "differ", "differentiate", "diffusive", "digestibility", "digestion", "digitalis", "dilettantish", "dilly", "dimity", "dimply", "dinette", "dingy", "dint", "diocese", "diplomacy", "diplomatic", "dipper", "dipsomania", "dirndl", "dirtily", "disable", "disadvantageous", "disaffiliation", "disappointingly", "disarm", "disavowal", "disbursal", "disciple", "disclaim", "discombobulate", "discomfort", "discouraging", "discreetness", "discursive", "discussion", "diseased", "disembowel", "disenchant", "disestablish", "disfranchise", "disgust", "disheveled", "dishevelment", "dishware", "disinclined", "disjointedness", "diskette", "dismay", "dismissively", "disobediently", "disorderly", "dispatch", "dispel", "displacement", "disport", "disposed", "disprove", "disputer", "disquisition", "disruption", "dissatisfied", "dissemblance", "dissident", "dissimulator", "dissipated", "dissuade", "distastefulness", "distention", "distinguish", "distract", "distributor", "disturbance", "disturbing", "ditto", "divalent", "divestiture", "dividers", "docile", "docility", "doge", "dogeared", "doings", "doll", "dollhouse", "doltish", "domicile", "domiciliary", "dominatrix", "dominion", "dongle", "doorway", "doping", "dork", "dorsally", "dotage", "doth", "doubleheader", "doubtful", "doubtless", "dovecote", "downheartedly", "downsize", "doxology", "dozen", "drachma", "draftiness", "dragnet", "drain", "drainboard", "draperies", "drawl", "drawstring", "dream", "dreamt", "drench", "drenching", "dresser", "drew", "drink", "driveway", "dropsical", "drowning", "dryly", "drywall", "dub", "ductless", "duds", "duel", "dues", "dullness", "dumdum", "dune", "dungaree", "duper", "durum", "duskiness", "dybbuk", "dynamism", "earache", "early", "earn", "earphone", "earth", "earwig", "easily", "eastward", "eavesdrop", "ebulliently", "ecclesiastical", "echo", "economist", "ecosystem", "edginess", "edgy", "editor", "educable", "educational", "eel", "effectuate", "efficiently", "effortlessness", "effusiveness", "eglantine", "ejaculatory", "elaborately", "elate", "elder", "election", "elective", "electrically", "electroencephalography", "electromagnetic", "electromagnetism", "eleemosynary", "element", "elixir", "ell", "elocution", "elopement", "emaciation", "emancipation", "embargo", "embarrassingly", "embezzlement", "embroidery", "emigrate", "emit", "emollient", "empathetic", "empathy", "empiricist", "employe", "empower", "enactment", "enamor", "encamp", "enchanting", "encourage", "encumbrance", "encyclopaedia", "endearing", "endearment", "ending", "endowment", "enervation", "engraver", "engrossing", "enigmatically", "enjoyment", "enlarger", "enmeshment", "enormous", "enraged", "enshroud", "entailment", "enterprise", "entertainer", "enthrone", "entourage", "entrance", "entropy", "enveloper", "environmentalism", "envoy", "ephemeral", "epidermis", "episcopate", "epitaph", "epithet", "equator", "equestrianism", "equipment", "equivalence", "equivalent", "equivocation", "eradicator", "ergonomically", "erosion", "eruditely", "erupt", "espadrille", "espresso", "essayist", "establish", "estuary", "etching", "ethically", "eucalypti", "euphoric", "europium", "evader", "evangelistic", "evaporate", "event", "eventfully", "evermore", "evidently", "exaltation", "exam", "example", "excavation", "excepted", "excerpt", "exchangeable", "excite", "excitingly", "exclude", "exclusion", "excommunication", "execrable", "executor", "exhaust", "exhibitionism", "exhilaration", "exigency", "exit", "exonerate", "exorcism", "exotic", "exoticism", "expatiate", "expectant", "expediently", "expediter", "expense", "experienced", "explicable", "explicitly", "expositor", "exposure", "expounder", "expressionistic", "extemporize", "extendable", "extinguish", "extirpation", "extortionately", "extortionist", "extractor", "extramarital", "extricable", "extrovert", "exudation", "exultantly", "exurb", "fabulous", "facet", "facilitate", "factory", "fail", "faille", "fairly", "fairway", "fake", "fall", "fallibly", "falls", "falsification", "familiarization", "fandango", "fantail", "fare", "farinaceous", "fascination", "fashion", "fashionably", "fatal", "fateful", "fatherless", "fathomless", "fatuity", "faultlessly", "fauna", "faze", "fearlessly", "features", "fecundate", "federalize", "fedora", "feedback", "feeler", "feldspar", "felicity", "female", "fencer", "fend", "fermentation", "ferociously", "ferule", "festal", "festivities", "fetcher", "fettle", "feverishly", "few", "fiasco", "fiche", "fiction", "fictitiously", "fidelity", "fief", "fieriness", "figuratively", "filch", "filibusterer", "filly", "filterer", "finances", "financing", "fingering", "finickiness", "firebreak", "firelight", "firestorm", "firmly", "fishcake", "fisherman", "fishmonger", "fistfight", "fitter", "flagman", "flagrant", "flair", "flamboyant", "flameproof", "flan", "flanker", "flannels", "flask", "flatness", "flatteringly", "flaunt", "flavoring", "flawlessly", "flay", "flesh", "fleshly", "flex", "flexible", "flippant", "flirtation", "floater", "flogger", "flophouse", "flowerbed", "flowing", "fluctuate", "fluff", "flunk", "fluoridate", "fly", "flycatcher", "flyway", "foam", "fodder", "foggily", "foible", "foldaway", "food", "foodstuff", "foolscap", "footlocker", "footsie", "for", "forbid", "foreclose", "forefoot", "foreknowledge", "forelock", "forequarter", "foresee", "foresight", "foresightedness", "forgetfulness", "fork", "formation", "formatted", "formulae", "fornicator", "forsooth", "fortitude", "fortune", "forward", "fossil", "foulard", "foundry", "fourteenth", "foxtrot", "fragment", "frailty", "frankincense", "fraudulent", "freckly", "freehold", "freeway", "freezer", "freshener", "fret", "friar", "fridge", "frighteningly", "frivolously", "frolic", "frolicsome", "frontally", "frontrunner", "frontwards", "frostbite", "frowardness", "frowzily", "fruit", "fruited", "fruitless", "fugue", "fulfilled", "fulfillment", "fullness", "function", "fundamentally", "fungicidal", "funnel", "furrier", "furring", "furtively", "fustian", "futurology", "fuzzily", "fuzzy", "gabble", "gage", "gaiety", "gainful", "gait", "gall", "galling", "gallivant", "gamete", "gamine", "garbanzo", "garbled", "gargoyle", "garishly", "garrulous", "gas", "gastropod", "gatekeeper", "gaudily", "gave", "gavotte", "gawky", "geese", "generator", "generousness", "genetically", "genie", "genteelly", "gentility", "geochemistry", "geologic", "geopolitical", "gerrymandering", "gesticulation", "gesture", "gibe", "gigantically", "gimbals", "ginkgo", "giraffe", "girl", "given", "glacial", "glamourous", "glassware", "glaucoma", "gleefulness", "glider", "glimpse", "glittering", "gloaming", "globally", "glockenspiel", "glorious", "glory", "glower", "gluttonously", "gnaw", "goat", "godfather", "goes", "going", "goldenrod", "golfer", "gonad", "gong", "gonorrhoea", "goober", "gorily", "gormandize", "governess", "gown", "grabber", "gracefully", "graciously", "graduation", "grafter", "granary", "grandiloquent", "grange", "granulated", "grapefruit", "graphically", "graspable", "grate", "grater", "gratis", "gravamen", "gravely", "gravitate", "gravy", "greasepaint", "great", "greengrocer", "gregariously", "greyhound", "gridlocked", "griever", "grimy", "griper", "grizzly", "groats", "groom", "groper", "grossness", "grouchily", "groveller", "grownup", "grudgingly", "gruffly", "grump", "grunion", "guardhouse", "guest", "gullibility", "gulper", "gunman", "gushing", "gusty", "gym", "gymnastic", "gynecologist", "gyro", "habitable", "habituate", "hadst", "haggler", "hail", "hailstorm", "hairdryer", "hairspring", "halfback", "hallelujah", "hallucination", "halogen", "hamper", "handbook", "handcuff", "handicapper", "hands", "handsome", "handwoven", "handwritten", "hanger", "hankie", "hansom", "happen", "harasser", "hardball", "hardener", "hardiness", "hardliner", "harken", "harmlessness", "harmonica", "harpist", "harpsichordist", "harrowing", "has", "hastily", "hate", "haul", "haven", "haw", "haycock", "hazardously", "haziness", "headboard", "headman", "headphones", "headwaters", "hear", "hearten", "heartlessness", "heartwarming", "heathenish", "heaver", "heavily", "hedgehop", "heed", "heftiness", "heinousness", "helium", "hellbent", "hellion", "hellishly", "helpfully", "helpmate", "hematite", "hemline", "hemophilia", "hereabouts", "heredity", "hereof", "heretical", "heretofore", "hermit", "heron", "herself", "hesitate", "hewer", "hexagon", "hiatus", "hiccough", "hid", "hideout", "hierarchically", "hilliness", "hinter", "hipness", "hippopotamus", "hipster", "historic", "history", "hitcher", "hive", "hoard", "hobby", "hogtie", "holdup", "holiday", "homage", "homelessness", "homemaking", "hominess", "honeycomb", "honeylocust", "honeymooner", "honorable", "honorably", "honorary", "hookah", "hookworm", "hoops", "hooves", "hopelessness", "hornless", "horribly", "horridly", "hosteler", "hostilely", "hostility", "hotblooded", "hours", "housebreaker", "housecoat", "houseful", "housing", "hovercraft", "hub", "huckster", "humanitarian", "humdrum", "humiliatingly", "hummus", "hump", "hundreds", "hundredweight", "hungry", "hurl", "hybrid", "hydrant", "hydraulically", "hydrodynamic", "hydrogen", "hydroplane", "hydrosphere", "hydrous", "hypermedia", "hypertension", "hyperventilate", "hypnoses", "hypothetical", "hysterics", "ichthyology", "icon", "idea", "idealization", "identically", "idolatry", "idyll", "ignominious", "ileum", "ilk", "illiteracy", "illiterately", "illuminate", "illumination", "illustriously", "imbibe", "imbrication", "imitative", "immaculate", "immerse", "immobilize", "immolate", "immune", "immunodeficiency", "impartiality", "impeccably", "impenetrability", "imperatively", "imperceptible", "imperially", "impetigo", "impingement", "impishly", "implantable", "implode", "imploringly", "importune", "imposition", "impost", "impotent", "impracticable", "impression", "impromptu", "improperly", "improvidence", "improviser", "imputable", "inactivate", "inadequate", "inadmissibility", "inadvertently", "inanely", "inappreciable", "inarguable", "incalculable", "incautious", "incessant", "incident", "incise", "incite", "inclusion", "incompetence", "incomprehensible", "inconsistency", "inconspicuously", "inconstancy", "inconveniently", "incorporeal", "incorrectly", "incrimination", "incubus", "indecently", "independent", "indescribable", "indeterminably", "indifferently", "indigently", "indignity", "indiscernible", "indispensably", "indite", "individualize", "indubitably", "inductee", "indulgence", "indulgently", "industrialization", "inebriate", "inelastic", "inelegant", "inequitable", "inessential", "inexact", "inexpiable", "inexpressibly", "infallible", "infant", "infarction", "infatuated", "infectiously", "infertile", "infiltrate", "inflatable", "infliction", "informant", "informatively", "infraction", "infrasonic", "ingeniousness", "ingenuity", "ingrain", "inhabitable", "inhalator", "initial", "initially", "injudiciously", "inkstand", "inky", "innocuous", "innovator", "inorganic", "inquiring", "inroad", "inrush", "inscrutability", "insentient", "inset", "inside", "insinuate", "insolubly", "inspection", "inspiration", "instalment", "instigation", "instruction", "instrumentally", "insularity", "insulting", "insuperable", "insurgent", "insurmountably", "intake", "integrative", "intended", "intensely", "intentions", "interactive", "intercede", "intercessory", "interchangeable", "interfaith", "intermediary", "intermediately", "interminably", "intermission", "internationalism", "internationalize", "interpretation", "interrogatively", "intersection", "interwove", "intestacy", "intimately", "intimidating", "intimidation", "intoxicant", "intractable", "intriguer", "introspective", "intrusiveness", "inundation", "invariability", "inveigh", "inventively", "inversion", "investigate", "invincible", "inviolability", "invisible", "involuntariness", "ionization", "ionizer", "ireful", "iridium", "irksomely", "iron", "irrationally", "irrefutably", "irremovable", "irrespective", "irretrievable", "irrevocably", "islander", "isobar", "isometrics", "italics", "itemized", "its", "ivory", "jackal", "jackknife", "jacks", "jam", "jardiniere", "jaunt", "jaywalker", "jazzy", "jealously", "jellylike", "jennet", "jersey", "jingoist", "jinrikisha", "jitters", "jogging", "jonquil", "jowl", "joyousness", "jubilantly", "judicially", "juggler", "julep", "jumpily", "junket", "juristic", "justifiably", "juvenile", "kappa", "kebab", "keenness", "keepsake", "kennels", "kickball", "kiln", "kilt", "kingship", "kiss", "kisser", "kitchenette", "kite", "knickerbockers", "knives", "knowable", "known", "krypton", "labial", "laboratory", "lackadaisical", "laconically", "lade", "lain", "lakefront", "lambada", "lambaste", "lambskin", "landing", "languid", "languidness", "lapdog", "laptop", "lariat", "larkspur", "latchkey", "latency", "latent", "lath", "lattice", "laudanum", "launderer", "laurels", "lavishly", "lawfully", "laxity", "layperson", "lea", "leafage", "leaper", "ledger", "leery", "leeward", "leftover", "leg", "legation", "legibly", "legislate", "legislative", "legit", "legitimate", "legitimize", "leisure", "lemon", "lengthways", "leniently", "leopard", "leotard", "lesion", "lessor", "lethargic", "leukaemia", "leveler", "liability", "libellous", "liberalism", "libertarian", "library", "lichee", "licorice", "lieder", "lifelessness", "lifesaving", "liftoff", "limestone", "linage", "lineally", "linens", "lines", "linguini", "linkage", "lioness", "lipstick", "lire", "lisp", "listener", "listlessness", "literately", "litigation", "litterbug", "liveable", "liver", "loam", "loan", "loathsomeness", "lobed", "locality", "locoweed", "locust", "loggia", "logistic", "logy", "lollypop", "longhair", "longways", "look", "loopy", "looter", "lordship", "lorgnette", "lose", "loudness", "louvered", "lovableness", "lovechild", "lowermost", "lowliness", "lubberly", "lucid", "luff", "lumbar", "lumberyard", "luminously", "lumpish", "luncheon", "lungfish", "lushly", "lusterless", "lustfully", "luxuriate", "lymphocyte", "lynching", "lyricism", "machinations", "madam", "madman", "madras", "magically", "magnesium", "magnetize", "maharani", "maidenhood", "maize", "majolica", "makeover", "maladjustment", "malamute", "malcontent", "malefactor", "maleficence", "malice", "malodorous", "maltose", "mambo", "mammoth", "manage", "maned", "manger", "mangle", "manna", "mannequin", "mannerly", "manual", "manufacture", "mar", "marbles", "marginalia", "marigold", "marimba", "marjoram", "marquetry", "marriageable", "martial", "maser", "masque", "masquerader", "mastery", "matchmaker", "materials", "matriarchal", "matron", "matt", "matzo", "maw", "max", "maxilla", "maxima", "may", "mayst", "mazurka", "meanie", "measure", "measureless", "medicate", "mediocre", "meeting", "megahertz", "megawatt", "meld", "meliorate", "mellifluously", "member", "memorabilia", "memory", "mendacious", "meningeal", "menisci", "menthol", "mention", "mercilessly", "meretriciously", "merganser", "meringue", "merit", "meritoriousness", "merrymaker", "mestizo", "metabolic", "metacarpi", "metaphysically", "metempsychoses", "meteoroid", "methodicalness", "metropolis", "mew", "miasmata", "microbiology", "microcosmic", "microfiche", "microprocessor", "microwave", "midday", "middle", "midshipman", "midwife", "miff", "mildness", "milker", "mill", "millet", "mincemeat", "mindful", "mindfulness", "mindset", "minibus", "minimalism", "minuscule", "minutely", "minutia", "mirror", "mirthlessly", "misalignment", "misanthropy", "miscall", "miscible", "misgiving", "misinformation", "mislaid", "misleadingly", "mismanage", "misogamist", "misogynous", "misreport", "miss", "misses", "mission", "mistreat", "mistress", "mistrustfully", "mite", "mitt", "mnemonically", "moaner", "mocha", "mocker", "modem", "moderately", "modern", "moist", "moistener", "molding", "molluscan", "moment", "monastery", "moneybags", "monism", "monkshood", "monochromatic", "monogamous", "monolingual", "monomer", "monopolization", "monotony", "monstrous", "monthly", "moonlight", "moonscape", "mopish", "mopy", "moralizer", "morbidity", "mordant", "morn", "morphemic", "mortarboard", "mossy", "motility", "motivational", "motor", "mount", "mournfully", "mouthpiece", "move", "movies", "mucilaginous", "muddy", "mudslide", "muffle", "muffler", "mulch", "mulligan", "multicultural", "multifarious", "multilevel", "multiplier", "multiprocessor", "mummify", "mumps", "munition", "murderously", "murky", "muse", "mushy", "musicality", "musician", "musketeer", "muster", "mutability", "myopia", "mystifying", "nacho", "naive", "naivete", "name", "namedrop", "namely", "naphtha", "narcissistic", "narcosis", "nationhood", "nattiness", "nauseating", "nauseous", "navigate", "nearby", "neat", "necessary", "needle", "nefarious", "negatively", "neglectfully", "neighborhood", "neocolonialism", "neoconservative", "nerd", "nervousness", "neuritic", "neurosurgeon", "neurotic", "neutralist", "newfangled", "newness", "newsboy", "nicotine", "nightcap", "nightclub", "nightstand", "nighttime", "nihilistic", "nincompoop", "nisei", "nitrite", "nobleness", "nocturne", "nodal", "noiselessly", "nomadic", "nominate", "nonabsorbent", "nonaggression", "nonaligned", "nonbeliever", "noncombustible", "noncomplying", "nonconsecutive", "noncontributing", "nondescript", "nondisclosure", "none", "nonhazardous", "nonindustrial", "noninflammatory", "nonjudgmental", "nonliving", "nonpareil", "nonperformance", "nonprescription", "nonrecurring", "nonrepresentational", "nonsense", "nonsensically", "nonspecialist", "nontechnical", "nonuniform", "nonviolently", "nonvoting", "noodle", "nope", "norm", "northeast", "northeasterly", "northwester", "northwestwards", "nosebleed", "nosegay", "nostalgically", "notarize", "notebook", "notifier", "novelette", "noxious", "nuclei", "numb", "numeracy", "numerical", "nurse", "nurturer", "nutmeat", "nutpick", "nutritionally", "oafish", "obedient", "objective", "obligation", "oblivion", "obliviously", "obnoxious", "obsequious", "observational", "obsession", "obsolesce", "obstetrical", "obtainment", "obvious", "obviousness", "oceanography", "odd", "odored", "offensive", "officer", "offload", "oiliness", "oldish", "ominously", "omnipotent", "omnipresent", "oncology", "onetime", "online", "onlooking", "onomatopoetic", "onward", "opaque", "openhandedness", "openness", "operatically", "opinionated", "opportune", "opportunism", "opportunity", "optimization", "optometrist", "opulence", "orally", "oratorically", "oratory", "oregano", "orientate", "oriented", "original", "origins", "ornateness", "orotund", "orthodontic", "oscilloscope", "ostentation", "others", "ouch", "out", "outbalance", "outboard", "outer", "outgo", "outgrown", "outing", "outlive", "outnumber", "outpoint", "outrank", "outreach", "outsell", "outsource", "oval", "overage", "overarm", "overbalance", "overburden", "overcautious", "overcompensation", "overdevelop", "overdose", "overdrew", "overexcited", "overextend", "overgeneralize", "overhasty", "overhung", "overkill", "overlie", "overmaster", "overoptimistic", "overpay", "overpopulate", "overpowering", "overprotect", "overriding", "overrun", "overshot", "overstep", "overt", "overtaken", "overweening", "overworked", "oxbow", "oxide", "oyster", "pachyderm", "pacification", "pageant", "palatable", "palely", "palfrey", "palmistry", "palsy", "paltry", "panacea", "pane", "panpipes", "pantheon", "pantry", "pantsuit", "paperhanging", "papery", "paragon", "parallax", "paralyze", "paraphernalia", "parasitism", "parcel", "parent", "parenthetic", "parishioner", "parking", "parquet", "partial", "particulate", "parturition", "passable", "pasteboard", "pastrami", "pat", "pate", "paternalistic", "pathetically", "patient", "patronizer", "pauperize", "payable", "payee", "peacefully", "peak", "pearl", "peccadillo", "pedagogic", "pedicure", "pedometer", "peel", "peer", "pelf", "penalization", "penetratingly", "penitently", "penknives", "pennant", "penuche", "peony", "perambulate", "perceivable", "perceptibly", "perceptional", "percolate", "perfidious", "pericardia", "perigee", "perilous", "perish", "perkily", "permissibly", "perniciousness", "perplex", "persecute", "persevere", "persistent", "perspicacity", "persuade", "pertinacity", "perturb", "perturbed", "perversion", "peskiness", "petrochemical", "pettifoggery", "petulantly", "peyote", "phalanges", "phantasmagoria", "pharmaceuticals", "philippic", "philistinism", "philology", "philosophic", "phlox", "phonographic", "phonology", "phosphorescent", "photocopy", "photographer", "photometer", "physic", "pianoforte", "pibroch", "pickerel", "picturesquely", "piece", "pierce", "piffle", "piggishly", "pigheadedness", "pigment", "pineapple", "pinnacle", "pinpoint", "piper", "piroshki", "pis", "pistil", "pitch", "pithiness", "pitiable", "pitilessness", "pizzazz", "placement", "placidity", "plagiarist", "plainspoken", "planet", "planking", "plantation", "plat", "platinum", "play", "playpen", "pleader", "please", "plebiscite", "pledge", "plethora", "plowshare", "plum", "plumb", "pluralist", "poaching", "pocketknife", "pockmark", "poignancy", "pointed", "poke", "polemicist", "polish", "politeness", "polity", "poll", "polling", "pollutant", "polonium", "polymath", "polysyllable", "pompon", "pompous", "pond", "pony", "poof", "poorly", "poppycock", "populous", "portentous", "portray", "position", "positron", "possess", "possessiveness", "postindustrial", "postmortem", "postprandial", "potable", "potbelly", "potentiality", "potherb", "potty", "poundage", "pox", "practicing", "praiseworthy", "prance", "prattler", "pray", "prayers", "preciosity", "precipice", "preclude", "precolonial", "precondition", "predicable", "predictably", "predominant", "prefabricate", "preform", "prehistoric", "prejudiced", "prelude", "premiere", "premolar", "preoperative", "preparation", "prepositional", "prepubescent", "prescription", "presentiment", "preserver", "preshrink", "pressing", "pretense", "pretzel", "prevalent", "previously", "priestliness", "primacy", "printer", "priority", "prissy", "privately", "probate", "proboscis", "procedural", "proceedings", "proclaim", "procrastinator", "procreation", "prodigality", "prodigiously", "producible", "productivity", "profanity", "professed", "professionally", "profoundly", "programmable", "progressive", "proliferate", "promenade", "promise", "prompting", "promulgator", "pronounced", "propagation", "propane", "prophetical", "prophylactic", "proportion", "proportionally", "propound", "prose", "proselytize", "prosy", "protect", "protection", "protector", "protrusile", "provability", "provenience", "provisional", "provocatively", "proxy", "prurience", "psyche", "psychedelic", "psychically", "psychoanalytical", "psychogenic", "psychotherapy", "pubescent", "publication", "publicity", "pudginess", "pugnaciously", "puncheon", "puncture", "puniness", "pupae", "puristic", "puritanical", "purportedly", "purposelessly", "purvey", "pushcart", "pushing", "pushup", "putrescent", "pyx", "quadraphonic", "quake", "qualitative", "quarterstaff", "quavery", "queasily", "questionable", "questioningly", "quick", "quiet", "quilter", "quitclaim", "quits", "quixotically", "rabbinical", "racially", "raciness", "racy", "radar", "radicalism", "radium", "radon", "raider", "railroading", "rainy", "rambunctiously", "ramjet", "randomization", "ranks", "ransom", "rapaciously", "rapid", "rashness", "rat", "ratchet", "rathskeller", "ratio", "ratiocination", "ratlike", "rattle", "rattling", "raucousness", "ravenously", "raving", "ravishingly", "rawhide", "razorback", "react", "reactivation", "readability", "realignment", "realistically", "rear", "reascend", "reassemble", "reauthorize", "rebate", "rebut", "rec", "recalculation", "recapitulate", "receivable", "recent", "recessive", "reciprocation", "recitalist", "reclusive", "recollection", "recombine", "reconnoiter", "reconsideration", "record", "recreational", "recrudescence", "rectifiable", "rectifier", "recuperative", "recurrence", "redbreast", "rediscover", "redone", "redundant", "redwood", "reemphasize", "reentry", "reexamine", "referable", "refreshed", "refreshing", "refrigerant", "refuel", "refurnish", "regalement", "regally", "regeneration", "regrettable", "regrew", "reimburse", "reincorporate", "reinsert", "reintegration", "reinterpretation", "rejuvenate", "relaid", "relation", "relaunch", "relevance", "relight", "reluctant", "remainder", "remedial", "remelt", "remold", "remorse", "remote", "remoteness", "renaissance", "reneger", "renegotiate", "rennet", "rental", "reoccur", "reorientation", "repaid", "repatriation", "repay", "repeated", "repel", "repetitiousness", "repine", "replete", "replicate", "reply", "reportorial", "repression", "reproachful", "reproducible", "reptilian", "repulsive", "reputably", "rescind", "rescue", "resection", "reserve", "residency", "residual", "resist", "resistor", "resolutely", "resources", "respectably", "resplendence", "responsibly", "rest", "restfully", "restriction", "restrung", "resurgence", "resuscitation", "retake", "retest", "retire", "retreat", "returns", "reuse", "revamp", "reveal", "revel", "revengeful", "revile", "reviser", "revocation", "reword", "rheumatism", "rhinoceros", "rho", "rhubarb", "ribaldry", "ricer", "riddance", "riderless", "ridicule", "rifling", "rightfully", "rightness", "rightsize", "rill", "ringlet", "rip", "riposte", "risque", "riveter", "roads", "roadworthy", "roast", "rockbound", "rocky", "roe", "roguishness", "romancer", "room", "roominess", "rooms", "rope", "ropes", "rosily", "rote", "rotten", "rouge", "roughneck", "roundly", "rowboat", "royally", "rubric", "ruggedly", "ruinous", "ruling", "runny", "runs", "rupee", "russet", "rusticity", "ruthlessness", "saccharin", "sacrilege", "sacristy", "saddlebag", "sagaciously", "sago", "sahib", "saint", "saliva", "sally", "salutary", "samba", "sampler", "sanatoria", "sandman", "sanguinary", "sapling", "sarcophagi", "sardonically", "satanically", "satinwood", "satirical", "satisfactory", "satrap", "saturated", "savoriness", "sawbones", "sawn", "scalding", "scalper", "scapulae", "scarceness", "scattered", "scavenge", "schemer", "schmo", "scholastic", "schoolmarm", "scientist", "scintilla", "scissors", "scofflaw", "scoop", "scope", "scoreboard", "scourge", "scow", "scrabble", "scrawny", "screenplay", "scribe", "script", "scrooge", "scrub", "scrunchie", "scuffle", "scurrilously", "seabird", "seafloor", "sealskin", "seaman", "season", "seaway", "sec", "secluded", "secondarily", "secretory", "sectional", "sedgy", "seedling", "seedy", "seer", "seismologic", "seize", "selfless", "semi", "semiannually", "semiprecious", "semipro", "semisolid", "senator", "senility", "sensationally", "sensibly", "sensuously", "sententious", "sentience", "separately", "sepulcher", "serious", "serous", "serried", "serviceable", "sesame", "settled", "seventeenth", "severity", "sexily", "sextet", "shabbily", "shad", "shah", "shameless", "shanghai", "shapeliness", "shareware", "shay", "sheath", "sheeny", "sheeting", "shellac", "shelled", "shepherd", "sherbert", "shiatsu", "shiftlessly", "shifty", "shindig", "shipboard", "shirt", "shod", "shoelace", "shoetree", "shop", "shorten", "shortie", "shortsightedness", "showroom", "shredder", "shrink", "shriven", "shuffle", "shutterbug", "shyster", "sickie", "sickle", "sideburns", "sift", "sigh", "signally", "significant", "signing", "signora", "silage", "sill", "silt", "silver", "similar", "similitude", "sincere", "sinecure", "singe", "singleton", "sinker", "sinless", "sinus", "sire", "sisal", "sisterliness", "site", "skedaddle", "sketchiness", "skew", "skier", "skilled", "skillfulness", "skirt", "skyjacker", "skywards", "slack", "slacker", "slag", "slew", "slide", "slight", "slimy", "sloe", "slogan", "sloppily", "slough", "sludgy", "slug", "sluggishly", "slyly", "smallpox", "smashed", "smilingly", "smithy", "smoothness", "snaffle", "snakelike", "snappishly", "snarly", "sneak", "snipe", "snobbishness", "snow", "snowbank", "snowboarding", "snowdrift", "snowy", "snugly", "sobriquet", "sociability", "sod", "sofa", "soil", "solicitousness", "solid", "solipsism", "solvency", "someday", "sometimes", "songster", "sorrow", "sorter", "soulfulness", "soundly", "sourdough", "southeasterly", "southerner", "soy", "spa", "spadices", "spangle", "spaniel", "spare", "spark", "sparseness", "spastic", "spatter", "spear", "specifications", "specifics", "spectroscopy", "speculate", "speedometer", "speller", "spent", "spewer", "sphere", "spiderweb", "spillage", "spinster", "spiracle", "spiritually", "spiteful", "spittle", "spoilt", "spoken", "spokeswoman", "spongy", "spoonbill", "spoonful", "spore", "sportswriter", "spotty", "sprat", "spread", "sprightliness", "spring", "springy", "sprint", "spur", "sputter", "spy", "squall", "squarely", "squeakily", "squeaky", "ssh", "stack", "stagehand", "staggers", "stagnation", "staidness", "stamina", "stammerer", "stamper", "stanza", "staphylococcal", "starboard", "starchiness", "starfish", "starlight", "statecraft", "stately", "stateroom", "stationer", "stature", "steadily", "stealth", "stegosaurus", "stemware", "stepladder", "steps", "stereophonic", "stereoscopic", "stickleback", "still", "stimulate", "stimuli", "stingray", "stinting", "stipulate", "stir", "stodgy", "stogy", "stoked", "stolid", "stopover", "story", "straightaway", "straighten", "straightly", "strangeness", "strangulation", "strapless", "stratum", "street", "streetlight", "streptococcus", "stressful", "strewn", "strict", "striking", "strip", "stripteaser", "stroller", "structural", "strudel", "studded", "student", "stuffily", "stump", "stupor", "stutterer", "stylish", "subcontract", "subculture", "subhead", "subliminal", "submarginal", "submission", "subordinate", "subplot", "subsection", "subsidized", "subsystem", "successively", "succinct", "sucrose", "suffer", "sufficient", "sugar", "sugarcoat", "suicidal", "suitableness", "suitcase", "sukiyaki", "sulfurous", "sumach", "sumo", "sunbonnet", "sunder", "sundry", "sunroof", "superconductivity", "supererogatory", "superfluousness", "superior", "supernatural", "superposition", "superstition", "supplemental", "supplier", "supportable", "suppurate", "surety", "surfing", "surmise", "surpass", "surprising", "surreal", "surrogacy", "surround", "susceptibility", "suspend", "suspenders", "suspicion", "sustenance", "swag", "swam", "swank", "sweeper", "swept", "swimming", "swinger", "sword", "sybaritic", "sycophancy", "syllabication", "sylvan", "symbiosis", "symbolically", "symptomatic", "synaptic", "syndrome", "synergistic", "synthesize", "synthetic", "tableaux", "tabletop", "tabulator", "taciturnly", "tactility", "tad", "tailoring", "taker", "talented", "talkativeness", "talky", "tamely", "tan", "tantalizer", "tarantula", "tarp", "tarpon", "tart", "taster", "tasty", "teammate", "tear", "tearful", "technetium", "technocracy", "tediously", "tedium", "teepee", "telecommunication", "telephoto", "teleplay", "telescope", "telltale", "temple", "temporary", "temporizer", "temptress", "tenacious", "tendentiousness", "tendril", "tennis", "tenor", "tentacle", "tenth", "tepee", "term", "tern", "terrestrially", "terrifically", "terrify", "tertiary", "tetra", "thallium", "thanklessly", "the", "thematically", "theology", "theoretic", "therapeutically", "there", "theretofore", "thereupon", "thermonuclear", "thermos", "these", "thickset", "thievish", "thine", "thorn", "thoroughgoing", "thoroughness", "thousandfold", "thralldom", "threader", "thrift", "throe", "thrombi", "throwback", "thrust", "thulium", "thunder", "thunderous", "thyme", "ticklishness", "tideland", "tiered", "tightly", "tiling", "tillable", "timber", "timeserver", "tingly", "tintinnabulation", "tirelessness", "tiresomely", "titan", "titanium", "toadyism", "tobacco", "today", "togaed", "tolerable", "toleration", "ton", "tongs", "took", "toolbox", "topflight", "torque", "torridity", "totalitarian", "totality", "totter", "touchiness", "toupee", "tourism", "tousle", "towelling", "townhouse", "townsman", "toxicity", "tracheal", "traction", "tradeswoman", "traditionalism", "trafficker", "trailer", "tranquilly", "transect", "transfiguration", "transitional", "transitory", "translucently", "transmutation", "transnational", "transplantation", "trapezoid", "trash", "traumatically", "traveled", "tray", "treasurer", "treelike", "trenchantly", "trestle", "triangularly", "tribe", "trichina", "trickery", "trifler", "trilateral", "trill", "trimming", "triumvir", "troika", "trolley", "tropic", "trot", "trouble", "troublemaker", "troublesome", "trouper", "trump", "trumps", "trustworthiness", "trusty", "truthfulness", "tsar", "tuberculin", "turban", "turbocharger", "tutorship", "tutu", "twelve", "twiddle", "twilled", "twist", "typesetter", "typewriting", "typewrote", "typically", "tzar", "ufologist", "ugh", "ulnae", "ultralight", "ultraviolet", "umbrage", "unaccomplished", "unaccountably", "unaesthetic", "unaltered", "unanticipated", "unassisted", "unavailable", "unawareness", "unbeatable", "unbelief", "unbind", "unblushingly", "unbridgeable", "unburden", "uncannily", "uncaught", "uncharted", "unclothed", "uncombed", "uncommonly", "uncomprehending", "uncongenial", "unconsidered", "unconstitutional", "uncork", "uncouth", "uncultured", "undecided", "underclassman", "undercoating", "undergarment", "underhandedly", "underneath", "underplay", "undersecretary", "undersold", "understate", "undertaking", "underwriter", "undesirability", "undeveloped", "undignified", "undisclosed", "undressed", "undue", "unease", "unendurable", "unequipped", "unethical", "unfeasible", "unflappability", "unflinching", "unforgivably", "unforgotten", "unfortunate", "unfriendliness", "ungenerous", "ungodliness", "unhardened", "unhatched", "unhealthful", "unhindered", "unhurriedly", "unidiomatic", "uniformed", "unimaginatively", "uninformative", "uninhibited", "unintentional", "unionism", "universe", "unkind", "unknown", "unlearn", "unlit", "unlovable", "unmade", "unmarketable", "unmeant", "unmitigated", "unmoral", "unnamed", "unobtrusively", "unorthodox", "unpeeled", "unpersuasive", "unpolitical", "unpopular", "unpredictability", "unpremeditated", "unpreparedness", "unpropitious", "unquestioned", "unrealistically", "unreformed", "unreliably", "unresolved", "unrestricted", "unromantic", "unsatisfactorily", "unsatisfied", "unscramble", "unscrupulousness", "unseasonable", "unseemliness", "unseen", "unshakably", "unshaven", "unsoundness", "unspecified", "unstressed", "unsubstantiated", "unsupported", "unsuspecting", "unsustainable", "unteachable", "untidiness", "untitled", "untouched", "unusually", "unwanted", "unwise", "unworldliness", "upbraid", "upland", "uppity", "uproarious", "upsilon", "uptake", "uptick", "urbanize", "uremic", "ursine", "usefulness", "utility", "utopia", "vagabondage", "vagary", "vagrant", "vainly", "validation", "validly", "valveless", "vampire", "vanadium", "vanilla", "vapidness", "variegated", "vase", "vaulting", "vehemence", "veiled", "venal", "venison", "ventilate", "ventral", "venturesomely", "veracious", "verandah", "verbatim", "verge", "veritably", "vernacular", "vernier", "vertebra", "vertically", "verve", "vesicle", "vest", "vet", "veteran", "vibes", "vicar", "viciousness", "victual", "videodisk", "viewing", "vigilante", "vindicate", "vindicator", "vinegary", "violoncellist", "visceral", "vitamin", "vitiation", "vivaciously", "vixen", "vixenishly", "vodka", "volcano", "volt", "voluminous", "voluptuously", "voracity", "vow", "vulcanization", "vulnerability", "waistline", "waitstaff", "wakefulness", "walk", "walrus", "wan", "wander", "wane", "war", "warmonger", "warped", "warrior", "washing", "waste", "watercress", "waterlily", "wax", "waxwork", "waywardness", "wealthiness", "wearable", "wearisomely", "weatherization", "weatherproof", "wee", "weensy", "weevil", "weigh", "wellhead", "went", "western", "westwards", "whaler", "wharf", "wheelbarrow", "wheelhouse", "wheezy", "whelm", "whenever", "whet", "whiner", "whipped", "whisker", "wholesaler", "whorish", "whorled", "why", "wickerwork", "wide", "wilds", "windless", "windsurfer", "windward", "winery", "wingding", "wintertime", "wiretap", "wisdom", "wiseacre", "witchcraft", "withering", "witlessness", "wits", "wobbly", "woebegone", "woke", "womanliness", "womenfolks", "wonderment", "wont", "woo", "woodcutter", "woodiness", "woodsiness", "woof", "wool", "wordplay", "working", "workout", "worldly", "worship", "worthlessness", "wounded", "wrappings", "wrecker", "wrestler", "wriggle", "writings", "wrongness", "xerographic", "xylophone", "yacht", "yank", "yearling", "yeast", "yep", "yeti", "yokel", "yuk", "yummy", "zeitgeist", "zephyr", "zestful", "zoological", "zygote"];
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -870,7 +902,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -939,15 +971,15 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(11);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -1015,7 +1047,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 };
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports) {
 
 var g;
@@ -1042,39 +1074,95 @@ module.exports = g;
 
 
 /***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var RECEIVE_DICTIONARY = exports.RECEIVE_DICTIONARY = 'RECEIVE_DICTIONARY';
-
-var receiveDictionary = exports.receiveDictionary = function receiveDictionary(dictionary, structure) {
-  return {
-    type: RECEIVE_DICTIONARY,
-    dictionary: dictionary,
-    structure: structure
-  };
-};
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var dictionary = exports.dictionary = ["aardvark", "abaci", "aback", "abacus", "abalone", "abandoned", "abash", "abashedly", "abattoir", "abbess", "abbreviated", "abduct", "abductor", "abet", "abhor", "abhorrent", "abiding", "abjectness", "ablation", "ablaze", "abnegate", "abnormally", "abode", "abominably", "aborigine", "abound", "abrasively", "abridgement", "abroad", "abrupt", "abruptness", "abscissa", "absinthe", "absolution", "absorbency", "absorbing", "abstinence", "abstract", "abstractness", "absurdly", "abundantly", "abutment", "acacia", "academia", "accelerator", "accented", "accept", "acceptable", "accident", "accommodate", "accommodations", "accompanist", "accomplished", "accordingly", "accordionist", "accouterments", "accretion", "accumulation", "accurateness", "accursedness", "accuser", "ace", "acerbic", "achene", "acidulous", "acknowledgment", "acne", "acoustic", "acquirement", "acquittal", "acrimony", "acrobatic", "acrophobia", "acting", "actively", "actress", "actuarial", "actuator", "acute", "adapt", "adapter", "adder", "addressee", "adenine", "adequateness", "adherence", "adieux", "adjacent", "adjoining", "adjudicatory", "adjust", "adjuster", "adman", "admire", "admissions", "admix", "adolescence", "adopted", "adorably", "adroit", "adroitness", "advance", "advantageously", "adventurousness", "adverse", "advertisement", "advertising", "advise", "adze", "aerial", "aerobic", "aerobics", "aeronautics", "aestheticism", "affable", "affair", "affiance", "afflatus", "affliction", "afford", "afghan", "aflutter", "aforementioned", "afterglow", "aftermarket", "afterthought", "agate", "agenda", "aggrandize", "aggressive", "agilely", "agitator", "agnosticism", "agonized", "agree", "agribusiness", "agriculture", "ahead", "aide", "airbrush", "airiness", "airport", "airship", "airworthiness", "airy", "akin", "alack", "albatross", "alcove", "ale", "alehouse", "alertness", "alibi", "alienated", "alienist", "alignment", "allegedly", "allegorically", "allergenic", "allied", "allocation", "allow", "allude", "allusive", "aloha", "alongside", "alpaca", "alphabetization", "alright", "alteration", "altogether", "altruistically", "alumni", "always", "amateurish", "amateurishness", "amazing", "ambidexterity", "ambidextrously", "ambivalence", "ambivalently", "ambulant", "amendable", "amenity", "amercement", "amiable", "amide", "ammeter", "amniocentesis", "amok", "amorally", "amphorae", "amplification", "amputee", "anabolism", "anagram", "analogically", "analogy", "analyzable", "anathematize", "anatomist", "ancestress", "anchorperson", "anchovy", "and", "anemically", "anesthetize", "angling", "angrily", "anguished", "animadvert", "animalcule", "animism", "animus", "anionic", "ankh", "annihilator", "annotate", "announcer", "ant", "antagonize", "antecedent", "anterior", "anthropomorphism", "anticancer", "anticyclone", "antidote", "antifreeze", "antihero", "antimalarial", "antipasti", "antipersonnel", "antiphon", "antipollution", "antisepsis", "antitheses", "antithetical", "antivenin", "antivivisectionist", "antonym", "anxiously", "anywise", "ape", "aphelion", "apish", "apocrypha", "apolitical", "apologize", "apostleship", "apothegm", "appaloosa", "apparently", "append", "appendicitis", "appetizingly", "applauder", "applesauce", "applicant", "applicator", "appointed", "appositeness", "apprenticeship", "appropriately", "approval", "approving", "aquatically", "aqueous", "aquifer", "arbitrament", "arbutus", "arcade", "archaist", "archduke", "archetypal", "architect", "architrave", "arena", "arguably", "argumentation", "argumentatively", "aristocratic", "armament", "armorer", "aromatherapist", "array", "arrowhead", "arsonist", "arteriole", "artery", "arthritic", "arthropod", "articulation", "artiste", "artlessness", "asbestos", "ascription", "aseptically", "asinine", "asininity", "aspirate", "assail", "assembly", "assertive", "assessment", "asset", "assiduity", "assignment", "assistant", "assortment", "assumable", "astatine", "astonishment", "astringent", "astrologist", "astrophysicist", "astute", "asylum", "asymmetrical", "atelier", "atlas", "atmospheric", "atrial", "atrocious", "attach", "attacker", "attainability", "attention", "attestation", "attributively", "audiotape", "audition", "augment", "augustness", "auspicious", "auspiciousness", "austral", "authoritarian", "autobiographical", "autobiography", "autocratic", "automatic", "automobile", "autopilot", "autumnal", "avaunt", "avenger", "avoidable", "avowal", "avowedly", "award", "away", "awesomeness", "awoken", "axiom", "axle", "axolotl", "azure", "babel", "babysat", "bacilli", "backbiter", "backdate", "backlash", "backpacker", "backside", "backstop", "backwardness", "backyard", "bactericidal", "bagful", "baize", "balcony", "bale", "balefulness", "balladeer", "ballast", "ballistic", "ban", "bandeaux", "banditry", "banisters", "banking", "bankruptcy", "banzai", "barbarity", "barbershop", "barcarole", "bareback", "barely", "bargeman", "barkeeper", "barman", "barnacle", "barnyard", "baroness", "barracks", "barred", "barreled", "barring", "basally", "basaltic", "bases", "basics", "basin", "basswood", "bate", "bathtub", "bathyscaphe", "battalion", "batterer", "battery", "bawdily", "beacon", "beady", "bean", "beard", "bearish", "bearskin", "beautician", "bebop", "becomingly", "bedclothes", "bedim", "bedrock", "beech", "beep", "befog", "befoul", "began", "begin", "beginning", "behindhand", "beholden", "belay", "believe", "bell", "bellow", "bellyache", "belted", "bendable", "benefaction", "benevolent", "benign", "benumb", "beryl", "besides", "besieger", "bestiary", "betrothal", "bettor", "betwixt", "bewilderingly", "bewitchment", "biannual", "bibliophile", "bicentenary", "bicuspid", "bid", "bidirectional", "bigoted", "bigwig", "bilabial", "bilaterally", "billboard", "binocular", "binomial", "biodegradability", "biographer", "biologically", "bionic", "biopic", "biorhythm", "bipolarity", "birdbath", "birthplace", "birthright", "bismuth", "bisque", "bitty", "bituminous", "blackboard", "blackjack", "blamelessness", "blase", "blaster", "blatantly", "blaze", "bleach", "bleachers", "blessedness", "blindfold", "blintz", "blissfulness", "blithesome", "blitzkrieg", "blob", "blockbuster", "blocker", "blondness", "bloodletting", "bloodmobile", "bloom", "blotched", "blotter", "blowtorch", "bluegill", "bluenose", "bluestocking", "bluffness", "bluntly", "blurry", "blusterous", "boater", "bobsled", "bobtail", "bod", "boffo", "bogie", "bohemian", "boisterously", "boll", "bombard", "bombed", "bond", "bony", "boogieman", "bookbinder", "booklet", "boomerang", "boondoggle", "boorishness", "borax", "border", "boron", "bossism", "botanical", "botanist", "bottler", "bounce", "bouncing", "boundlessness", "bow", "bowels", "bowlful", "bowling", "bowstring", "boxing", "boxwood", "bracelet", "bracing", "brainless", "brash", "bravado", "bravely", "bravura", "bray", "brazier", "bread", "breadfruit", "breastwork", "breathable", "breathlessly", "brethren", "brewer", "bridal", "bridegroom", "bridle", "brigand", "brimless", "brindle", "bringer", "brioche", "broad", "broadcasting", "broaden", "broken", "brooding", "brotherhood", "brow", "browbeaten", "bruin", "bruised", "brushoff", "brushwork", "brutish", "bubbly", "buccaneer", "bucksaw", "buckskin", "buddy", "buff", "bug", "bullfighter", "bullishly", "bullock", "bumblebee", "bumpkin", "bunch", "bungler", "burbs", "bureaucrat", "burglar", "burliness", "burnable", "bursitis", "busgirl", "bushiness", "bushy", "businesswoman", "butch", "butchery", "buttermilk", "buyout", "bygone", "bypass", "byplay", "byte", "caboodle", "cabriolet", "cad", "caddishness", "caffeine", "cahoots", "cajolement", "calaboose", "calculatingly", "calico", "caliper", "calisthenic", "caller", "calligraphic", "callous", "callus", "calumniation", "calyces", "camelhair", "campaigner", "canard", "canasta", "candelabra", "candidate", "cannabis", "cannibalize", "cantankerousness", "canticle", "cantilevered", "cantonment", "canyon", "capability", "caper", "capital", "cappuccino", "caramelize", "carbohydrate", "carboniferous", "cardamom", "cardsharp", "carefree", "caretaker", "carjack", "carjacking", "carnal", "carnivore", "caroller", "carousel", "carpetbagger", "carpi", "carrel", "cartel", "cartographer", "cartridge", "carving", "caseharden", "caseload", "casino", "casket", "castigator", "casuistic", "catafalque", "catastrophic", "catbird", "catching", "category", "catercorner", "catharses", "cathode", "catnap", "causeway", "caution", "cavernous", "cavil", "cayman", "cedar", "celebrated", "cell", "censor", "censoriousness", "censurable", "cent", "centrifugal", "ceramist", "cerebral", "cerebration", "certifiably", "cerulean", "cessation", "chairmanship", "chalky", "chamomile", "championship", "chantey", "chaparral", "chaperonage", "chaps", "characterless", "chardonnay", "charily", "chariot", "charmed", "charter", "chary", "chaser", "chasteness", "cheap", "cheater", "checkbook", "checkered", "cheerful", "cheerfulness", "cheerless", "chef", "chemically", "chemotherapy", "cheroot", "chicanery", "chickenpox", "chid", "chief", "chignon", "childishness", "chip", "chitinous", "chitterlings", "chives", "chloride", "chlorinated", "chloroform", "chloroplast", "choke", "chopper", "chopstick", "chorally", "choreographic", "chosen", "chromatic", "chub", "chuckhole", "chug", "chump", "cilium", "cinder", "cinnamon", "circuitousness", "circularly", "circumference", "circumscription", "circumstantial", "cite", "citizenship", "city", "civic", "civilize", "clack", "claimer", "clairvoyant", "clamp", "clan", "claque", "clarinettist", "classroom", "clausal", "cleaner", "clearly", "clew", "clientele", "clingy", "clinician", "cloaca", "clockwork", "clogged", "cloistral", "close", "clothes", "cloture", "clout", "cloy", "club", "clumpy", "coach", "coalesce", "coastal", "coastline", "cobalt", "coca", "cockatrice", "cockpit", "codify", "coed", "coelenterate", "coevally", "coffeecake", "cofferdam", "cogitation", "cohabitation", "cohesiveness", "coin", "coincidentally", "coinsurance", "coldblooded", "collaboration", "collateralize", "collation", "collectively", "colleen", "collie", "colloid", "collude", "colonelcy", "colonnaded", "colorblind", "colorfast", "colorization", "colossal", "colt", "comb", "combined", "comfortable", "comfy", "commend", "commendably", "commiseration", "commissary", "committeeman", "commonly", "compact", "companionship", "compatibility", "compeer", "compelling", "competency", "competitiveness", "compilation", "complacently", "complaint", "compliant", "compliment", "compositely", "compressible", "compute", "comradely", "con", "conceit", "conceive", "conceptualization", "conceptually", "concertmaster", "concession", "conciliate", "conclusion", "concretely", "concubine", "condition", "conditionally", "conductible", "conductive", "confectioner", "confederacy", "confess", "confine", "confirm", "confirmed", "confiscatory", "confluent", "confuse", "confutation", "congeniality", "congenital", "congratulation", "congruently", "conjectural", "conjoint", "conjunct", "connubial", "conquerable", "conscientiously", "conscious", "consecration", "consensus", "consequently", "conservatively", "considerately", "consignee", "consistence", "consolingly", "consortia", "conspiratorially", "constituency", "constitutional", "constructionist", "consultancy", "consummate", "contemplative", "contemptible", "contentious", "conterminous", "contest", "continuity", "contraband", "contraption", "contravene", "contributory", "controversially", "contumacious", "contumacy", "conurbation", "convenient", "conventionally", "conversational", "conversely", "convertor", "cookbook", "coonskin", "coordinate", "coordination", "copious", "copula", "copulative", "cordiality", "cordillera", "cornball", "coronae", "corpulent", "correctable", "corroborate", "corsair", "cortisone", "coruscate", "cosmologist", "cosmopolitanism", "costliness", "costs", "cottage", "cottony", "councilman", "counsellor", "counter", "counterculture", "counterfoil", "counteroffensive", "counterpane", "counterspy", "countertenor", "coupe", "coupon", "course", "courtesan", "courthouse", "coven", "coverall", "cow", "coworker", "cowrie", "coyness", "crackhead", "crackly", "craftsmanship", "cram", "cramping", "crank", "crankshaft", "crave", "crawdad", "crawlspace", "creamer", "creativeness", "creche", "credential", "crematory", "crenelation", "crib", "cried", "criminology", "crises", "critically", "crocodile", "crook", "crookneck", "crooner", "croquet", "crossness", "crosstown", "crouton", "crowning", "crucifixion", "cruddy", "cruiser", "crumb", "crupper", "crystallize", "cuddle", "cudgel", "cull", "culvert", "cunningly", "cupidity", "curator", "curiae", "curiousness", "curl", "curliness", "currently", "cursively", "curtail", "curtsey", "customization", "cutler", "cutter", "cuttlefish", "cyberspace", "cyclopedia", "cytoplasm", "dace", "dachshund", "daffiness", "daffy", "dagger", "daintiness", "damask", "damning", "damper", "dandruff", "dangerous", "dangle", "dankly", "darkener", "darned", "dastard", "davit", "daylight", "dazedly", "deactivation", "deadwood", "deafen", "debarment", "debate", "debauchery", "debilitate", "debtor", "debutante", "decanter", "decease", "decimeter", "declamatory", "declassify", "decode", "decompression", "deconstruction", "decor", "decriminalize", "deductible", "deepen", "defamer", "defaulter", "defectiveness", "defer", "deferment", "defiance", "definite", "deflate", "deform", "defray", "defunct", "degeneracy", "degree", "dehumidifier", "dehydrogenate", "deistic", "delay", "delegate", "deliberative", "delicious", "delighted", "delineate", "deliquescent", "delivery", "demagogic", "demand", "demitasse", "democracy", "demography", "demolition", "demonstrate", "demoralization", "demoralized", "demurral", "denigrate", "denim", "denomination", "dentistry", "denude", "depletion", "depolarization", "depopulate", "depositor", "depreciate", "deprivation", "deputation", "deputize", "derogate", "derogatorily", "desalinate", "desalt", "descend", "desensitization", "desiccant", "desiccation", "designation", "desk", "despairingly", "destabilization", "destruction", "detach", "deteriorate", "determination", "determiner", "detox", "detriment", "deuce", "developer", "deviate", "devilishness", "devote", "devotion", "devoutness", "dextrose", "diabolic", "diagnostically", "diagnostics", "diameter", "diatomic", "dibs", "dicey", "dictation", "diesel", "differ", "differentiate", "diffusive", "digestibility", "digestion", "digitalis", "dilettantish", "dilly", "dimity", "dimply", "dinette", "dingy", "dint", "diocese", "diplomacy", "diplomatic", "dipper", "dipsomania", "dirndl", "dirtily", "disable", "disadvantageous", "disaffiliation", "disappointingly", "disarm", "disavowal", "disbursal", "disciple", "disclaim", "discombobulate", "discomfort", "discouraging", "discreetness", "discursive", "discussion", "diseased", "disembowel", "disenchant", "disestablish", "disfranchise", "disgust", "disheveled", "dishevelment", "dishware", "disinclined", "disjointedness", "diskette", "dismay", "dismissively", "disobediently", "disorderly", "dispatch", "dispel", "displacement", "disport", "disposed", "disprove", "disputer", "disquisition", "disruption", "dissatisfied", "dissemblance", "dissident", "dissimulator", "dissipated", "dissuade", "distastefulness", "distention", "distinguish", "distract", "distributor", "disturbance", "disturbing", "ditto", "divalent", "divestiture", "dividers", "docile", "docility", "doge", "dogeared", "doings", "doll", "dollhouse", "doltish", "domicile", "domiciliary", "dominatrix", "dominion", "dongle", "doorway", "doping", "dork", "dorsally", "dotage", "doth", "doubleheader", "doubtful", "doubtless", "dovecote", "downheartedly", "downsize", "doxology", "dozen", "drachma", "draftiness", "dragnet", "drain", "drainboard", "draperies", "drawl", "drawstring", "dream", "dreamt", "drench", "drenching", "dresser", "drew", "drink", "driveway", "dropsical", "drowning", "dryly", "drywall", "dub", "ductless", "duds", "duel", "dues", "dullness", "dumdum", "dune", "dungaree", "duper", "durum", "duskiness", "dybbuk", "dynamism", "earache", "early", "earn", "earphone", "earth", "earwig", "easily", "eastward", "eavesdrop", "ebulliently", "ecclesiastical", "echo", "economist", "ecosystem", "edginess", "edgy", "editor", "educable", "educational", "eel", "effectuate", "efficiently", "effortlessness", "effusiveness", "eglantine", "ejaculatory", "elaborately", "elate", "elder", "election", "elective", "electrically", "electroencephalography", "electromagnetic", "electromagnetism", "eleemosynary", "element", "elixir", "ell", "elocution", "elopement", "emaciation", "emancipation", "embargo", "embarrassingly", "embezzlement", "embroidery", "emigrate", "emit", "emollient", "empathetic", "empathy", "empiricist", "employe", "empower", "enactment", "enamor", "encamp", "enchanting", "encourage", "encumbrance", "encyclopaedia", "endearing", "endearment", "ending", "endowment", "enervation", "engraver", "engrossing", "enigmatically", "enjoyment", "enlarger", "enmeshment", "enormous", "enraged", "enshroud", "entailment", "enterprise", "entertainer", "enthrone", "entourage", "entrance", "entropy", "enveloper", "environmentalism", "envoy", "ephemeral", "epidermis", "episcopate", "epitaph", "epithet", "equator", "equestrianism", "equipment", "equivalence", "equivalent", "equivocation", "eradicator", "ergonomically", "erosion", "eruditely", "erupt", "espadrille", "espresso", "essayist", "establish", "estuary", "etching", "ethically", "eucalypti", "euphoric", "europium", "evader", "evangelistic", "evaporate", "event", "eventfully", "evermore", "evidently", "exaltation", "exam", "example", "excavation", "excepted", "excerpt", "exchangeable", "excite", "excitingly", "exclude", "exclusion", "excommunication", "execrable", "executor", "exhaust", "exhibitionism", "exhilaration", "exigency", "exit", "exonerate", "exorcism", "exotic", "exoticism", "expatiate", "expectant", "expediently", "expediter", "expense", "experienced", "explicable", "explicitly", "expositor", "exposure", "expounder", "expressionistic", "extemporize", "extendable", "extinguish", "extirpation", "extortionately", "extortionist", "extractor", "extramarital", "extricable", "extrovert", "exudation", "exultantly", "exurb", "fabulous", "facet", "facilitate", "factory", "fail", "faille", "fairly", "fairway", "fake", "fall", "fallibly", "falls", "falsification", "familiarization", "fandango", "fantail", "fare", "farinaceous", "fascination", "fashion", "fashionably", "fatal", "fateful", "fatherless", "fathomless", "fatuity", "faultlessly", "fauna", "faze", "fearlessly", "features", "fecundate", "federalize", "fedora", "feedback", "feeler", "feldspar", "felicity", "female", "fencer", "fend", "fermentation", "ferociously", "ferule", "festal", "festivities", "fetcher", "fettle", "feverishly", "few", "fiasco", "fiche", "fiction", "fictitiously", "fidelity", "fief", "fieriness", "figuratively", "filch", "filibusterer", "filly", "filterer", "finances", "financing", "fingering", "finickiness", "firebreak", "firelight", "firestorm", "firmly", "fishcake", "fisherman", "fishmonger", "fistfight", "fitter", "flagman", "flagrant", "flair", "flamboyant", "flameproof", "flan", "flanker", "flannels", "flask", "flatness", "flatteringly", "flaunt", "flavoring", "flawlessly", "flay", "flesh", "fleshly", "flex", "flexible", "flippant", "flirtation", "floater", "flogger", "flophouse", "flowerbed", "flowing", "fluctuate", "fluff", "flunk", "fluoridate", "fly", "flycatcher", "flyway", "foam", "fodder", "foggily", "foible", "foldaway", "food", "foodstuff", "foolscap", "footlocker", "footsie", "for", "forbid", "foreclose", "forefoot", "foreknowledge", "forelock", "forequarter", "foresee", "foresight", "foresightedness", "forgetfulness", "fork", "formation", "formatted", "formulae", "fornicator", "forsooth", "fortitude", "fortune", "forward", "fossil", "foulard", "foundry", "fourteenth", "foxtrot", "fragment", "frailty", "frankincense", "fraudulent", "freckly", "freehold", "freeway", "freezer", "freshener", "fret", "friar", "fridge", "frighteningly", "frivolously", "frolic", "frolicsome", "frontally", "frontrunner", "frontwards", "frostbite", "frowardness", "frowzily", "fruit", "fruited", "fruitless", "fugue", "fulfilled", "fulfillment", "fullness", "function", "fundamentally", "fungicidal", "funnel", "furrier", "furring", "furtively", "fustian", "futurology", "fuzzily", "fuzzy", "gabble", "gage", "gaiety", "gainful", "gait", "gall", "galling", "gallivant", "gamete", "gamine", "garbanzo", "garbled", "gargoyle", "garishly", "garrulous", "gas", "gastropod", "gatekeeper", "gaudily", "gave", "gavotte", "gawky", "geese", "generator", "generousness", "genetically", "genie", "genteelly", "gentility", "geochemistry", "geologic", "geopolitical", "gerrymandering", "gesticulation", "gesture", "gibe", "gigantically", "gimbals", "ginkgo", "giraffe", "girl", "given", "glacial", "glamourous", "glassware", "glaucoma", "gleefulness", "glider", "glimpse", "glittering", "gloaming", "globally", "glockenspiel", "glorious", "glory", "glower", "gluttonously", "gnaw", "goat", "godfather", "goes", "going", "goldenrod", "golfer", "gonad", "gong", "gonorrhoea", "goober", "gorily", "gormandize", "governess", "gown", "grabber", "gracefully", "graciously", "graduation", "grafter", "granary", "grandiloquent", "grange", "granulated", "grapefruit", "graphically", "graspable", "grate", "grater", "gratis", "gravamen", "gravely", "gravitate", "gravy", "greasepaint", "great", "greengrocer", "gregariously", "greyhound", "gridlocked", "griever", "grimy", "griper", "grizzly", "groats", "groom", "groper", "grossness", "grouchily", "groveller", "grownup", "grudgingly", "gruffly", "grump", "grunion", "guardhouse", "guest", "gullibility", "gulper", "gunman", "gushing", "gusty", "gym", "gymnastic", "gynecologist", "gyro", "habitable", "habituate", "hadst", "haggler", "hail", "hailstorm", "hairdryer", "hairspring", "halfback", "hallelujah", "hallucination", "halogen", "hamper", "handbook", "handcuff", "handicapper", "hands", "handsome", "handwoven", "handwritten", "hanger", "hankie", "hansom", "happen", "harasser", "hardball", "hardener", "hardiness", "hardliner", "harken", "harmlessness", "harmonica", "harpist", "harpsichordist", "harrowing", "has", "hastily", "hate", "haul", "haven", "haw", "haycock", "hazardously", "haziness", "headboard", "headman", "headphones", "headwaters", "hear", "hearten", "heartlessness", "heartwarming", "heathenish", "heaver", "heavily", "hedgehop", "heed", "heftiness", "heinousness", "helium", "hellbent", "hellion", "hellishly", "helpfully", "helpmate", "hematite", "hemline", "hemophilia", "hereabouts", "heredity", "hereof", "heretical", "heretofore", "hermit", "heron", "herself", "hesitate", "hewer", "hexagon", "hiatus", "hiccough", "hid", "hideout", "hierarchically", "hilliness", "hinter", "hipness", "hippopotamus", "hipster", "historic", "history", "hitcher", "hive", "hoard", "hobby", "hogtie", "holdup", "holiday", "homage", "homelessness", "homemaking", "hominess", "honeycomb", "honeylocust", "honeymooner", "honorable", "honorably", "honorary", "hookah", "hookworm", "hoops", "hooves", "hopelessness", "hornless", "horribly", "horridly", "hosteler", "hostilely", "hostility", "hotblooded", "hours", "housebreaker", "housecoat", "houseful", "housing", "hovercraft", "hub", "huckster", "humanitarian", "humdrum", "humiliatingly", "hummus", "hump", "hundreds", "hundredweight", "hungry", "hurl", "hybrid", "hydrant", "hydraulically", "hydrodynamic", "hydrogen", "hydroplane", "hydrosphere", "hydrous", "hypermedia", "hypertension", "hyperventilate", "hypnoses", "hypothetical", "hysterics", "ichthyology", "icon", "idea", "idealization", "identically", "idolatry", "idyll", "ignominious", "ileum", "ilk", "illiteracy", "illiterately", "illuminate", "illumination", "illustriously", "imbibe", "imbrication", "imitative", "immaculate", "immerse", "immobilize", "immolate", "immune", "immunodeficiency", "impartiality", "impeccably", "impenetrability", "imperatively", "imperceptible", "imperially", "impetigo", "impingement", "impishly", "implantable", "implode", "imploringly", "importune", "imposition", "impost", "impotent", "impracticable", "impression", "impromptu", "improperly", "improvidence", "improviser", "imputable", "inactivate", "inadequate", "inadmissibility", "inadvertently", "inanely", "inappreciable", "inarguable", "incalculable", "incautious", "incessant", "incident", "incise", "incite", "inclusion", "incompetence", "incomprehensible", "inconsistency", "inconspicuously", "inconstancy", "inconveniently", "incorporeal", "incorrectly", "incrimination", "incubus", "indecently", "independent", "indescribable", "indeterminably", "indifferently", "indigently", "indignity", "indiscernible", "indispensably", "indite", "individualize", "indubitably", "inductee", "indulgence", "indulgently", "industrialization", "inebriate", "inelastic", "inelegant", "inequitable", "inessential", "inexact", "inexpiable", "inexpressibly", "infallible", "infant", "infarction", "infatuated", "infectiously", "infertile", "infiltrate", "inflatable", "infliction", "informant", "informatively", "infraction", "infrasonic", "ingeniousness", "ingenuity", "ingrain", "inhabitable", "inhalator", "initial", "initially", "injudiciously", "inkstand", "inky", "innocuous", "innovator", "inorganic", "inquiring", "inroad", "inrush", "inscrutability", "insentient", "inset", "inside", "insinuate", "insolubly", "inspection", "inspiration", "instalment", "instigation", "instruction", "instrumentally", "insularity", "insulting", "insuperable", "insurgent", "insurmountably", "intake", "integrative", "intended", "intensely", "intentions", "interactive", "intercede", "intercessory", "interchangeable", "interfaith", "intermediary", "intermediately", "interminably", "intermission", "internationalism", "internationalize", "interpretation", "interrogatively", "intersection", "interwove", "intestacy", "intimately", "intimidating", "intimidation", "intoxicant", "intractable", "intriguer", "introspective", "intrusiveness", "inundation", "invariability", "inveigh", "inventively", "inversion", "investigate", "invincible", "inviolability", "invisible", "involuntariness", "ionization", "ionizer", "ireful", "iridium", "irksomely", "iron", "irrationally", "irrefutably", "irremovable", "irrespective", "irretrievable", "irrevocably", "islander", "isobar", "isometrics", "italics", "itemized", "its", "ivory", "jackal", "jackknife", "jacks", "jam", "jardiniere", "jaunt", "jaywalker", "jazzy", "jealously", "jellylike", "jennet", "jersey", "jingoist", "jinrikisha", "jitters", "jogging", "jonquil", "jowl", "joyousness", "jubilantly", "judicially", "juggler", "julep", "jumpily", "junket", "juristic", "justifiably", "juvenile", "kappa", "kebab", "keenness", "keepsake", "kennels", "kickball", "kiln", "kilt", "kingship", "kiss", "kisser", "kitchenette", "kite", "knickerbockers", "knives", "knowable", "known", "krypton", "labial", "laboratory", "lackadaisical", "laconically", "lade", "lain", "lakefront", "lambada", "lambaste", "lambskin", "landing", "languid", "languidness", "lapdog", "laptop", "lariat", "larkspur", "latchkey", "latency", "latent", "lath", "lattice", "laudanum", "launderer", "laurels", "lavishly", "lawfully", "laxity", "layperson", "lea", "leafage", "leaper", "ledger", "leery", "leeward", "leftover", "leg", "legation", "legibly", "legislate", "legislative", "legit", "legitimate", "legitimize", "leisure", "lemon", "lengthways", "leniently", "leopard", "leotard", "lesion", "lessor", "lethargic", "leukaemia", "leveler", "liability", "libellous", "liberalism", "libertarian", "library", "lichee", "licorice", "lieder", "lifelessness", "lifesaving", "liftoff", "limestone", "linage", "lineally", "linens", "lines", "linguini", "linkage", "lioness", "lipstick", "lire", "lisp", "listener", "listlessness", "literately", "litigation", "litterbug", "liveable", "liver", "loam", "loan", "loathsomeness", "lobed", "locality", "locoweed", "locust", "loggia", "logistic", "logy", "lollypop", "longhair", "longways", "look", "loopy", "looter", "lordship", "lorgnette", "lose", "loudness", "louvered", "lovableness", "lovechild", "lowermost", "lowliness", "lubberly", "lucid", "luff", "lumbar", "lumberyard", "luminously", "lumpish", "luncheon", "lungfish", "lushly", "lusterless", "lustfully", "luxuriate", "lymphocyte", "lynching", "lyricism", "machinations", "madam", "madman", "madras", "magically", "magnesium", "magnetize", "maharani", "maidenhood", "maize", "majolica", "makeover", "maladjustment", "malamute", "malcontent", "malefactor", "maleficence", "malice", "malodorous", "maltose", "mambo", "mammoth", "manage", "maned", "manger", "mangle", "manna", "mannequin", "mannerly", "manual", "manufacture", "mar", "marbles", "marginalia", "marigold", "marimba", "marjoram", "marquetry", "marriageable", "martial", "maser", "masque", "masquerader", "mastery", "matchmaker", "materials", "matriarchal", "matron", "matt", "matzo", "maw", "max", "maxilla", "maxima", "may", "mayst", "mazurka", "meanie", "measure", "measureless", "medicate", "mediocre", "meeting", "megahertz", "megawatt", "meld", "meliorate", "mellifluously", "member", "memorabilia", "memory", "mendacious", "meningeal", "menisci", "menthol", "mention", "mercilessly", "meretriciously", "merganser", "meringue", "merit", "meritoriousness", "merrymaker", "mestizo", "metabolic", "metacarpi", "metaphysically", "metempsychoses", "meteoroid", "methodicalness", "metropolis", "mew", "miasmata", "microbiology", "microcosmic", "microfiche", "microprocessor", "microwave", "midday", "middle", "midshipman", "midwife", "miff", "mildness", "milker", "mill", "millet", "mincemeat", "mindful", "mindfulness", "mindset", "minibus", "minimalism", "minuscule", "minutely", "minutia", "mirror", "mirthlessly", "misalignment", "misanthropy", "miscall", "miscible", "misgiving", "misinformation", "mislaid", "misleadingly", "mismanage", "misogamist", "misogynous", "misreport", "miss", "misses", "mission", "mistreat", "mistress", "mistrustfully", "mite", "mitt", "mnemonically", "moaner", "mocha", "mocker", "modem", "moderately", "modern", "moist", "moistener", "molding", "molluscan", "moment", "monastery", "moneybags", "monism", "monkshood", "monochromatic", "monogamous", "monolingual", "monomer", "monopolization", "monotony", "monstrous", "monthly", "moonlight", "moonscape", "mopish", "mopy", "moralizer", "morbidity", "mordant", "morn", "morphemic", "mortarboard", "mossy", "motility", "motivational", "motor", "mount", "mournfully", "mouthpiece", "move", "movies", "mucilaginous", "muddy", "mudslide", "muffle", "muffler", "mulch", "mulligan", "multicultural", "multifarious", "multilevel", "multiplier", "multiprocessor", "mummify", "mumps", "munition", "murderously", "murky", "muse", "mushy", "musicality", "musician", "musketeer", "muster", "mutability", "myopia", "mystifying", "nacho", "naive", "naivete", "name", "namedrop", "namely", "naphtha", "narcissistic", "narcosis", "nationhood", "nattiness", "nauseating", "nauseous", "navigate", "nearby", "neat", "necessary", "needle", "nefarious", "negatively", "neglectfully", "neighborhood", "neocolonialism", "neoconservative", "nerd", "nervousness", "neuritic", "neurosurgeon", "neurotic", "neutralist", "newfangled", "newness", "newsboy", "nicotine", "nightcap", "nightclub", "nightstand", "nighttime", "nihilistic", "nincompoop", "nisei", "nitrite", "nobleness", "nocturne", "nodal", "noiselessly", "nomadic", "nominate", "nonabsorbent", "nonaggression", "nonaligned", "nonbeliever", "noncombustible", "noncomplying", "nonconsecutive", "noncontributing", "nondescript", "nondisclosure", "none", "nonhazardous", "nonindustrial", "noninflammatory", "nonjudgmental", "nonliving", "nonpareil", "nonperformance", "nonprescription", "nonrecurring", "nonrepresentational", "nonsense", "nonsensically", "nonspecialist", "nontechnical", "nonuniform", "nonviolently", "nonvoting", "noodle", "nope", "norm", "northeast", "northeasterly", "northwester", "northwestwards", "nosebleed", "nosegay", "nostalgically", "notarize", "notebook", "notifier", "novelette", "noxious", "nuclei", "numb", "numeracy", "numerical", "nurse", "nurturer", "nutmeat", "nutpick", "nutritionally", "oafish", "obedient", "objective", "obligation", "oblivion", "obliviously", "obnoxious", "obsequious", "observational", "obsession", "obsolesce", "obstetrical", "obtainment", "obvious", "obviousness", "oceanography", "odd", "odored", "offensive", "officer", "offload", "oiliness", "oldish", "ominously", "omnipotent", "omnipresent", "oncology", "onetime", "online", "onlooking", "onomatopoetic", "onward", "opaque", "openhandedness", "openness", "operatically", "opinionated", "opportune", "opportunism", "opportunity", "optimization", "optometrist", "opulence", "orally", "oratorically", "oratory", "oregano", "orientate", "oriented", "original", "origins", "ornateness", "orotund", "orthodontic", "oscilloscope", "ostentation", "others", "ouch", "out", "outbalance", "outboard", "outer", "outgo", "outgrown", "outing", "outlive", "outnumber", "outpoint", "outrank", "outreach", "outsell", "outsource", "oval", "overage", "overarm", "overbalance", "overburden", "overcautious", "overcompensation", "overdevelop", "overdose", "overdrew", "overexcited", "overextend", "overgeneralize", "overhasty", "overhung", "overkill", "overlie", "overmaster", "overoptimistic", "overpay", "overpopulate", "overpowering", "overprotect", "overriding", "overrun", "overshot", "overstep", "overt", "overtaken", "overweening", "overworked", "oxbow", "oxide", "oyster", "pachyderm", "pacification", "pageant", "palatable", "palely", "palfrey", "palmistry", "palsy", "paltry", "panacea", "pane", "panpipes", "pantheon", "pantry", "pantsuit", "paperhanging", "papery", "paragon", "parallax", "paralyze", "paraphernalia", "parasitism", "parcel", "parent", "parenthetic", "parishioner", "parking", "parquet", "partial", "particulate", "parturition", "passable", "pasteboard", "pastrami", "pat", "pate", "paternalistic", "pathetically", "patient", "patronizer", "pauperize", "payable", "payee", "peacefully", "peak", "pearl", "peccadillo", "pedagogic", "pedicure", "pedometer", "peel", "peer", "pelf", "penalization", "penetratingly", "penitently", "penknives", "pennant", "penuche", "peony", "perambulate", "perceivable", "perceptibly", "perceptional", "percolate", "perfidious", "pericardia", "perigee", "perilous", "perish", "perkily", "permissibly", "perniciousness", "perplex", "persecute", "persevere", "persistent", "perspicacity", "persuade", "pertinacity", "perturb", "perturbed", "perversion", "peskiness", "petrochemical", "pettifoggery", "petulantly", "peyote", "phalanges", "phantasmagoria", "pharmaceuticals", "philippic", "philistinism", "philology", "philosophic", "phlox", "phonographic", "phonology", "phosphorescent", "photocopy", "photographer", "photometer", "physic", "pianoforte", "pibroch", "pickerel", "picturesquely", "piece", "pierce", "piffle", "piggishly", "pigheadedness", "pigment", "pineapple", "pinnacle", "pinpoint", "piper", "piroshki", "pis", "pistil", "pitch", "pithiness", "pitiable", "pitilessness", "pizzazz", "placement", "placidity", "plagiarist", "plainspoken", "planet", "planking", "plantation", "plat", "platinum", "play", "playpen", "pleader", "please", "plebiscite", "pledge", "plethora", "plowshare", "plum", "plumb", "pluralist", "poaching", "pocketknife", "pockmark", "poignancy", "pointed", "poke", "polemicist", "polish", "politeness", "polity", "poll", "polling", "pollutant", "polonium", "polymath", "polysyllable", "pompon", "pompous", "pond", "pony", "poof", "poorly", "poppycock", "populous", "portentous", "portray", "position", "positron", "possess", "possessiveness", "postindustrial", "postmortem", "postprandial", "potable", "potbelly", "potentiality", "potherb", "potty", "poundage", "pox", "practicing", "praiseworthy", "prance", "prattler", "pray", "prayers", "preciosity", "precipice", "preclude", "precolonial", "precondition", "predicable", "predictably", "predominant", "prefabricate", "preform", "prehistoric", "prejudiced", "prelude", "premiere", "premolar", "preoperative", "preparation", "prepositional", "prepubescent", "prescription", "presentiment", "preserver", "preshrink", "pressing", "pretense", "pretzel", "prevalent", "previously", "priestliness", "primacy", "printer", "priority", "prissy", "privately", "probate", "proboscis", "procedural", "proceedings", "proclaim", "procrastinator", "procreation", "prodigality", "prodigiously", "producible", "productivity", "profanity", "professed", "professionally", "profoundly", "programmable", "progressive", "proliferate", "promenade", "promise", "prompting", "promulgator", "pronounced", "propagation", "propane", "prophetical", "prophylactic", "proportion", "proportionally", "propound", "prose", "proselytize", "prosy", "protect", "protection", "protector", "protrusile", "provability", "provenience", "provisional", "provocatively", "proxy", "prurience", "psyche", "psychedelic", "psychically", "psychoanalytical", "psychogenic", "psychotherapy", "pubescent", "publication", "publicity", "pudginess", "pugnaciously", "puncheon", "puncture", "puniness", "pupae", "puristic", "puritanical", "purportedly", "purposelessly", "purvey", "pushcart", "pushing", "pushup", "putrescent", "pyx", "quadraphonic", "quake", "qualitative", "quarterstaff", "quavery", "queasily", "questionable", "questioningly", "quick", "quiet", "quilter", "quitclaim", "quits", "quixotically", "rabbinical", "racially", "raciness", "racy", "radar", "radicalism", "radium", "radon", "raider", "railroading", "rainy", "rambunctiously", "ramjet", "randomization", "ranks", "ransom", "rapaciously", "rapid", "rashness", "rat", "ratchet", "rathskeller", "ratio", "ratiocination", "ratlike", "rattle", "rattling", "raucousness", "ravenously", "raving", "ravishingly", "rawhide", "razorback", "react", "reactivation", "readability", "realignment", "realistically", "rear", "reascend", "reassemble", "reauthorize", "rebate", "rebut", "rec", "recalculation", "recapitulate", "receivable", "recent", "recessive", "reciprocation", "recitalist", "reclusive", "recollection", "recombine", "reconnoiter", "reconsideration", "record", "recreational", "recrudescence", "rectifiable", "rectifier", "recuperative", "recurrence", "redbreast", "rediscover", "redone", "redundant", "redwood", "reemphasize", "reentry", "reexamine", "referable", "refreshed", "refreshing", "refrigerant", "refuel", "refurnish", "regalement", "regally", "regeneration", "regrettable", "regrew", "reimburse", "reincorporate", "reinsert", "reintegration", "reinterpretation", "rejuvenate", "relaid", "relation", "relaunch", "relevance", "relight", "reluctant", "remainder", "remedial", "remelt", "remold", "remorse", "remote", "remoteness", "renaissance", "reneger", "renegotiate", "rennet", "rental", "reoccur", "reorientation", "repaid", "repatriation", "repay", "repeated", "repel", "repetitiousness", "repine", "replete", "replicate", "reply", "reportorial", "repression", "reproachful", "reproducible", "reptilian", "repulsive", "reputably", "rescind", "rescue", "resection", "reserve", "residency", "residual", "resist", "resistor", "resolutely", "resources", "respectably", "resplendence", "responsibly", "rest", "restfully", "restriction", "restrung", "resurgence", "resuscitation", "retake", "retest", "retire", "retreat", "returns", "reuse", "revamp", "reveal", "revel", "revengeful", "revile", "reviser", "revocation", "reword", "rheumatism", "rhinoceros", "rho", "rhubarb", "ribaldry", "ricer", "riddance", "riderless", "ridicule", "rifling", "rightfully", "rightness", "rightsize", "rill", "ringlet", "rip", "riposte", "risque", "riveter", "roads", "roadworthy", "roast", "rockbound", "rocky", "roe", "roguishness", "romancer", "room", "roominess", "rooms", "rope", "ropes", "rosily", "rote", "rotten", "rouge", "roughneck", "roundly", "rowboat", "royally", "rubric", "ruggedly", "ruinous", "ruling", "runny", "runs", "rupee", "russet", "rusticity", "ruthlessness", "saccharin", "sacrilege", "sacristy", "saddlebag", "sagaciously", "sago", "sahib", "saint", "saliva", "sally", "salutary", "samba", "sampler", "sanatoria", "sandman", "sanguinary", "sapling", "sarcophagi", "sardonically", "satanically", "satinwood", "satirical", "satisfactory", "satrap", "saturated", "savoriness", "sawbones", "sawn", "scalding", "scalper", "scapulae", "scarceness", "scattered", "scavenge", "schemer", "schmo", "scholastic", "schoolmarm", "scientist", "scintilla", "scissors", "scofflaw", "scoop", "scope", "scoreboard", "scourge", "scow", "scrabble", "scrawny", "screenplay", "scribe", "script", "scrooge", "scrub", "scrunchie", "scuffle", "scurrilously", "seabird", "seafloor", "sealskin", "seaman", "season", "seaway", "sec", "secluded", "secondarily", "secretory", "sectional", "sedgy", "seedling", "seedy", "seer", "seismologic", "seize", "selfless", "semi", "semiannually", "semiprecious", "semipro", "semisolid", "senator", "senility", "sensationally", "sensibly", "sensuously", "sententious", "sentience", "separately", "sepulcher", "serious", "serous", "serried", "serviceable", "sesame", "settled", "seventeenth", "severity", "sexily", "sextet", "shabbily", "shad", "shah", "shameless", "shanghai", "shapeliness", "shareware", "shay", "sheath", "sheeny", "sheeting", "shellac", "shelled", "shepherd", "sherbert", "shiatsu", "shiftlessly", "shifty", "shindig", "shipboard", "shirt", "shod", "shoelace", "shoetree", "shop", "shorten", "shortie", "shortsightedness", "showroom", "shredder", "shrink", "shriven", "shuffle", "shutterbug", "shyster", "sickie", "sickle", "sideburns", "sift", "sigh", "signally", "significant", "signing", "signora", "silage", "sill", "silt", "silver", "similar", "similitude", "sincere", "sinecure", "singe", "singleton", "sinker", "sinless", "sinus", "sire", "sisal", "sisterliness", "site", "skedaddle", "sketchiness", "skew", "skier", "skilled", "skillfulness", "skirt", "skyjacker", "skywards", "slack", "slacker", "slag", "slew", "slide", "slight", "slimy", "sloe", "slogan", "sloppily", "slough", "sludgy", "slug", "sluggishly", "slyly", "smallpox", "smashed", "smilingly", "smithy", "smoothness", "snaffle", "snakelike", "snappishly", "snarly", "sneak", "snipe", "snobbishness", "snow", "snowbank", "snowboarding", "snowdrift", "snowy", "snugly", "sobriquet", "sociability", "sod", "sofa", "soil", "solicitousness", "solid", "solipsism", "solvency", "someday", "sometimes", "songster", "sorrow", "sorter", "soulfulness", "soundly", "sourdough", "southeasterly", "southerner", "soy", "spa", "spadices", "spangle", "spaniel", "spare", "spark", "sparseness", "spastic", "spatter", "spear", "specifications", "specifics", "spectroscopy", "speculate", "speedometer", "speller", "spent", "spewer", "sphere", "spiderweb", "spillage", "spinster", "spiracle", "spiritually", "spiteful", "spittle", "spoilt", "spoken", "spokeswoman", "spongy", "spoonbill", "spoonful", "spore", "sportswriter", "spotty", "sprat", "spread", "sprightliness", "spring", "springy", "sprint", "spur", "sputter", "spy", "squall", "squarely", "squeakily", "squeaky", "ssh", "stack", "stagehand", "staggers", "stagnation", "staidness", "stamina", "stammerer", "stamper", "stanza", "staphylococcal", "starboard", "starchiness", "starfish", "starlight", "statecraft", "stately", "stateroom", "stationer", "stature", "steadily", "stealth", "stegosaurus", "stemware", "stepladder", "steps", "stereophonic", "stereoscopic", "stickleback", "still", "stimulate", "stimuli", "stingray", "stinting", "stipulate", "stir", "stodgy", "stogy", "stoked", "stolid", "stopover", "story", "straightaway", "straighten", "straightly", "strangeness", "strangulation", "strapless", "stratum", "street", "streetlight", "streptococcus", "stressful", "strewn", "strict", "striking", "strip", "stripteaser", "stroller", "structural", "strudel", "studded", "student", "stuffily", "stump", "stupor", "stutterer", "stylish", "subcontract", "subculture", "subhead", "subliminal", "submarginal", "submission", "subordinate", "subplot", "subsection", "subsidized", "subsystem", "successively", "succinct", "sucrose", "suffer", "sufficient", "sugar", "sugarcoat", "suicidal", "suitableness", "suitcase", "sukiyaki", "sulfurous", "sumach", "sumo", "sunbonnet", "sunder", "sundry", "sunroof", "superconductivity", "supererogatory", "superfluousness", "superior", "supernatural", "superposition", "superstition", "supplemental", "supplier", "supportable", "suppurate", "surety", "surfing", "surmise", "surpass", "surprising", "surreal", "surrogacy", "surround", "susceptibility", "suspend", "suspenders", "suspicion", "sustenance", "swag", "swam", "swank", "sweeper", "swept", "swimming", "swinger", "sword", "sybaritic", "sycophancy", "syllabication", "sylvan", "symbiosis", "symbolically", "symptomatic", "synaptic", "syndrome", "synergistic", "synthesize", "synthetic", "tableaux", "tabletop", "tabulator", "taciturnly", "tactility", "tad", "tailoring", "taker", "talented", "talkativeness", "talky", "tamely", "tan", "tantalizer", "tarantula", "tarp", "tarpon", "tart", "taster", "tasty", "teammate", "tear", "tearful", "technetium", "technocracy", "tediously", "tedium", "teepee", "telecommunication", "telephoto", "teleplay", "telescope", "telltale", "temple", "temporary", "temporizer", "temptress", "tenacious", "tendentiousness", "tendril", "tennis", "tenor", "tentacle", "tenth", "tepee", "term", "tern", "terrestrially", "terrifically", "terrify", "tertiary", "tetra", "thallium", "thanklessly", "the", "thematically", "theology", "theoretic", "therapeutically", "there", "theretofore", "thereupon", "thermonuclear", "thermos", "these", "thickset", "thievish", "thine", "thorn", "thoroughgoing", "thoroughness", "thousandfold", "thralldom", "threader", "thrift", "throe", "thrombi", "throwback", "thrust", "thulium", "thunder", "thunderous", "thyme", "ticklishness", "tideland", "tiered", "tightly", "tiling", "tillable", "timber", "timeserver", "tingly", "tintinnabulation", "tirelessness", "tiresomely", "titan", "titanium", "toadyism", "tobacco", "today", "togaed", "tolerable", "toleration", "ton", "tongs", "took", "toolbox", "topflight", "torque", "torridity", "totalitarian", "totality", "totter", "touchiness", "toupee", "tourism", "tousle", "towelling", "townhouse", "townsman", "toxicity", "tracheal", "traction", "tradeswoman", "traditionalism", "trafficker", "trailer", "tranquilly", "transect", "transfiguration", "transitional", "transitory", "translucently", "transmutation", "transnational", "transplantation", "trapezoid", "trash", "traumatically", "traveled", "tray", "treasurer", "treelike", "trenchantly", "trestle", "triangularly", "tribe", "trichina", "trickery", "trifler", "trilateral", "trill", "trimming", "triumvir", "troika", "trolley", "tropic", "trot", "trouble", "troublemaker", "troublesome", "trouper", "trump", "trumps", "trustworthiness", "trusty", "truthfulness", "tsar", "tuberculin", "turban", "turbocharger", "tutorship", "tutu", "twelve", "twiddle", "twilled", "twist", "typesetter", "typewriting", "typewrote", "typically", "tzar", "ufologist", "ugh", "ulnae", "ultralight", "ultraviolet", "umbrage", "unaccomplished", "unaccountably", "unaesthetic", "unaltered", "unanticipated", "unassisted", "unavailable", "unawareness", "unbeatable", "unbelief", "unbind", "unblushingly", "unbridgeable", "unburden", "uncannily", "uncaught", "uncharted", "unclothed", "uncombed", "uncommonly", "uncomprehending", "uncongenial", "unconsidered", "unconstitutional", "uncork", "uncouth", "uncultured", "undecided", "underclassman", "undercoating", "undergarment", "underhandedly", "underneath", "underplay", "undersecretary", "undersold", "understate", "undertaking", "underwriter", "undesirability", "undeveloped", "undignified", "undisclosed", "undressed", "undue", "unease", "unendurable", "unequipped", "unethical", "unfeasible", "unflappability", "unflinching", "unforgivably", "unforgotten", "unfortunate", "unfriendliness", "ungenerous", "ungodliness", "unhardened", "unhatched", "unhealthful", "unhindered", "unhurriedly", "unidiomatic", "uniformed", "unimaginatively", "uninformative", "uninhibited", "unintentional", "unionism", "universe", "unkind", "unknown", "unlearn", "unlit", "unlovable", "unmade", "unmarketable", "unmeant", "unmitigated", "unmoral", "unnamed", "unobtrusively", "unorthodox", "unpeeled", "unpersuasive", "unpolitical", "unpopular", "unpredictability", "unpremeditated", "unpreparedness", "unpropitious", "unquestioned", "unrealistically", "unreformed", "unreliably", "unresolved", "unrestricted", "unromantic", "unsatisfactorily", "unsatisfied", "unscramble", "unscrupulousness", "unseasonable", "unseemliness", "unseen", "unshakably", "unshaven", "unsoundness", "unspecified", "unstressed", "unsubstantiated", "unsupported", "unsuspecting", "unsustainable", "unteachable", "untidiness", "untitled", "untouched", "unusually", "unwanted", "unwise", "unworldliness", "upbraid", "upland", "uppity", "uproarious", "upsilon", "uptake", "uptick", "urbanize", "uremic", "ursine", "usefulness", "utility", "utopia", "vagabondage", "vagary", "vagrant", "vainly", "validation", "validly", "valveless", "vampire", "vanadium", "vanilla", "vapidness", "variegated", "vase", "vaulting", "vehemence", "veiled", "venal", "venison", "ventilate", "ventral", "venturesomely", "veracious", "verandah", "verbatim", "verge", "veritably", "vernacular", "vernier", "vertebra", "vertically", "verve", "vesicle", "vest", "vet", "veteran", "vibes", "vicar", "viciousness", "victual", "videodisk", "viewing", "vigilante", "vindicate", "vindicator", "vinegary", "violoncellist", "visceral", "vitamin", "vitiation", "vivaciously", "vixen", "vixenishly", "vodka", "volcano", "volt", "voluminous", "voluptuously", "voracity", "vow", "vulcanization", "vulnerability", "waistline", "waitstaff", "wakefulness", "walk", "walrus", "wan", "wander", "wane", "war", "warmonger", "warped", "warrior", "washing", "waste", "watercress", "waterlily", "wax", "waxwork", "waywardness", "wealthiness", "wearable", "wearisomely", "weatherization", "weatherproof", "wee", "weensy", "weevil", "weigh", "wellhead", "went", "western", "westwards", "whaler", "wharf", "wheelbarrow", "wheelhouse", "wheezy", "whelm", "whenever", "whet", "whiner", "whipped", "whisker", "wholesaler", "whorish", "whorled", "why", "wickerwork", "wide", "wilds", "windless", "windsurfer", "windward", "winery", "wingding", "wintertime", "wiretap", "wisdom", "wiseacre", "witchcraft", "withering", "witlessness", "wits", "wobbly", "woebegone", "woke", "womanliness", "womenfolks", "wonderment", "wont", "woo", "woodcutter", "woodiness", "woodsiness", "woof", "wool", "wordplay", "working", "workout", "worldly", "worship", "worthlessness", "wounded", "wrappings", "wrecker", "wrestler", "wriggle", "writings", "wrongness", "xerographic", "xylophone", "yacht", "yank", "yearling", "yeast", "yep", "yeti", "yokel", "yuk", "yummy", "zeitgeist", "zephyr", "zestful", "zoological", "zygote"];
-
-/***/ }),
 /* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TreeNode = function () {
+  function TreeNode() {
+    var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+    var isWord = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+    _classCallCheck(this, TreeNode);
+
+    this.val = val;
+    this.parent = null;
+    this.children = {};
+    this.isWord = isWord;
+  }
+
+  _createClass(TreeNode, [{
+    key: "setParent",
+    value: function setParent(parent) {
+      if (this.parent === parent) {
+        return;
+      }
+
+      if (this.parent) delete this.parent.children[this.val];
+      this.parent = parent;
+      if (this.parent) this.parent.children[this.val] = this;
+    }
+  }, {
+    key: "addChild",
+    value: function addChild(child) {
+      child.setParent(this);
+    }
+  }, {
+    key: "removeChild",
+    value: function removeChild(val) {
+      var child = this.children[val];
+      if (child) child.setParent(null);
+    }
+  }, {
+    key: "isLeaf",
+    value: function isLeaf() {
+      return Object.keys(this.children).length < 1;
+    }
+  }, {
+    key: "isRoot",
+    value: function isRoot() {
+      return !this.parent;
+    }
+  }, {
+    key: "numChildren",
+    value: function numChildren() {
+      return Object.keys(this.children).length;
+    }
+  }, {
+    key: "allChildWords",
+    value: function allChildWords() {
+      var _this = this;
+
+      if (this.isLeaf()) {
+        return [];
+      }
+      var childrenVals = Object.keys(this.children).filter(function (key) {
+        return _this.children[key].isWord;
+      });
+      Object.values(this.children).forEach(function (child) {
+        childrenVals = childrenVals.concat(child.allChildWords());
+      });
+      return childrenVals;
+    }
+  }]);
+
+  return TreeNode;
+}();
+
+exports.default = TreeNode;
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1088,9 +1176,9 @@ var dictionary = exports.dictionary = ["aardvark", "abaci", "aback", "abacus", "
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(8);
-  var warning = __webpack_require__(13);
-  var ReactPropTypesSecret = __webpack_require__(19);
+  var invariant = __webpack_require__(9);
+  var warning = __webpack_require__(15);
+  var ReactPropTypesSecret = __webpack_require__(20);
   var loggedTypeFailures = {};
 }
 
@@ -1141,7 +1229,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1160,7 +1248,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1171,15 +1259,15 @@ exports.locationsAreEqual = exports.createLocation = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _resolvePathname = __webpack_require__(35);
+var _resolvePathname = __webpack_require__(36);
 
 var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
 
-var _valueEqual = __webpack_require__(36);
+var _valueEqual = __webpack_require__(37);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(10);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1244,7 +1332,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 };
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1335,18 +1423,18 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(24);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1465,11 +1553,11 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1542,7 +1630,7 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1627,7 +1715,7 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1655,17 +1743,17 @@ function warning(message) {
 }
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(48);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(49);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "combineReducers", function() { return __WEBPACK_IMPORTED_MODULE_1__combineReducers__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "bindActionCreators", function() { return __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__["a"]; });
@@ -1692,13 +1780,13 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(108);
 
 
 
@@ -1764,7 +1852,7 @@ function isPlainObject(value) {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1803,7 +1891,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1884,7 +1972,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1926,7 +2014,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1997,7 +2085,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2012,7 +2100,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(60);
+var isTextNode = __webpack_require__(61);
 
 /*eslint-disable no-bitwise */
 
@@ -2040,7 +2128,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2070,7 +2158,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2147,7 +2235,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["default"] = (resolvePathname);
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2192,7 +2280,7 @@ function valueEqual(a, b) {
 /* harmony default export */ __webpack_exports__["default"] = (valueEqual);
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2253,7 +2341,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2363,18 +2451,18 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(41);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2386,7 +2474,7 @@ Link.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(25);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2523,7 +2611,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2589,7 +2677,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2661,7 +2749,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2685,19 +2773,19 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 });
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = connectAdvanced;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(44);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2990,14 +3078,14 @@ selectorFactory) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -3249,11 +3337,11 @@ var ActionTypes = {
 }
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(102);
 
 
 /** Built-in value references. */
@@ -3263,7 +3351,7 @@ var Symbol = __WEBPACK_IMPORTED_MODULE_0__root_js__["a" /* default */].Symbol;
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -3291,7 +3379,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3319,7 +3407,7 @@ function warning(message) {
 }
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3358,14 +3446,14 @@ function compose() {
 }
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = wrapMapToPropsConstant;
 /* unused harmony export getDependsOnOwnProps */
 /* harmony export (immutable) */ __webpack_exports__["b"] = wrapMapToPropsFunc;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(52);
 
 
 function wrapMapToPropsConstant(getConstant) {
@@ -3436,13 +3524,13 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifyPlainObject;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__warning__ = __webpack_require__(27);
 
 
 
@@ -3453,7 +3541,7 @@ function verifyPlainObject(value, displayName, methodName) {
 }
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3475,7 +3563,7 @@ var receiveSelection = exports.receiveSelection = function receiveSelection(sele
 };
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3487,11 +3575,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _linked_list = __webpack_require__(54);
+var _linked_list = __webpack_require__(55);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
-var _hashString = __webpack_require__(129);
+var _hashString = __webpack_require__(133);
 
 var _hashString2 = _interopRequireDefault(_hashString);
 
@@ -3569,7 +3657,7 @@ var Hashmap = function () {
 exports.default = Hashmap;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3690,7 +3778,7 @@ var ListNode = function () {
 exports.default = LinkedList;
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3700,23 +3788,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(58);
+var _reactDom = __webpack_require__(59);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _app = __webpack_require__(67);
+var _app = __webpack_require__(68);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _store = __webpack_require__(130);
+var _store = __webpack_require__(134);
 
 var _store2 = _interopRequireDefault(_store);
 
-var _hashmap = __webpack_require__(53);
+var _hashmap = __webpack_require__(54);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
-var _linked_list = __webpack_require__(54);
+var _linked_list = __webpack_require__(55);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
@@ -3728,7 +3816,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3741,7 +3829,7 @@ document.addEventListener('DOMContentLoaded', function () {
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(7),n=__webpack_require__(12),p=__webpack_require__(5),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(8),n=__webpack_require__(14),p=__webpack_require__(5),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -3756,7 +3844,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 57 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3777,12 +3865,12 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(7);
-var emptyObject = __webpack_require__(12);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(13);
+var _assign = __webpack_require__(8);
+var emptyObject = __webpack_require__(14);
+var invariant = __webpack_require__(9);
+var warning = __webpack_require__(15);
 var emptyFunction = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(18);
+var checkPropTypes = __webpack_require__(19);
 
 // TODO: this is special because it gets imported during build.
 
@@ -5121,7 +5209,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 58 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5159,15 +5247,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(59);
+  module.exports = __webpack_require__(60);
 } else {
-  module.exports = __webpack_require__(62);
+  module.exports = __webpack_require__(63);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 59 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5183,7 +5271,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(29),B=__webpack_require__(7),C=__webpack_require__(5),ba=__webpack_require__(30),da=__webpack_require__(31),ea=__webpack_require__(32),fa=__webpack_require__(33),ia=__webpack_require__(34),D=__webpack_require__(12);
+var aa=__webpack_require__(0),l=__webpack_require__(30),B=__webpack_require__(8),C=__webpack_require__(5),ba=__webpack_require__(31),da=__webpack_require__(32),ea=__webpack_require__(33),fa=__webpack_require__(34),ia=__webpack_require__(35),D=__webpack_require__(14);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -5403,7 +5491,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 60 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5418,7 +5506,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(61);
+var isNode = __webpack_require__(62);
 
 /**
  * @param {*} object The object to check.
@@ -5431,7 +5519,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 61 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5459,7 +5547,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 62 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5481,20 +5569,20 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(0);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(13);
-var ExecutionEnvironment = __webpack_require__(29);
-var _assign = __webpack_require__(7);
+var invariant = __webpack_require__(9);
+var warning = __webpack_require__(15);
+var ExecutionEnvironment = __webpack_require__(30);
+var _assign = __webpack_require__(8);
 var emptyFunction = __webpack_require__(5);
-var EventListener = __webpack_require__(30);
-var getActiveElement = __webpack_require__(31);
-var shallowEqual = __webpack_require__(32);
-var containsNode = __webpack_require__(33);
-var focusNode = __webpack_require__(34);
-var emptyObject = __webpack_require__(12);
-var checkPropTypes = __webpack_require__(18);
-var hyphenateStyleName = __webpack_require__(63);
-var camelizeStyleName = __webpack_require__(65);
+var EventListener = __webpack_require__(31);
+var getActiveElement = __webpack_require__(32);
+var shallowEqual = __webpack_require__(33);
+var containsNode = __webpack_require__(34);
+var focusNode = __webpack_require__(35);
+var emptyObject = __webpack_require__(14);
+var checkPropTypes = __webpack_require__(19);
+var hyphenateStyleName = __webpack_require__(64);
+var camelizeStyleName = __webpack_require__(66);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -20861,7 +20949,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 63 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20876,7 +20964,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(64);
+var hyphenate = __webpack_require__(65);
 
 var msPattern = /^ms-/;
 
@@ -20903,7 +20991,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 64 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20939,7 +21027,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 65 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20954,7 +21042,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(66);
+var camelize = __webpack_require__(67);
 
 var msPattern = /^-ms-/;
 
@@ -20982,7 +21070,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 66 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21017,7 +21105,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 67 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21033,9 +21121,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _reactRedux = __webpack_require__(11);
+var _reactRedux = __webpack_require__(7);
 
-var _landing_page = __webpack_require__(118);
+var _landing_page = __webpack_require__(119);
 
 var _landing_page2 = _interopRequireDefault(_landing_page);
 
@@ -21058,7 +21146,7 @@ var App = function App(_ref) {
 exports.default = App;
 
 /***/ }),
-/* 68 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21068,9 +21156,9 @@ exports.default = App;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(23);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -21125,7 +21213,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 69 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21139,12 +21227,12 @@ BrowserRouter.propTypes = {
 
 
 var emptyFunction = __webpack_require__(5);
-var invariant = __webpack_require__(8);
-var warning = __webpack_require__(13);
-var assign = __webpack_require__(7);
+var invariant = __webpack_require__(9);
+var warning = __webpack_require__(15);
+var assign = __webpack_require__(8);
 
-var ReactPropTypesSecret = __webpack_require__(19);
-var checkPropTypes = __webpack_require__(18);
+var ReactPropTypesSecret = __webpack_require__(20);
+var checkPropTypes = __webpack_require__(19);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -21675,7 +21763,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 70 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21689,8 +21777,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(5);
-var invariant = __webpack_require__(8);
-var ReactPropTypesSecret = __webpack_require__(19);
+var invariant = __webpack_require__(9);
+var ReactPropTypesSecret = __webpack_require__(20);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -21740,7 +21828,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21760,15 +21848,15 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(20);
+var _LocationUtils = __webpack_require__(21);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(10);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22053,7 +22141,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 72 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22063,9 +22151,9 @@ exports.default = createBrowserHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(23);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22119,7 +22207,7 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 73 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22137,15 +22225,15 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(20);
+var _LocationUtils = __webpack_require__(21);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(10);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(37);
+var _DOMUtils = __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22449,18 +22537,18 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 74 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(76);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 75 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22470,9 +22558,9 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(24);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22527,7 +22615,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 76 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22543,11 +22631,11 @@ var _warning = __webpack_require__(2);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(9);
+var _PathUtils = __webpack_require__(10);
 
-var _LocationUtils = __webpack_require__(20);
+var _LocationUtils = __webpack_require__(21);
 
-var _createTransitionManager = __webpack_require__(21);
+var _createTransitionManager = __webpack_require__(22);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -22703,7 +22791,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22711,8 +22799,8 @@ exports.default = createMemoryHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(39);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -22784,10 +22872,10 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(79)
+var isarray = __webpack_require__(80)
 
 /**
  * Expose `pathToRegexp`.
@@ -23216,7 +23304,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -23225,18 +23313,18 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(82);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23327,18 +23415,18 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(84);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23350,7 +23438,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(85);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -23446,20 +23534,20 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(86);
 /* unused harmony reexport createBrowserHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(87);
 /* unused harmony reexport createHashHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(88);
 /* unused harmony reexport createMemoryHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(16);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(11);
 /* unused harmony reexport parsePath */
 /* unused harmony reexport createPath */
 
@@ -23473,7 +23561,7 @@ Redirect.contextTypes = {
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23481,10 +23569,10 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(42);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -23777,7 +23865,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createBrowserHistory);
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23785,10 +23873,10 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(42);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -24098,15 +24186,15 @@ var createHashHistory = function createHashHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createHashHistory);
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(26);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -24266,18 +24354,18 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createMemoryHistory);
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(90);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24289,9 +24377,9 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(24);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24460,18 +24548,18 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(92);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24483,7 +24571,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(25);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24565,29 +24653,29 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(25);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(95);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24595,9 +24683,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(41);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24632,7 +24720,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24641,8 +24729,8 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_PropTypes__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warning__ = __webpack_require__(27);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -24718,7 +24806,7 @@ function createProvider() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24817,17 +24905,17 @@ var Subscription = function () {
 
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export createConnect */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(117);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -24933,7 +25021,7 @@ function createConnect() {
 /* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24970,15 +25058,15 @@ function shallowEqual(objA, objB) {
 }
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export whenMapDispatchToPropsIsFunction */
 /* unused harmony export whenMapDispatchToPropsIsMissing */
 /* unused harmony export whenMapDispatchToPropsIsObject */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_redux__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__wrapMapToProps__ = __webpack_require__(51);
 
 
 
@@ -25001,13 +25089,13 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(105);
 
 
 
@@ -25039,11 +25127,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(103);
 
 
 /** Detect free variable `self`. */
@@ -25056,7 +25144,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25065,14 +25153,14 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(17)))
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(47);
 
 
 /** Used for built-in method references. */
@@ -25122,7 +25210,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25151,11 +25239,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(107);
 
 
 /** Built-in value references. */
@@ -25165,7 +25253,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25187,7 +25275,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25223,14 +25311,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(109);
+module.exports = __webpack_require__(110);
 
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25240,7 +25328,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(110);
+var _ponyfill = __webpack_require__(111);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -25263,10 +25351,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(47)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(48)(module)))
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25295,14 +25383,14 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = combineReducers;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash_es_isPlainObject__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_warning__ = __webpack_require__(49);
 
 
 
@@ -25436,7 +25524,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25490,12 +25578,12 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyMiddleware;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compose__ = __webpack_require__(50);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -25546,13 +25634,13 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export whenMapStateToPropsIsFunction */
 /* unused harmony export whenMapStateToPropsIsMissing */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__wrapMapToProps__ = __webpack_require__(51);
 
 
 function whenMapStateToPropsIsFunction(mapStateToProps) {
@@ -25568,7 +25656,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25576,7 +25664,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* unused harmony export wrapMergePropsFunc */
 /* unused harmony export whenMergePropsIsFunction */
 /* unused harmony export whenMergePropsIsOmitted */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_verifyPlainObject__ = __webpack_require__(52);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -25625,14 +25713,14 @@ function whenMergePropsIsOmitted(mergeProps) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export impureFinalPropsSelectorFactory */
 /* unused harmony export pureFinalPropsSelectorFactory */
 /* harmony export (immutable) */ __webpack_exports__["a"] = finalPropsSelectorFactory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(118);
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -25738,12 +25826,12 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = verifySubselectors;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_warning__ = __webpack_require__(27);
 
 
 function verify(selector, methodName, displayName) {
@@ -25763,7 +25851,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 }
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25777,21 +25865,25 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _search_selector_container = __webpack_require__(119);
+var _search_selector_container = __webpack_require__(120);
 
 var _search_selector_container2 = _interopRequireDefault(_search_selector_container);
 
-var _binary_container = __webpack_require__(121);
+var _binary_container = __webpack_require__(122);
 
 var _binary_container2 = _interopRequireDefault(_binary_container);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _trie_container = __webpack_require__(124);
+var _compressed_trie_container = __webpack_require__(125);
+
+var _compressed_trie_container2 = _interopRequireDefault(_compressed_trie_container);
+
+var _trie_container = __webpack_require__(128);
 
 var _trie_container2 = _interopRequireDefault(_trie_container);
 
-var _hashmap_container = __webpack_require__(127);
+var _hashmap_container = __webpack_require__(131);
 
 var _hashmap_container2 = _interopRequireDefault(_hashmap_container);
 
@@ -25804,6 +25896,7 @@ var LandingPage = function LandingPage(props) {
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _search_selector_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/binary', component: _binary_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/trie', component: _trie_container2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/compressed-trie', component: _compressed_trie_container2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/hashmap', component: _hashmap_container2.default })
   );
 };
@@ -25811,7 +25904,7 @@ var LandingPage = function LandingPage(props) {
 exports.default = LandingPage;
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25821,13 +25914,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(11);
+var _reactRedux = __webpack_require__(7);
 
-var _search_selector = __webpack_require__(120);
+var _search_selector = __webpack_require__(121);
 
 var _search_selector2 = _interopRequireDefault(_search_selector);
 
-var _selection_actions = __webpack_require__(52);
+var _selection_actions = __webpack_require__(53);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25847,7 +25940,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_search_selector2.default);
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25919,6 +26012,15 @@ var SearchSelector = function (_React$Component) {
             null,
             _react2.default.createElement(
               _reactRouterDom.Link,
+              { to: '/compressed-trie' },
+              'Compressed Trie'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            null,
+            _react2.default.createElement(
+              _reactRouterDom.Link,
               { to: '/hashmap' },
               'Hashmap'
             )
@@ -25934,7 +26036,7 @@ var SearchSelector = function (_React$Component) {
 exports.default = SearchSelector;
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25944,11 +26046,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(11);
+var _reactRedux = __webpack_require__(7);
 
-var _dictionary_actions = __webpack_require__(16);
+var _dictionary_actions = __webpack_require__(12);
 
-var _binary = __webpack_require__(122);
+var _binary = __webpack_require__(123);
 
 var _binary2 = _interopRequireDefault(_binary);
 
@@ -25972,7 +26074,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_binary2.default);
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25990,9 +26092,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dictionary = __webpack_require__(17);
+var _dictionary = __webpack_require__(13);
 
-var _word = __webpack_require__(123);
+var _word = __webpack_require__(124);
 
 var _word2 = _interopRequireDefault(_word);
 
@@ -26163,7 +26265,7 @@ var Binary = function (_React$Component) {
 exports.default = Binary;
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26190,7 +26292,7 @@ var Word = function Word(props) {
 exports.default = Word;
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26200,19 +26302,19 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(11);
+var _reactRedux = __webpack_require__(7);
 
-var _trie = __webpack_require__(125);
+var _compressed_trie = __webpack_require__(126);
 
-var _trie2 = _interopRequireDefault(_trie);
+var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
 
-var _dictionary_actions = __webpack_require__(16);
+var _dictionary_actions = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    dictionaryTrie: state.dictionary.trie,
+    dictionaryTrie: state.dictionary.compressedTrie,
     dictionaryLength: state.dictionary.length
   };
 };
@@ -26225,10 +26327,10 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   };
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_trie2.default);
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_compressed_trie2.default);
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26244,11 +26346,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dictionary = __webpack_require__(17);
+var _dictionary = __webpack_require__(13);
 
-var _tree_node = __webpack_require__(126);
+var _tree_node = __webpack_require__(18);
 
 var _tree_node2 = _interopRequireDefault(_tree_node);
+
+var _compressed_trie = __webpack_require__(127);
+
+var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
 
 var _reactRouterDom = __webpack_require__(6);
 
@@ -26260,15 +26366,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Trie = function (_React$Component) {
-  _inherits(Trie, _React$Component);
+var CompressedTrie = function (_React$Component) {
+  _inherits(CompressedTrie, _React$Component);
 
-  function Trie(props) {
-    _classCallCheck(this, Trie);
+  function CompressedTrie(props) {
+    _classCallCheck(this, CompressedTrie);
 
-    var _this = _possibleConstructorReturn(this, (Trie.__proto__ || Object.getPrototypeOf(Trie)).call(this, props));
-
-    _this.root = new _tree_node2.default();
+    var _this = _possibleConstructorReturn(this, (CompressedTrie.__proto__ || Object.getPrototypeOf(CompressedTrie)).call(this, props));
 
     _this.state = {
       searchQuery: "",
@@ -26281,9 +26385,7 @@ var Trie = function (_React$Component) {
     return _this;
   }
 
-  // TODO: Add autocomplete to search input using the trie!
-
-  _createClass(Trie, [{
+  _createClass(CompressedTrie, [{
     key: 'handleInput',
     value: function handleInput(e) {
       this.setState({ searchQuery: e.target.value, inspecting: null, checked: 0, found: "Enter a word to search!" });
@@ -26296,14 +26398,14 @@ var Trie = function (_React$Component) {
     }
   }, {
     key: 'trieSearch',
-    value: function trieSearch(trie, target) {
+    value: function trieSearch(root, target) {
       var _this2 = this;
 
       var funcue = [];
       var searching = true;
       var i = 1;
       var checked = 1;
-      var currentParent = trie;
+      var currentParent = root;
       var inspecting = currentParent.children[target.slice(0, i)];
 
       var _loop = function _loop() {
@@ -26357,8 +26459,8 @@ var Trie = function (_React$Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
-      _tree_node2.default.buildTrie(this.root, _dictionary.dictionary, 1);
-      this.props.receiveDictionary(this.root, "trie");
+      this.trie = new _compressed_trie2.default(new _tree_node2.default(), _dictionary.dictionary);
+      this.props.receiveDictionary(this.trie.root, "compressedTrie");
     }
   }, {
     key: 'toJSX',
@@ -26385,7 +26487,7 @@ var Trie = function (_React$Component) {
 
       return _react2.default.createElement(
         'section',
-        { className: 'trie' },
+        { className: 'compressed-trie' },
         _react2.default.createElement(
           _reactRouterDom.Link,
           { to: '/' },
@@ -26394,26 +26496,31 @@ var Trie = function (_React$Component) {
         _react2.default.createElement(
           'h3',
           null,
-          'Trie'
+          'Compressed Trie'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. Searching for a word is done in O(m) time where m is the length of the target string. Building a trie can be costly (at least O(n*m) time), but one reason you might want to use a trie is if you need to know all the words that a word fragment could lead to (such as in autocomplete).'
+          'The compressed trie is similar to a trie, except the compressed trie has a reduced size. This is accomplished by ignoring word segments that would only lead to one other word segment, essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function, or built from scratch like the the one below. While the space requirement can be greatly reduced, traversal becomes slightly more complicated. The time complexity for search remains O(m) time where m is the length of the target string.'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'This is a demonstration of how a trie would be traversed to locate a word. Complete words are found in the leaf nodes. (Please note that this dictionary is missing many words!)'
+          'This is a demonstration of how a compressed trie would be traversed to locate a word. Complete words are found in the leaf nodes. (Please note that this dictionary is missing many words!)'
         ),
-        _react2.default.createElement('input', {
-          disabled: this.state.disabled,
-          type: 'text',
-          value: this.state.searchQuery,
-          onKeyPress: function onKeyPress(e) {
-            if (e.key === "Enter") _this5.handleSubmit();
-          },
-          onChange: this.handleInput.bind(this) }),
+        _react2.default.createElement(
+          'label',
+          null,
+          'Search for a word',
+          _react2.default.createElement('input', {
+            disabled: this.state.disabled,
+            type: 'text',
+            value: this.state.searchQuery,
+            onKeyPress: function onKeyPress(e) {
+              if (e.key === "Enter") _this5.handleSubmit();
+            },
+            onChange: this.handleInput.bind(this) })
+        ),
         _react2.default.createElement(
           'button',
           {
@@ -26440,20 +26547,20 @@ var Trie = function (_React$Component) {
         ),
         _react2.default.createElement(
           'section',
-          { className: 'trie-list' },
-          this.toJSX(this.root)
+          { className: 'compressed-trie-list' },
+          this.trie ? this.toJSX(this.trie.root) : ""
         )
       );
     }
   }]);
 
-  return Trie;
+  return CompressedTrie;
 }(_react2.default.Component);
 
-exports.default = Trie;
+exports.default = CompressedTrie;
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26465,59 +26572,28 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _tree_node = __webpack_require__(18);
+
+var _tree_node2 = _interopRequireDefault(_tree_node);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var TreeNode = function () {
-  function TreeNode() {
-    var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+var CompressedTrie = function () {
+  function CompressedTrie(parent) {
+    var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
 
-    _classCallCheck(this, TreeNode);
+    _classCallCheck(this, CompressedTrie);
 
-    this.val = val;
-    this.parent = null;
-    this.children = {};
+    this.root = parent;
+
+    CompressedTrie.buildCompressedTrie(this.root, words, 1);
   }
 
-  _createClass(TreeNode, [{
-    key: "setParent",
-    value: function setParent(parent) {
-      if (this.parent === parent) {
-        return;
-      }
-
-      if (this.parent) delete this.parent.children[this.val];
-      this.parent = parent;
-      if (this.parent) this.parent.children[this.val] = this;
-    }
-  }, {
-    key: "addChild",
-    value: function addChild(child) {
-      child.setParent(this);
-    }
-  }, {
-    key: "removeChild",
-    value: function removeChild(val) {
-      var child = this.children[val];
-      if (child) child.setParent(null);
-    }
-  }, {
-    key: "isLeaf",
-    value: function isLeaf() {
-      return Object.keys(this.children).length < 1;
-    }
-  }, {
-    key: "isRoot",
-    value: function isRoot() {
-      return !this.parent;
-    }
-  }, {
-    key: "numChildren",
-    value: function numChildren() {
-      return Object.keys(this.children).length;
-    }
-  }], [{
-    key: "buildTrie",
-    value: function buildTrie(parent, words, segLength) {
+  _createClass(CompressedTrie, null, [{
+    key: 'buildCompressedTrie',
+    value: function buildCompressedTrie(parent, words, segLength) {
 
       var queue = [];
       var newParent = void 0;
@@ -26532,7 +26608,7 @@ var TreeNode = function () {
           // and if we only have one word in the queue
           if (queue.length < 2) {
             // add a new node with value = word and append to parent
-            var newChild = new TreeNode(queue[0].slice(0));
+            var newChild = new _tree_node2.default(queue[0].slice(0));
             parent.addChild(newChild);
             queue = [];
           } else {
@@ -26541,14 +26617,14 @@ var TreeNode = function () {
               return word.slice(0, segLength + 1) !== queue[0].slice(0, segLength + 1);
             })) {
               // append a new node with value = segment of the word and make that the new parent
-              newParent = new TreeNode(words[i].slice(0, segLength));
+              newParent = new _tree_node2.default(words[i].slice(0, segLength));
               parent.addChild(newParent);
             } else {
               // otherwise, keep the same parent
               newParent = parent;
             }
             // build tree for the words in queue
-            this.buildTrie(newParent, queue, segLength + 1);
+            this.buildCompressedTrie(newParent, queue, segLength + 1);
             queue = [];
           }
         }
@@ -26556,13 +26632,13 @@ var TreeNode = function () {
     }
   }]);
 
-  return TreeNode;
+  return CompressedTrie;
 }();
 
-exports.default = TreeNode;
+exports.default = CompressedTrie;
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26572,13 +26648,256 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _reactRedux = __webpack_require__(11);
+var _reactRedux = __webpack_require__(7);
 
-var _hashmap = __webpack_require__(128);
+var _trie = __webpack_require__(129);
+
+var _trie2 = _interopRequireDefault(_trie);
+
+var _dictionary_actions = __webpack_require__(12);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    dictionaryTrie: state.dictionary.trie,
+    dictionaryLength: state.dictionary.length
+  };
+};
+
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
+  return {
+    receiveDictionary: function receiveDictionary(dictionary, structure) {
+      return dispatch((0, _dictionary_actions.receiveDictionary)(dictionary, structure));
+    }
+  };
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_trie2.default);
+
+/***/ }),
+/* 129 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _dictionary = __webpack_require__(13);
+
+var _tree_node = __webpack_require__(18);
+
+var _tree_node2 = _interopRequireDefault(_tree_node);
+
+var _trie = __webpack_require__(130);
+
+var _trie2 = _interopRequireDefault(_trie);
+
+var _reactRouterDom = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Trie = function (_React$Component) {
+  _inherits(Trie, _React$Component);
+
+  function Trie(props) {
+    _classCallCheck(this, Trie);
+
+    var _this = _possibleConstructorReturn(this, (Trie.__proto__ || Object.getPrototypeOf(Trie)).call(this, props));
+
+    _this.state = {
+      searchQuery: "",
+      autosuggestResults: []
+    };
+    return _this;
+  }
+
+  _createClass(Trie, [{
+    key: 'handleInput',
+    value: function handleInput(e) {
+      var _this2 = this;
+
+      this.setState({ searchQuery: e.target.value }, function () {
+        return _this2.autosuggest();
+      });
+    }
+  }, {
+    key: 'autosuggest',
+    value: function autosuggest() {
+      var parentNode = _trie2.default.findNodeByVal(this.trie.root, this.state.searchQuery);
+      var res = void 0;
+      if (parentNode) {
+        res = parentNode.allChildWords();
+      } else {
+        res = [];
+      }
+      this.setState({ autosuggestResults: res });
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.trie = new _trie2.default(new _tree_node2.default(), _dictionary.dictionary);
+      this.props.receiveDictionary(this.trie.root, "trie");
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'section',
+        { className: 'trie' },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { to: '/' },
+          'Return'
+        ),
+        _react2.default.createElement(
+          'h3',
+          null,
+          'Trie'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. Searching for a word is done in O(m) time where m is the length of the target string.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This is a demonstration of how a trie can be used to accomplish autosuggest. A search for the node with the target value is first conducted, then its child nodes are searched to find values that are dictionary words. (Please note that this dictionary is missing many words!)'
+        ),
+        _react2.default.createElement(
+          'label',
+          null,
+          'Autocomplete',
+          _react2.default.createElement('input', { value: this.state.searchQuery, onChange: this.handleInput.bind(this) })
+        ),
+        _react2.default.createElement(
+          'ul',
+          null,
+          this.state.autosuggestResults.map(function (word, i) {
+            return _react2.default.createElement(
+              'li',
+              { key: i },
+              word
+            );
+          })
+        )
+      );
+    }
+  }]);
+
+  return Trie;
+}(_react2.default.Component);
+
+exports.default = Trie;
+
+/***/ }),
+/* 130 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _tree_node = __webpack_require__(18);
+
+var _tree_node2 = _interopRequireDefault(_tree_node);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Trie = function () {
+  function Trie(parent) {
+    var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+
+    _classCallCheck(this, Trie);
+
+    this.root = parent;
+    Trie.buildTrie(this.root, words);
+  }
+
+  _createClass(Trie, null, [{
+    key: 'findNodeByVal',
+    value: function findNodeByVal(node, target) {
+      if (node.val === target) return node;
+      if (node.isLeaf()) return null;
+      var childrenToCheck = Object.values(node.children).filter(function (child) {
+        return target.startsWith(child.val);
+      });
+      for (var i = 0; i < childrenToCheck.length; i++) {
+        var res = Trie.findNodeByVal(childrenToCheck[i], target);
+        if (res) return res;
+      }
+      return null;
+    }
+  }, {
+    key: 'buildTrie',
+    value: function buildTrie(parent, words) {
+
+      words.forEach(function (word) {
+        var currentParent = parent;
+        for (var i = 1; i <= word.length; i++) {
+          var isWord = i === word.length;
+          if (!currentParent.children[word.slice(0, i)]) {
+            var newParent = new _tree_node2.default(word.slice(0, i), isWord);
+            currentParent.addChild(newParent);
+            currentParent = newParent;
+          } else {
+            if (isWord) {
+              currentParent.children[word.slice(0, i)].isWord = true;
+            } else {
+              currentParent = currentParent.children[word.slice(0, i)];
+            }
+          }
+        }
+      });
+    }
+  }]);
+
+  return Trie;
+}();
+
+exports.default = Trie;
+
+/***/ }),
+/* 131 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _reactRedux = __webpack_require__(7);
+
+var _hashmap = __webpack_require__(132);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
-var _dictionary_actions = __webpack_require__(16);
+var _dictionary_actions = __webpack_require__(12);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26600,7 +26919,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(_hashmap2.default);
 
 /***/ }),
-/* 128 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26612,7 +26931,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _hashmap = __webpack_require__(53);
+var _hashmap = __webpack_require__(54);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
@@ -26620,7 +26939,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dictionary = __webpack_require__(17);
+var _dictionary = __webpack_require__(13);
 
 var _reactRouterDom = __webpack_require__(6);
 
@@ -26691,7 +27010,7 @@ var HashmapDictionary = function (_React$Component) {
 exports.default = HashmapDictionary;
 
 /***/ }),
-/* 129 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
@@ -26728,7 +27047,7 @@ return hash;
 
 
 /***/ }),
-/* 130 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26738,13 +27057,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _redux = __webpack_require__(27);
+var _redux = __webpack_require__(28);
 
-var _reduxLogger = __webpack_require__(131);
+var _reduxLogger = __webpack_require__(135);
 
 var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
-var _root_reducer = __webpack_require__(132);
+var _root_reducer = __webpack_require__(136);
 
 var _root_reducer2 = _interopRequireDefault(_root_reducer);
 
@@ -26757,15 +27076,15 @@ var configureStore = function configureStore(preloadedState) {
 exports.default = configureStore;
 
 /***/ }),
-/* 131 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {!function(e,t){ true?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(e.reduxLogger=e.reduxLogger||{})}(this,function(e){"use strict";function t(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}function r(e,t){Object.defineProperty(this,"kind",{value:e,enumerable:!0}),t&&t.length&&Object.defineProperty(this,"path",{value:t,enumerable:!0})}function n(e,t,r){n.super_.call(this,"E",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0}),Object.defineProperty(this,"rhs",{value:r,enumerable:!0})}function o(e,t){o.super_.call(this,"N",e),Object.defineProperty(this,"rhs",{value:t,enumerable:!0})}function i(e,t){i.super_.call(this,"D",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0})}function a(e,t,r){a.super_.call(this,"A",e),Object.defineProperty(this,"index",{value:t,enumerable:!0}),Object.defineProperty(this,"item",{value:r,enumerable:!0})}function f(e,t,r){var n=e.slice((r||t)+1||e.length);return e.length=t<0?e.length+t:t,e.push.apply(e,n),e}function u(e){var t="undefined"==typeof e?"undefined":N(e);return"object"!==t?t:e===Math?"math":null===e?"null":Array.isArray(e)?"array":"[object Date]"===Object.prototype.toString.call(e)?"date":"function"==typeof e.toString&&/^\/.*\//.test(e.toString())?"regexp":"object"}function l(e,t,r,c,s,d,p){s=s||[],p=p||[];var g=s.slice(0);if("undefined"!=typeof d){if(c){if("function"==typeof c&&c(g,d))return;if("object"===("undefined"==typeof c?"undefined":N(c))){if(c.prefilter&&c.prefilter(g,d))return;if(c.normalize){var h=c.normalize(g,d,e,t);h&&(e=h[0],t=h[1])}}}g.push(d)}"regexp"===u(e)&&"regexp"===u(t)&&(e=e.toString(),t=t.toString());var y="undefined"==typeof e?"undefined":N(e),v="undefined"==typeof t?"undefined":N(t),b="undefined"!==y||p&&p[p.length-1].lhs&&p[p.length-1].lhs.hasOwnProperty(d),m="undefined"!==v||p&&p[p.length-1].rhs&&p[p.length-1].rhs.hasOwnProperty(d);if(!b&&m)r(new o(g,t));else if(!m&&b)r(new i(g,e));else if(u(e)!==u(t))r(new n(g,e,t));else if("date"===u(e)&&e-t!==0)r(new n(g,e,t));else if("object"===y&&null!==e&&null!==t)if(p.filter(function(t){return t.lhs===e}).length)e!==t&&r(new n(g,e,t));else{if(p.push({lhs:e,rhs:t}),Array.isArray(e)){var w;e.length;for(w=0;w<e.length;w++)w>=t.length?r(new a(g,w,new i(void 0,e[w]))):l(e[w],t[w],r,c,g,w,p);for(;w<t.length;)r(new a(g,w,new o(void 0,t[w++])))}else{var x=Object.keys(e),S=Object.keys(t);x.forEach(function(n,o){var i=S.indexOf(n);i>=0?(l(e[n],t[n],r,c,g,n,p),S=f(S,i)):l(e[n],void 0,r,c,g,n,p)}),S.forEach(function(e){l(void 0,t[e],r,c,g,e,p)})}p.length=p.length-1}else e!==t&&("number"===y&&isNaN(e)&&isNaN(t)||r(new n(g,e,t)))}function c(e,t,r,n){return n=n||[],l(e,t,function(e){e&&n.push(e)},r),n.length?n:void 0}function s(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":s(o[r.path[n]],r.index,r.item);break;case"D":delete o[r.path[n]];break;case"E":case"N":o[r.path[n]]=r.rhs}}else switch(r.kind){case"A":s(e[t],r.index,r.item);break;case"D":e=f(e,t);break;case"E":case"N":e[t]=r.rhs}return e}function d(e,t,r){if(e&&t&&r&&r.kind){for(var n=e,o=-1,i=r.path?r.path.length-1:0;++o<i;)"undefined"==typeof n[r.path[o]]&&(n[r.path[o]]="number"==typeof r.path[o]?[]:{}),n=n[r.path[o]];switch(r.kind){case"A":s(r.path?n[r.path[o]]:n,r.index,r.item);break;case"D":delete n[r.path[o]];break;case"E":case"N":n[r.path[o]]=r.rhs}}}function p(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":p(o[r.path[n]],r.index,r.item);break;case"D":o[r.path[n]]=r.lhs;break;case"E":o[r.path[n]]=r.lhs;break;case"N":delete o[r.path[n]]}}else switch(r.kind){case"A":p(e[t],r.index,r.item);break;case"D":e[t]=r.lhs;break;case"E":e[t]=r.lhs;break;case"N":e=f(e,t)}return e}function g(e,t,r){if(e&&t&&r&&r.kind){var n,o,i=e;for(o=r.path.length-1,n=0;n<o;n++)"undefined"==typeof i[r.path[n]]&&(i[r.path[n]]={}),i=i[r.path[n]];switch(r.kind){case"A":p(i[r.path[n]],r.index,r.item);break;case"D":i[r.path[n]]=r.lhs;break;case"E":i[r.path[n]]=r.lhs;break;case"N":delete i[r.path[n]]}}}function h(e,t,r){if(e&&t){var n=function(n){r&&!r(e,t,n)||d(e,t,n)};l(e,t,n)}}function y(e){return"color: "+F[e].color+"; font-weight: bold"}function v(e){var t=e.kind,r=e.path,n=e.lhs,o=e.rhs,i=e.index,a=e.item;switch(t){case"E":return[r.join("."),n,"→",o];case"N":return[r.join("."),o];case"D":return[r.join(".")];case"A":return[r.join(".")+"["+i+"]",a];default:return[]}}function b(e,t,r,n){var o=c(e,t);try{n?r.groupCollapsed("diff"):r.group("diff")}catch(e){r.log("diff")}o?o.forEach(function(e){var t=e.kind,n=v(e);r.log.apply(r,["%c "+F[t].text,y(t)].concat(P(n)))}):r.log("—— no diff ——");try{r.groupEnd()}catch(e){r.log("—— diff end —— ")}}function m(e,t,r,n){switch("undefined"==typeof e?"undefined":N(e)){case"object":return"function"==typeof e[n]?e[n].apply(e,P(r)):e[n];case"function":return e(t);default:return e}}function w(e){var t=e.timestamp,r=e.duration;return function(e,n,o){var i=["action"];return i.push("%c"+String(e.type)),t&&i.push("%c@ "+n),r&&i.push("%c(in "+o.toFixed(2)+" ms)"),i.join(" ")}}function x(e,t){var r=t.logger,n=t.actionTransformer,o=t.titleFormatter,i=void 0===o?w(t):o,a=t.collapsed,f=t.colors,u=t.level,l=t.diff,c="undefined"==typeof t.titleFormatter;e.forEach(function(o,s){var d=o.started,p=o.startedTime,g=o.action,h=o.prevState,y=o.error,v=o.took,w=o.nextState,x=e[s+1];x&&(w=x.prevState,v=x.started-d);var S=n(g),k="function"==typeof a?a(function(){return w},g,o):a,j=D(p),E=f.title?"color: "+f.title(S)+";":"",A=["color: gray; font-weight: lighter;"];A.push(E),t.timestamp&&A.push("color: gray; font-weight: lighter;"),t.duration&&A.push("color: gray; font-weight: lighter;");var O=i(S,j,v);try{k?f.title&&c?r.groupCollapsed.apply(r,["%c "+O].concat(A)):r.groupCollapsed(O):f.title&&c?r.group.apply(r,["%c "+O].concat(A)):r.group(O)}catch(e){r.log(O)}var N=m(u,S,[h],"prevState"),P=m(u,S,[S],"action"),C=m(u,S,[y,h],"error"),F=m(u,S,[w],"nextState");if(N)if(f.prevState){var L="color: "+f.prevState(h)+"; font-weight: bold";r[N]("%c prev state",L,h)}else r[N]("prev state",h);if(P)if(f.action){var T="color: "+f.action(S)+"; font-weight: bold";r[P]("%c action    ",T,S)}else r[P]("action    ",S);if(y&&C)if(f.error){var M="color: "+f.error(y,h)+"; font-weight: bold;";r[C]("%c error     ",M,y)}else r[C]("error     ",y);if(F)if(f.nextState){var _="color: "+f.nextState(w)+"; font-weight: bold";r[F]("%c next state",_,w)}else r[F]("next state",w);l&&b(h,w,r,k);try{r.groupEnd()}catch(e){r.log("—— log end ——")}})}function S(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=Object.assign({},L,e),r=t.logger,n=t.stateTransformer,o=t.errorTransformer,i=t.predicate,a=t.logErrors,f=t.diffPredicate;if("undefined"==typeof r)return function(){return function(e){return function(t){return e(t)}}};if(e.getState&&e.dispatch)return console.error("[redux-logger] redux-logger not installed. Make sure to pass logger instance as middleware:\n// Logger with default options\nimport { logger } from 'redux-logger'\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n// Or you can create your own logger with custom options http://bit.ly/redux-logger-options\nimport createLogger from 'redux-logger'\nconst logger = createLogger({\n  // ...options\n});\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n"),function(){return function(e){return function(t){return e(t)}}};var u=[];return function(e){var r=e.getState;return function(e){return function(l){if("function"==typeof i&&!i(r,l))return e(l);var c={};u.push(c),c.started=O.now(),c.startedTime=new Date,c.prevState=n(r()),c.action=l;var s=void 0;if(a)try{s=e(l)}catch(e){c.error=o(e)}else s=e(l);c.took=O.now()-c.started,c.nextState=n(r());var d=t.diff&&"function"==typeof f?f(r,l):t.diff;if(x(u,Object.assign({},t,{diff:d})),u.length=0,c.error)throw c.error;return s}}}}var k,j,E=function(e,t){return new Array(t+1).join(e)},A=function(e,t){return E("0",t-e.toString().length)+e},D=function(e){return A(e.getHours(),2)+":"+A(e.getMinutes(),2)+":"+A(e.getSeconds(),2)+"."+A(e.getMilliseconds(),3)},O="undefined"!=typeof performance&&null!==performance&&"function"==typeof performance.now?performance:Date,N="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},P=function(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)},C=[];k="object"===("undefined"==typeof global?"undefined":N(global))&&global?global:"undefined"!=typeof window?window:{},j=k.DeepDiff,j&&C.push(function(){"undefined"!=typeof j&&k.DeepDiff===c&&(k.DeepDiff=j,j=void 0)}),t(n,r),t(o,r),t(i,r),t(a,r),Object.defineProperties(c,{diff:{value:c,enumerable:!0},observableDiff:{value:l,enumerable:!0},applyDiff:{value:h,enumerable:!0},applyChange:{value:d,enumerable:!0},revertChange:{value:g,enumerable:!0},isConflict:{value:function(){return"undefined"!=typeof j},enumerable:!0},noConflict:{value:function(){return C&&(C.forEach(function(e){e()}),C=null),c},enumerable:!0}});var F={E:{color:"#2196F3",text:"CHANGED:"},N:{color:"#4CAF50",text:"ADDED:"},D:{color:"#F44336",text:"DELETED:"},A:{color:"#2196F3",text:"ARRAY:"}},L={level:"log",logger:console,logErrors:!0,collapsed:void 0,predicate:void 0,duration:!1,timestamp:!0,stateTransformer:function(e){return e},actionTransformer:function(e){return e},errorTransformer:function(e){return e},colors:{title:function(){return"inherit"},prevState:function(){return"#9E9E9E"},action:function(){return"#03A9F4"},nextState:function(){return"#4CAF50"},error:function(){return"#F20404"}},diff:!1,diffPredicate:void 0,transformer:void 0},T=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.dispatch,r=e.getState;return"function"==typeof t||"function"==typeof r?S()({dispatch:t,getState:r}):void console.error("\n[redux-logger v3] BREAKING CHANGE\n[redux-logger v3] Since 3.0.0 redux-logger exports by default logger with default settings.\n[redux-logger v3] Change\n[redux-logger v3] import createLogger from 'redux-logger'\n[redux-logger v3] to\n[redux-logger v3] import { createLogger } from 'redux-logger'\n")};e.defaults=L,e.createLogger=S,e.logger=T,e.default=T,Object.defineProperty(e,"__esModule",{value:!0})});
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17)))
 
 /***/ }),
-/* 132 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26775,13 +27094,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _redux = __webpack_require__(27);
+var _redux = __webpack_require__(28);
 
-var _search_selection_reducer = __webpack_require__(133);
+var _search_selection_reducer = __webpack_require__(137);
 
 var _search_selection_reducer2 = _interopRequireDefault(_search_selection_reducer);
 
-var _dictionary_reducer = __webpack_require__(134);
+var _dictionary_reducer = __webpack_require__(138);
 
 var _dictionary_reducer2 = _interopRequireDefault(_dictionary_reducer);
 
@@ -26795,7 +27114,7 @@ var RootReducer = (0, _redux.combineReducers)({
 exports.default = RootReducer;
 
 /***/ }),
-/* 133 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26805,7 +27124,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _selection_actions = __webpack_require__(52);
+var _selection_actions = __webpack_require__(53);
 
 var SearchSelectionReducer = function SearchSelectionReducer() {
   var oldState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
@@ -26822,7 +27141,7 @@ var SearchSelectionReducer = function SearchSelectionReducer() {
 exports.default = SearchSelectionReducer;
 
 /***/ }),
-/* 134 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26832,11 +27151,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _dictionary_actions = __webpack_require__(16);
+var _dictionary_actions = __webpack_require__(12);
 
-var _lodash = __webpack_require__(135);
+var _lodash = __webpack_require__(139);
 
-var _dictionary = __webpack_require__(17);
+var _dictionary = __webpack_require__(13);
 
 var initialState = { length: _dictionary.dictionary.length };
 
@@ -26857,7 +27176,7 @@ var DictionaryReducer = function DictionaryReducer() {
 exports.default = DictionaryReducer;
 
 /***/ }),
-/* 135 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -43946,7 +44265,7 @@ exports.default = DictionaryReducer;
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(15), __webpack_require__(47)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(17), __webpack_require__(48)(module)))
 
 /***/ })
 /******/ ]);

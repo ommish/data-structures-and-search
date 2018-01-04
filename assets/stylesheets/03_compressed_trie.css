@@ -1,0 +1,17 @@
+.compressed-trie-list {
+  width: 40%;
+}
+
+.compressed-trie-list:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+.node {
+  border: 1px solid black;
+  background: white;
+}
+
+.node.active {
+  background: red;
+}

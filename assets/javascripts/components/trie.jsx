@@ -49,7 +49,7 @@ class Trie extends React.Component {
         <label>Autocomplete
         <input value={this.state.searchQuery} onChange={this.handleInput.bind(this)}/>
         </label>
-        <ul>
+        <ul className="trie-list">
         {this.state.autosuggestResults.map((word, i) => <li key={i}>{word}</li>)}
         </ul>
       </section>

@@ -20,12 +20,12 @@ class CompressedTrie extends React.Component {
   }
 
   handleInput(e) {
-    this.setState({searchQuery: e.target.value, inspecting: null, checked: 0, found: "Enter a word to search!"});
+    this.setState({searchQuery: e.target.value, inspecting: null, inspectingSeg: null, checked: 0, found: "Enter a word to search!"});
   }
 
   handleSubmit() {
+    this.setState({disabled: true, inspecting: null, checked: 0, inspectingSeg: null, found: "Searching..."});
     this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString().toLowerCase());
-    this.setState({disabled: true, found: "Searching..."});
   }
 
   trieSearch(root, target) {

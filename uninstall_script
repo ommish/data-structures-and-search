@@ -1,0 +1,6 @@
+#!/bin/bash
+npm uninstall babel-core
+npm uninstall babel-loader
+npm uninstall babel-preset-env
+npm uninstall babel-preset-react
+npm uninstall webpack

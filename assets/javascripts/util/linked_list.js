@@ -6,6 +6,16 @@ class LinkedList {
     this.tail.prev = this.head;
   }
 
+  numNodes() {
+    let count = 0;
+    this.eachNode((node) => count++);
+    return count;
+  }
+
+  isEmpty() {
+    return this.head.next === this.tail;
+  }
+
   eachNode(callback) {
     let currentNode = this.head.next;
     while (currentNode !== this.tail) {

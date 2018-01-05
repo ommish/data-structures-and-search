@@ -43,6 +43,12 @@ class Hashmap {
     });
   }
 
+  eachList(callback) {
+    this.lists.forEach((list, i) => {
+      callback(list, i);
+    });
+  }
+
   numLists() {
     return this.lists.length;
   }

@@ -13,5 +13,7 @@
 }
 
 .node.active {
-  background: red;
+  font-weight: bold;
+  color: #b21a00;
+  background: #d1d1d1;
 }

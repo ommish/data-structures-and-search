@@ -1,6 +1,7 @@
 .word-list {
   width: 20%;
   margin: 10px 0;
+  padding: 0;
 }
 
 .word {
@@ -10,9 +11,14 @@
 }
 
 .word.active {
-  color: red;
+  color: #b21a00;
+  background: #ededed;
   font-size: 24px;
   font-weight: bold;
   padding: 5px 10px;
   box-shadow: 5px 5px #A0A0A0;
+}
+
+.word.range {
+  background: #ededed;
 }

@@ -10,6 +10,8 @@ class Binary extends React.Component {
     this.state = {
       searchQuery: "",
       inspecting: null,
+      currentStart: null,
+      currentEnd: null,
       disabled: false,
       checked: 0,
       searching: "Enter a word to search!"
@@ -36,9 +38,11 @@ class Binary extends React.Component {
 
       const idx = probeIdx;
       const checkedWords = checked;
+      const currentStart = startIdx;
+      const currentEnd = endIdx;
       const searching = target === arr[probeIdx] ? "Found!" : "Searching..."
       funcue.push(() => {
-        this.setState({inspecting: idx, checked: checkedWords, searching});
+        this.setState({inspecting: idx, currentEnd, currentStart, checked: checkedWords, searching});
       });
 
       if (target === arr[probeIdx]) {
@@ -54,7 +58,7 @@ class Binary extends React.Component {
       checked++;
     }
     funcue.push(() => {
-      this.setState({inspecting: null, searching: "Not found!"});
+      this.setState({inspecting: null, currentStart: null, currentEnd: null, searching: "Not found!"});
     });
     this.startBSearchAnimation(funcue);
     return null;
@@ -75,7 +79,7 @@ class Binary extends React.Component {
   }
 
   render() {
-    const words = this.props.dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting}/>);
+    const words = this.props.dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
     return (
     <section className="binary">
     <Link to="/">Return</Link>

@@ -106,14 +106,13 @@ class CompressedTrie extends React.Component {
         The time complexity for search remains O(m) time where m is the length of the target string.</p>
         <p>This is a demonstration of how a compressed trie would be traversed to locate a word. Complete words are found in the leaf nodes.
         (Please note that this dictionary is missing many words!)</p>
-        <label>Search for a word
+        <h4>Search for a node by value</h4>
         <input
           disabled={this.state.disabled}
           type="text"
           value={this.state.searchQuery}
           onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
           onChange={this.handleInput.bind(this)}/>
-          </label>
         <button
           disabled={this.state.disabled}
           onClick={this.handleSubmit.bind(this)}>

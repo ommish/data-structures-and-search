@@ -27,12 +27,16 @@ class Trie extends React.Component {
     } else {
       res = [];
     }
+    if (this.state.searchQuery === "") {
+      res = this.trie.root.allChildWords();
+    }
     this.setState({autosuggestResults: res});
   }
 
   componentDidMount() {
     this.trie = new TrieStructure(new TreeNode(), dictionary);
     this.props.receiveDictionary(this.trie.root, "trie");
+    this.autosuggest();
   }
 
 
@@ -46,9 +50,8 @@ class Trie extends React.Component {
         <p>This is a demonstration of how a trie can be used to accomplish autosuggest. A search for the node with the target value is first conducted,
         then its child nodes are searched to find values that are dictionary words.
         (Please note that this dictionary is missing many words!)</p>
-        <label>Autocomplete
+        <h4>Autocomplete</h4>
         <input value={this.state.searchQuery} onChange={this.handleInput.bind(this)}/>
-        </label>
         <ul className="trie-list">
         {this.state.autosuggestResults.map((word, i) => <li key={i}>{word}</li>)}
         </ul>

@@ -12,25 +12,36 @@ class LRUCache {
   getVal(key) {
     const node = this.hashmap.findNode(key);
     if (node) {
-      return this.updateStore(node);
+      return this.updateStore(node.val);
     } else {
       return this.addToStore(key);
     }
   }
 
   updateStore(node) {
-    node.removeFromList();
-    const newNode = this.store.appendNode(node.key, node.val);
-    return this.hashmap.addVal(node.key, newNode);
+    return new Promise((resolve, reject) => {
+      node.removeFromList();
+      const newNode = this.store.appendNode(node.key, node.val);
+      this.hashmap.addVal(node.key, newNode);
+
+      resolve();
+    });
   }
 
   addToStore(key) {
     if (this.hashmap.numElements === this.max) {
       this.ejectNode();
     }
-    const val = this.func(key);
-    const newNode = this.store.appendNode(key, val);
-    return this.hashmap.addVal(key, newNode);
+    let val;
+    return this.func(key).then((res) => {
+      if (res.data[0]) {
+        val = res.data[0].images.original.url;
+      } else {
+        val = "http://s3-sa-east-1.amazonaws.com/base-fisc-prod/missing.png";
+      }
+      const newNode = this.store.appendNode(key, val);
+      return this.hashmap.addVal(key, newNode);
+    });
   }
 
   ejectNode() {

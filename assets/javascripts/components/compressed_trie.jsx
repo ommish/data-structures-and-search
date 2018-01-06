@@ -17,6 +17,9 @@ class CompressedTrie extends React.Component {
       found: "Enter a word to search!",
       inspectingSeg: null,
     };
+
+    this.root = new TreeNode();
+    CompressedTrieStructure.buildCompressedTrie(this.root, dictionary, 1);
   }
 
   handleInput(e) {
@@ -77,11 +80,6 @@ class CompressedTrie extends React.Component {
         this.setState({disabled: false});
       }
     }, 1000);
-  }
-
-  componentWillMount() {
-    this.root = new TreeNode();
-    CompressedTrieStructure.buildCompressedTrie(this.root, dictionary, 1);
   }
 
   toJSX(node) {

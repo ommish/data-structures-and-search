@@ -14,6 +14,11 @@ class HashmapDictionary extends React.Component {
       currentNode: null,
       searching: "Enter a word to search",
     }
+
+    this.dictionaryHashmap = new Hashmap();
+    dictionary.forEach((word) => {
+      this.dictionaryHashmap.addVal(word, true);
+    });
   }
 
   handleInput(e) {
@@ -56,7 +61,7 @@ class HashmapDictionary extends React.Component {
     });
     if (searching) {
       let searching4 = "Not found!";
-      funcue.push(() => this.setState({currentNode, searching: searching4}));
+      funcue.push(() => this.setState({currentNode: null, searching: searching4}));
       this.startHashmapAnimation(funcue);
     }
   }
@@ -69,13 +74,6 @@ class HashmapDictionary extends React.Component {
         this.setState({disabled: false});
       }
     }, 1000);
-  }
-
-  componentWillMount() {
-    this.dictionaryHashmap = new Hashmap();
-    dictionary.forEach((word) => {
-      this.dictionaryHashmap.addVal(word, true);
-    });
   }
 
   createList() {
@@ -102,12 +100,13 @@ class HashmapDictionary extends React.Component {
 
   render() {
     return (
-      <section className="trie">
+      <section>
         <Link to="/">Return</Link>
         <h3>Hashmap</h3>
         <p></p>
         <input
           type="text"
+          onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
           onChange={this.handleInput.bind(this)}
           value={this.state.searchQuery}
           disabled={this.state.disabled}/>

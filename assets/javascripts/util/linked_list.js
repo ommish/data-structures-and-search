@@ -28,6 +28,7 @@ class LinkedList {
     let currentNode = this.head.next;
     while (currentNode !== this.tail) {
       callback(currentNode);
+      if (!currentNode) break;
       currentNode = currentNode.next;
     }
   }
@@ -47,7 +48,7 @@ class LinkedList {
     let updatedNode;
     this.eachNode((node) => {
       if (node.key === key) {
-        node[key] = val;
+        node.val = val;
         updatedNode = node;
       }
     });
@@ -57,7 +58,7 @@ class LinkedList {
   removeNode(key) {
     let deleted;
     this.eachNode((node) => {
-      if (node.key === key) {
+      if (!deleted && node.key === key) {
         deleted = node;
         node.removeFromList();
       }

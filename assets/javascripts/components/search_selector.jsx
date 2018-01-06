@@ -12,6 +12,7 @@ class SearchSelector extends React.Component {
         <li><NavLink to="/trie">Trie</NavLink></li>
         <li><NavLink to="/compressed-trie">Compressed Trie</NavLink></li>
         <li><NavLink to="/hashmap">Hashmap</NavLink></li>
+        <li><NavLink to="/lru-cache">LRU Cache</NavLink></li>
       </ul>
       <ul>
         <li><a href="http://www.ommish.com">Portfolio</a></li>

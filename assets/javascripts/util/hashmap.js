@@ -10,6 +10,10 @@ class Hashmap {
     this.numElements = 0;
   }
 
+  findNode(key) {
+    return this.list(key).findNode(key);
+  }
+
   addVal(key, val) {
     if (this.numLists() === this.numElements) this.resize();
     if (this.list(key).include(key)) {
@@ -18,6 +22,7 @@ class Hashmap {
       this.list(key).appendNode(key, val);
       this.numElements++;
     }
+    return val;
   }
 
   deleteKey(key) {

@@ -1,19 +1,21 @@
 import React from 'react';
-import SearchSelector from './search_selector_container';
-import Binary from './binary_container';
+import SearchSelector from './search_selector';
+import Binary from './binary';
 import { Route } from 'react-router-dom';
-import CompressedTrie from './compressed_trie_container';
-import Trie from './trie_container';
-import Hashmap from './hashmap_container';
+import CompressedTrie from './compressed_trie';
+import Trie from './trie';
+import Hashmap from './hashmap';
+import LRUCache from './lru_cache';
 
 const LandingPage = (props) => {
   return (
     <main>
-      <Route exact path="/" component={SearchSelector} />
-      <Route exact path="/binary" component={Binary} />
+      <Route path="/" component={SearchSelector} />
+      <Route exact path="/array" component={Binary} />
       <Route exact path="/trie" component={Trie} />
       <Route exact path="/compressed-trie" component={CompressedTrie} />
       <Route exact path="/hashmap" component={Hashmap} />
+      <Route exact path="/lru-cache" component={LRUCache} />
     </main>
   );
 };

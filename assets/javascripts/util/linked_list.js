@@ -6,6 +6,14 @@ class LinkedList {
     this.tail.prev = this.head;
   }
 
+  findNode(key) {
+    let res;
+    this.eachNode((node) => {
+      if (node.key === key) res = node;
+    });
+    return res;
+  }
+
   numNodes() {
     let count = 0;
     this.eachNode((node) => count++);

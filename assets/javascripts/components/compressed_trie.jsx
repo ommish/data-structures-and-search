@@ -25,7 +25,7 @@ class CompressedTrie extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, inspecting: null, checked: 0, inspectingSeg: null, found: "Searching..."});
-    this.trieSearch(this.props.dictionaryTrie, this.state.searchQuery.toString().toLowerCase());
+    this.trieSearch(this.root, this.state.searchQuery.toString().toLowerCase());
   }
 
   trieSearch(root, target) {
@@ -79,9 +79,9 @@ class CompressedTrie extends React.Component {
     }, 1000);
   }
 
-  componentDidMount() {
-    this.trie = new CompressedTrieStructure(new TreeNode(), dictionary);
-    this.props.receiveDictionary(this.trie.root, "compressedTrie");
+  componentWillMount() {
+    this.root = new TreeNode();
+    CompressedTrieStructure.buildCompressedTrie(this.root, dictionary, 1);
   }
 
   toJSX(node) {
@@ -101,9 +101,9 @@ class CompressedTrie extends React.Component {
         <p>The compressed trie is similar to a trie, except the compressed trie has a reduced size.
         This is accomplished by ignoring word segments that would only lead to one other word segment,
         essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function,
-        or built from scratch like the the one below.
-        While the space requirement can be greatly reduced, traversal becomes slightly more complicated.
-        The time complexity for search remains O(m) time where m is the length of the target string.</p>
+        or built from scratch like the one below.
+        While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher, and traversal becomes slightly more complicated.
+        The time complexity for search remains O(m) where m is the length of the target string.</p>
         <p>This is a demonstration of how a compressed trie would be traversed to locate a word. Complete words are found in the leaf nodes.
         (Please note that this dictionary is missing many words!)</p>
         <h4>Search for a node by value</h4>
@@ -122,7 +122,7 @@ class CompressedTrie extends React.Component {
         <h4>{this.state.checked} nodes checked</h4>
         <h4>Looking for: {this.state.inspectingSeg}</h4>
 
-        <section className="compressed-trie-list">{this.trie ? this.toJSX(this.trie.root) : ""}</section>
+        <section className="compressed-trie-list">{this.root ? this.toJSX(this.root) : ""}</section>
       </section>
     );  }
 

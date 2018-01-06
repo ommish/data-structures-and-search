@@ -27,7 +27,7 @@ class HashmapDictionary extends React.Component {
 
   startHashmapSearch() {
     const funcue = [];
-    let currentBucket = this.props.dictionaryHashmap.list(this.state.searchQuery);
+    let currentBucket = this.dictionaryHashmap.list(this.state.searchQuery);
     let searching = true;
 
     let searching1 = currentBucket ? "Searching..." : "Not found!";
@@ -71,36 +71,36 @@ class HashmapDictionary extends React.Component {
     }, 1000);
   }
 
-  componentDidMount() {
-    const dictionaryHashmap = new Hashmap();
+  componentWillMount() {
+    this.dictionaryHashmap = new Hashmap();
     dictionary.forEach((word) => {
-      dictionaryHashmap.addVal(word, true);
+      this.dictionaryHashmap.addVal(word, true);
     });
-    this.props.receiveDictionary(dictionaryHashmap, "hashmap");
+  }
+
+  createList() {
+    let allWords = [];
+    this.dictionaryHashmap.eachList((list, i) => {
+      const listWords = [];
+      let j = 0;
+      const bucketClass = this.state.currentBucket === list ? "bucket active" : "bucket";
+      if (list.isEmpty()) {
+        listWords.push(<li className="linked-list-node" key={i}>&nbsp;</li>);
+        allWords.push(<ul className={bucketClass} key={i}>{listWords}</ul>);
+      }
+      list.eachNode((node) => {
+        j++;
+        const nodeClass = this.state.currentNode === node ? "linked-list-node active" : "linked-list-node";
+        listWords.push(<li className={nodeClass} key={node.key}>{node.key}</li>);
+        if (j === list.numNodes()) {
+          allWords.push(<ul className={bucketClass} key={node.key}>{listWords}</ul>)
+        }
+      });
+    });
+    return allWords;
   }
 
   render() {
-    let allWords = [];
-    if (this.props.dictionaryHashmap) {
-      this.props.dictionaryHashmap.eachList((list, i) => {
-        const listWords = [];
-        let j = 0;
-        const bucketClass = this.state.currentBucket === list ? "bucket active" : "bucket";
-        if (list.isEmpty()) {
-          listWords.push(<li className="linked-list-node" key={i}>EMPTY</li>);
-          allWords.push(<ul className={bucketClass} key={i}>{listWords}</ul>);
-        }
-        list.eachNode((node) => {
-          j++;
-          const nodeClass = this.state.currentNode === node ? "linked-list-node active" : "linked-list-node";
-          listWords.push(<li className={nodeClass} key={node.key}>{node.key}</li>);
-          if (j === list.numNodes()) {
-            allWords.push(<ul className={bucketClass} key={node.key}>{listWords}</ul>)
-          }
-        });
-      });
-
-    }
     return (
       <section className="trie">
         <Link to="/">Return</Link>
@@ -118,7 +118,7 @@ class HashmapDictionary extends React.Component {
         </button>
         <h4>{this.state.searching}</h4>
         <ul className="hashmap-list">
-          {allWords}
+          {this.createList()}
         </ul>
       </section>
     );

@@ -24,7 +24,7 @@ class Binary extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, inspecting: null, currentStart: null, currentEnd: null, checked: 0, searching: "Searching..."});
-    this.binarySearch(this.props.dictionary, this.state.searchQuery.toString().toLowerCase());
+    this.binarySearch(dictionary, this.state.searchQuery.toString().toLowerCase());
   }
 
   binarySearch(arr, target) {
@@ -74,12 +74,8 @@ class Binary extends React.Component {
     }, 1000)
   }
 
-  componentDidMount() {
-    this.props.receiveDictionary(dictionary, "array");
-  }
-
   render() {
-    const words = this.props.dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
+    const words = dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
     return (
     <section className="binary">
     <Link to="/">Return</Link>
@@ -92,7 +88,7 @@ class Binary extends React.Component {
         Start!
         </button>
         <h4>{this.state.searching}</h4>
-        <h4>{this.state.checked} / {this.props.dictionaryLength} words checked</h4>
+        <h4>{this.state.checked} / {dictionary.length} words checked</h4>
         <ul className="word-list">
           {words}
         </ul>

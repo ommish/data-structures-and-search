@@ -77,22 +77,24 @@ class Binary extends React.Component {
   render() {
     const words = dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
     return (
-    <section className="binary">
-    <Link to="/">Return</Link>
-      <h3>Binary Search</h3>
-      <p>You will see the word at the probe index highlighted as the array is traversed.</p>
+    <main className="binary">
+      <h3>Array</h3>
+      <h4>Binary Search</h4>
+      <p>This is a demonstration of how an array would be searched using binary search. The section being searched will be highlighted, and the word at the probe index will be colored red.</p>
       <input disabled={this.state.disabled} type="text" value={this.state.searchQuery} onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}} onChange={this.handleInput.bind(this)}/>
       <button
         disabled={this.state.disabled}
         onClick={this.handleSubmit.bind(this)}>
         Start!
-        </button>
-        <h4>{this.state.searching}</h4>
-        <h4>{this.state.checked} / {dictionary.length} words checked</h4>
-        <ul className="word-list">
-          {words}
-        </ul>
-    </section>
+      </button>
+      <div className="search-status">
+        <p>{this.state.searching}</p>
+        <p>{this.state.checked} / {dictionary.length} words checked</p>
+      </div>
+      <ul className="word-list">
+        {words}
+      </ul>
+    </main>
     );
   }
 }

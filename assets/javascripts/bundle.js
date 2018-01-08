@@ -20070,9 +20070,7 @@ var _landing_page2 = _interopRequireDefault(_landing_page);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var App = function App(_ref) {
-  var store = _ref.store;
-
+var App = function App() {
   return _react2.default.createElement(
     _reactRouterDom.HashRouter,
     null,
@@ -23743,9 +23741,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _search_selector = __webpack_require__(81);
+var _header = __webpack_require__(96);
 
-var _search_selector2 = _interopRequireDefault(_search_selector);
+var _header2 = _interopRequireDefault(_header);
 
 var _binary = __webpack_require__(82);
 
@@ -23769,160 +23767,30 @@ var _lru_cache = __webpack_require__(90);
 
 var _lru_cache2 = _interopRequireDefault(_lru_cache);
 
+var _about = __webpack_require__(95);
+
+var _about2 = _interopRequireDefault(_about);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var LandingPage = function LandingPage(props) {
   return _react2.default.createElement(
-    'main',
+    'div',
     null,
-    _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _search_selector2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _header2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/array', component: _binary2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/trie', component: _trie2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/compressed-trie', component: _compressed_trie2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/hashmap', component: _hashmap2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lru-cache', component: _lru_cache2.default })
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lru-cache', component: _lru_cache2.default }),
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _about2.default })
   );
 };
 
 exports.default = LandingPage;
 
 /***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(6);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var SearchSelector = function (_React$Component) {
-  _inherits(SearchSelector, _React$Component);
-
-  function SearchSelector() {
-    _classCallCheck(this, SearchSelector);
-
-    return _possibleConstructorReturn(this, (SearchSelector.__proto__ || Object.getPrototypeOf(SearchSelector)).apply(this, arguments));
-  }
-
-  _createClass(SearchSelector, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'section',
-        null,
-        _react2.default.createElement(
-          'h2',
-          null,
-          'Select a data structure:'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/array' },
-              'Array'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/trie' },
-              'Trie'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/compressed-trie' },
-              'Compressed Trie'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/hashmap' },
-              'Hashmap'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              _reactRouterDom.NavLink,
-              { to: '/lru-cache' },
-              'LRU Cache'
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'a',
-              { href: 'http://www.ommish.com' },
-              'Portfolio'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'a',
-              { href: 'https://www.linkedin.com/in/ommish' },
-              'LinkedIn'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            null,
-            _react2.default.createElement(
-              'a',
-              { href: 'https://github.com/ommish/data-structures-and-search' },
-              'Github'
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return SearchSelector;
-}(_react2.default.Component);
-
-exports.default = SearchSelector;
-
-/***/ }),
+/* 81 */,
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24058,22 +23926,22 @@ var Binary = function (_React$Component) {
         return _react2.default.createElement(_word2.default, { key: i, index: i, word: word, inspecting: _this4.state.inspecting, startIdx: _this4.state.currentStart, endIdx: _this4.state.currentEnd });
       });
       return _react2.default.createElement(
-        'section',
+        'main',
         { className: 'binary' },
         _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/' },
-          'Return'
+          'h3',
+          null,
+          'Array'
         ),
         _react2.default.createElement(
-          'h3',
+          'h4',
           null,
           'Binary Search'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'You will see the word at the probe index highlighted as the array is traversed.'
+          'This is a demonstration of how an array would be searched using binary search. The section being searched will be highlighted, and the word at the probe index will be colored red.'
         ),
         _react2.default.createElement('input', { disabled: this.state.disabled, type: 'text', value: this.state.searchQuery, onKeyPress: function onKeyPress(e) {
             if (e.key === "Enter") _this4.handleSubmit();
@@ -24086,17 +23954,21 @@ var Binary = function (_React$Component) {
           'Start!'
         ),
         _react2.default.createElement(
-          'h4',
-          null,
-          this.state.searching
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          this.state.checked,
-          ' / ',
-          _dictionary.dictionary.length,
-          ' words checked'
+          'div',
+          { className: 'search-status' },
+          _react2.default.createElement(
+            'p',
+            null,
+            this.state.searching
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            this.state.checked,
+            ' / ',
+            _dictionary.dictionary.length,
+            ' words checked'
+          )
         ),
         _react2.default.createElement(
           'ul',
@@ -24281,12 +24153,13 @@ var CompressedTrie = function (_React$Component) {
     value: function toJSX(node) {
       var _this4 = this;
 
+      var wordClass = this.state.inspecting === node.val ? "word active" : "word";
       return _react2.default.createElement(
         'ul',
-        { key: node.val, className: this.state.inspecting === node.val ? "node active" : "node" },
+        { key: node.val, className: 'word-list compressed-trie' },
         node.isRoot() ? "" : _react2.default.createElement(
           'li',
-          null,
+          { className: wordClass },
           node.val
         ),
         node.isLeaf() ? "" : Object.values(node.children).map(function (child) {
@@ -24300,13 +24173,8 @@ var CompressedTrie = function (_React$Component) {
       var _this5 = this;
 
       return _react2.default.createElement(
-        'section',
-        { className: 'compressed-trie' },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/' },
-          'Return'
-        ),
+        'main',
+        { className: '' },
         _react2.default.createElement(
           'h3',
           null,
@@ -24315,17 +24183,12 @@ var CompressedTrie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'The compressed trie is similar to a trie, except the compressed trie has a reduced size. This is accomplished by ignoring word segments that would only lead to one other word segment, essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function, or built from scratch like the one below. While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher, and traversal becomes slightly more complicated. The time complexity for search remains O(m) where m is the length of the target string.'
+          'The compressed trie is similar to a trie, but has a reduced size. This is accomplished by ignoring word segments that would only lead to one other word segment, essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function, or built from scratch like the one below. While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher. The time complexity for search remains O(m) where m is the length of the target string.'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'This is a demonstration of how a compressed trie would be traversed to locate a word. Complete words are found in the leaf nodes. (Please note that this dictionary is missing many words!)'
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          'Search for a node by value'
+          'This is a demonstration of how a compressed trie would be traversed to locate a node.'
         ),
         _react2.default.createElement('input', {
           disabled: this.state.disabled,
@@ -24343,21 +24206,25 @@ var CompressedTrie = function (_React$Component) {
           'Start!'
         ),
         _react2.default.createElement(
-          'h4',
-          null,
-          this.state.found
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          this.state.checked,
-          ' nodes checked'
-        ),
-        _react2.default.createElement(
-          'h4',
-          null,
-          'Looking for: ',
-          this.state.inspectingSeg
+          'div',
+          { className: 'search-status' },
+          _react2.default.createElement(
+            'p',
+            null,
+            this.state.found
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            this.state.checked,
+            ' nodes checked'
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Looking for: ',
+            this.state.inspectingSeg
+          )
         ),
         _react2.default.createElement(
           'section',
@@ -24537,41 +24404,37 @@ var Trie = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'section',
+        'main',
         { className: 'trie' },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/' },
-          'Return'
-        ),
         _react2.default.createElement(
           'h3',
           null,
           'Trie'
         ),
         _react2.default.createElement(
-          'p',
-          null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. Searching for a word is done in O(m) time where m is the length of the target string.'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'This is a demonstration of how a trie can be used to implement autosuggest. A search for the node with the target value is first conducted, then its child nodes are searched to find values that are dictionary words. (Please note that this dictionary is missing many words!)'
-        ),
-        _react2.default.createElement(
           'h4',
           null,
           'Autosuggest'
         ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. The values of the child nodes are word segments that continue from the parent node\'s. Searching for a word is done in O(m) time where m is the length of the target string.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value, the values of its terminal nodes are displayed.'
+        ),
         _react2.default.createElement('input', { value: this.state.searchQuery, onChange: this.handleInput.bind(this) }),
+        _react2.default.createElement('p', null),
         _react2.default.createElement(
           'ul',
-          { className: 'trie-list' },
+          { className: 'word-list' },
           this.state.autosuggestResults.map(function (word, i) {
             return _react2.default.createElement(
               'li',
-              { key: i },
+              { className: 'word', key: i },
               word
             );
           })
@@ -24795,31 +24658,34 @@ var HashmapDictionary = function (_React$Component) {
       this.dictionaryHashmap.eachList(function (list, i) {
         var listWords = [];
         var j = 0;
-        var bucketClass = _this4.state.currentBucket === list ? "bucket active" : "bucket";
+        // const bucketClass = this.state.currentBucket === list ? "bucket active" : "bucket";
+        var wordClass = _this4.state.currentBucket === list ? "word range" : "word";
+
         if (list.isEmpty()) {
           listWords.push(_react2.default.createElement(
             'li',
-            { className: 'linked-list-node', key: i },
-            '\xA0'
+            { className: wordClass + ' empty', key: i },
+            'empty'
           ));
           allWords.push(_react2.default.createElement(
             'ul',
-            { className: bucketClass, key: i },
+            { key: i },
             listWords
           ));
         }
         list.eachNode(function (node) {
           j++;
-          var nodeClass = _this4.state.currentNode === node ? "linked-list-node active" : "linked-list-node";
+          var wordClass = _this4.state.currentBucket === list ? "word range" : "word";
+          wordClass += _this4.state.currentNode === node ? " active" : "";
           listWords.push(_react2.default.createElement(
             'li',
-            { className: nodeClass, key: node.key },
+            { className: wordClass, key: node.key },
             node.key
           ));
           if (j === list.numNodes()) {
             allWords.push(_react2.default.createElement(
               'ul',
-              { className: bucketClass, key: node.key },
+              { key: node.key },
               listWords
             ));
           }
@@ -24833,19 +24699,23 @@ var HashmapDictionary = function (_React$Component) {
       var _this5 = this;
 
       return _react2.default.createElement(
-        'section',
+        'main',
         null,
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/' },
-          'Return'
-        ),
         _react2.default.createElement(
           'h3',
           null,
           'Hashmap'
         ),
-        _react2.default.createElement('p', null),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This hashmap is built with a resizing array of linked lists. Doubling of the array size is triggered when the number of stored elements reaches the number of linked lists. Finding a word in this dictionary is achieved in constant time.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'The list containing the element will be highlighted, and the word at the node being checked will be colored red.'
+        ),
         _react2.default.createElement('input', {
           type: 'text',
           onKeyPress: function onKeyPress(e) {
@@ -24862,13 +24732,17 @@ var HashmapDictionary = function (_React$Component) {
           'Start'
         ),
         _react2.default.createElement(
-          'h4',
-          null,
-          this.state.searching
+          'div',
+          { className: 'search-status' },
+          _react2.default.createElement(
+            'p',
+            null,
+            this.state.searching
+          )
         ),
         _react2.default.createElement(
           'ul',
-          { className: 'hashmap-list' },
+          { className: 'word-list' },
           this.createList()
         )
       );
@@ -25013,24 +24887,65 @@ var LRUCache = function (_React$Component) {
       return cachedGifs;
     }
   }, {
+    key: 'renderHashmap',
+    value: function renderHashmap() {
+      var allWords = [];
+      this.state.lruCache.hashmap.eachList(function (list, i) {
+        var listWords = [];
+        var j = 0;
+        if (list.isEmpty()) {
+          listWords.push(_react2.default.createElement(
+            'li',
+            { className: 'word empty', key: i },
+            'empty'
+          ));
+          allWords.push(_react2.default.createElement(
+            'ul',
+            { key: i },
+            listWords
+          ));
+        }
+        list.eachNode(function (node) {
+          j++;
+          listWords.push(_react2.default.createElement(
+            'li',
+            { className: 'word', key: node.key },
+            node.key
+          ));
+          if (j === list.numNodes()) {
+            allWords.push(_react2.default.createElement(
+              'ul',
+              { key: node.key },
+              listWords
+            ));
+          }
+        });
+      });
+      return allWords;
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this3 = this;
 
       return _react2.default.createElement(
-        'section',
+        'main',
         null,
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { to: '/' },
-          'Return'
-        ),
         _react2.default.createElement(
           'h3',
           null,
           'LRU Cache'
         ),
-        _react2.default.createElement('p', null),
+        _react2.default.createElement(
+          'p',
+          null,
+          'This LRU cache is built using a hashmap and doubly linked list. The max size of the cache is set to 5 elements. Search terms are stored as keys in the hashmap with values pointing to nodes in the doubly linked list.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Searching for an uncached search term will result in a query with the GIPHY Api, whereas searching for a cached term will result in retrieval of the corresponding cached value in the store.'
+        ),
         _react2.default.createElement('input', {
           type: 'text',
           onKeyPress: function onKeyPress(e) {
@@ -25047,8 +24962,15 @@ var LRUCache = function (_React$Component) {
           'Submit'
         ),
         _react2.default.createElement(
+          'ul',
+          { className: 'word-list' },
+          'Hashmap:',
+          this.renderHashmap()
+        ),
+        _react2.default.createElement(
           'div',
           { className: 'cache-gifs' },
+          'Linked List:',
           this.renderCache()
         )
       );
@@ -42300,6 +42222,214 @@ module.exports = function(module) {
 	return module;
 };
 
+
+/***/ }),
+/* 95 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  return _react2.default.createElement(
+    'main',
+    null,
+    'Thanks for visiting! I put together these simple visualizations of data structures and search methods using just React and CSS.'
+  );
+};
+
+/***/ }),
+/* 96 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header() {
+    _classCallCheck(this, Header);
+
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+  }
+
+  _createClass(Header, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'section',
+        null,
+        _react2.default.createElement(
+          'header',
+          null,
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { exact: true, className: 'home-link', to: '/' },
+                'Home'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\xA0\xA0\xA0\xA0'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeClassName: 'selected-navlink', to: '/array' },
+                'Array'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeClassName: 'selected-navlink', to: '/trie' },
+                'Trie'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeClassName: 'selected-navlink', to: '/compressed-trie' },
+                'Compressed Trie'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeClassName: 'selected-navlink', to: '/hashmap' },
+                'Hashmap'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { activeClassName: 'selected-navlink', to: '/lru-cache' },
+                'LRU Cache'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'footer',
+          null,
+          _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'http://www.ommish.com', target: '_blank' },
+                'Portfolio'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://github.com/ommish', target: '_blank' },
+                'Github'
+              )
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              '\u2022'
+            ),
+            _react2.default.createElement(
+              'li',
+              null,
+              _react2.default.createElement(
+                'a',
+                { href: 'https://www.linkedin.com/in/ommish', target: '_blank' },
+                'LinkedIn'
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Header;
+}(_react2.default.Component);
+
+exports.default = Header;
 
 /***/ })
 /******/ ]);

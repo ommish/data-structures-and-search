@@ -1,18 +1,73 @@
-html, body, div, section, ul, ol, li, p, header, footer, nav, form, input, button, main {
-  font-family: 'Crimson Text', serif;
+html, body, a, div, section, ol, ul, li, p, header, footer, nav, form, input, button, main {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: lighter;
   font-size: inherit;
   background: transparent;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-ul, ol {
-  list-style: none;
+body {
+  background: #f8db95;
+}
+
+h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-li {
-  padding: 0;
+a:hover {
+  opacity: 0.5;
 }
 
-main {
+.selected-navlink {
+  text-decoration: underline;
+  font-size: 24px;
+}
+
+
+.home-link {
+  color: #bc1a16;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+header {
+  background: #e0aa27;
+  display: flex;
+  align-items: center;
   padding: 20px;
+}
+
+header > ul {
+  color: #f5622c;
+  display: flex;
+  align-items: center;
+}
+
+header > ul li {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+footer {
+  display: flex;
+  background: #87b34d;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+footer > ul {
+  display: flex;
+  align-items: center;
+  color: #bc1a16;
+}
+
+footer > ul li {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 10px;
 }

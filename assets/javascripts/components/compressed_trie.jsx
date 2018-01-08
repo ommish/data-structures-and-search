@@ -83,9 +83,10 @@ class CompressedTrie extends React.Component {
   }
 
   toJSX(node) {
+    const wordClass = this.state.inspecting === node.val ? "word active" : "word"
     return (
-      <ul key={node.val} className={this.state.inspecting === node.val ? "node active" : "node"}>
-        {node.isRoot() ? "" : <li>{node.val}</li>}
+      <ul key={node.val} className="word-list compressed-trie">
+        {node.isRoot() ? "" : <li className={wordClass}>{node.val}</li>}
         {node.isLeaf() ? "" : Object.values(node.children).map((child) => this.toJSX(child))}
       </ul>
     );
@@ -93,18 +94,15 @@ class CompressedTrie extends React.Component {
 
   render() {
     return (
-      <section className="compressed-trie">
-        <Link to="/">Return</Link>
+      <main className="">
         <h3>Compressed Trie</h3>
-        <p>The compressed trie is similar to a trie, except the compressed trie has a reduced size.
+        <p>The compressed trie is similar to a trie, but has a reduced size.
         This is accomplished by ignoring word segments that would only lead to one other word segment,
         essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function,
         or built from scratch like the one below.
-        While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher, and traversal becomes slightly more complicated.
+        While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher.
         The time complexity for search remains O(m) where m is the length of the target string.</p>
-        <p>This is a demonstration of how a compressed trie would be traversed to locate a word. Complete words are found in the leaf nodes.
-        (Please note that this dictionary is missing many words!)</p>
-        <h4>Search for a node by value</h4>
+        <p>This is a demonstration of how a compressed trie would be traversed to locate a node.</p>
         <input
           disabled={this.state.disabled}
           type="text"
@@ -116,12 +114,13 @@ class CompressedTrie extends React.Component {
           onClick={this.handleSubmit.bind(this)}>
           Start!
         </button>
-        <h4>{this.state.found}</h4>
-        <h4>{this.state.checked} nodes checked</h4>
-        <h4>Looking for: {this.state.inspectingSeg}</h4>
-
+        <div className="search-status">
+        <p>{this.state.found}</p>
+        <p>{this.state.checked} nodes checked</p>
+        <p>Looking for: {this.state.inspectingSeg}</p>
+        </div>
         <section className="compressed-trie-list">{this.root ? this.toJSX(this.root) : ""}</section>
-      </section>
+      </main>
     );  }
 
 }

@@ -47,12 +47,34 @@ class LRUCache extends React.Component {
     return cachedGifs;
   }
 
+  renderHashmap() {
+      let allWords = [];
+      this.state.lruCache.hashmap.eachList((list, i) => {
+        const listWords = [];
+        let j = 0;
+        if (list.isEmpty()) {
+          listWords.push(<li className="word empty" key={i}>empty</li>);
+          allWords.push(<ul key={i}>{listWords}</ul>);
+        }
+        list.eachNode((node) => {
+          j++;
+          listWords.push(<li className="word" key={node.key}>{node.key}</li>);
+          if (j === list.numNodes()) {
+            allWords.push(<ul key={node.key}>{listWords}</ul>)
+          }
+        });
+      });
+      return allWords;
+  }
+
   render() {
     return (
-      <section>
-        <Link to="/">Return</Link>
+      <main>
         <h3>LRU Cache</h3>
-        <p></p>
+        <p>This LRU cache is built using a hashmap and doubly linked list. The max size of the cache is set to 5 elements.
+        Search terms are stored as keys in the hashmap with values pointing to nodes in the doubly linked list.</p>
+        <p>Searching for an uncached search term will result in a query with the GIPHY Api, whereas searching for a cached term will
+        result in retrieval of the corresponding cached value in the store.</p>
         <input
           type="text"
           onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
@@ -64,10 +86,15 @@ class LRUCache extends React.Component {
           onClick={this.handleSubmit.bind(this)}>
           Submit
         </button>
+        <ul className="word-list">
+        Hashmap:
+          {this.renderHashmap()}
+        </ul>
         <div className="cache-gifs">
+        Linked List:
           {this.renderCache()}
         </div>
-      </section>
+      </main>
     )
   }
 

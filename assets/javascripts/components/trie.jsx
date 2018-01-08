@@ -41,20 +41,20 @@ class Trie extends React.Component {
 
   render() {
     return (
-      <section className="trie">
-        <Link to="/">Return</Link>
+      <main className="trie">
         <h3>Trie</h3>
-        <p>This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
-        Searching for a word is done in O(m) time where m is the length of the target string.</p>
-        <p>This is a demonstration of how a trie can be used to implement autosuggest. A search for the node with the target value is first conducted,
-        then its child nodes are searched to find values that are dictionary words.
-        (Please note that this dictionary is missing many words!)</p>
         <h4>Autosuggest</h4>
+        <p>
+        This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
+        The values of the child nodes are word segments that continue from the parent node's. Searching for a word is done in O(m) time where m is the length of the target string.</p>
+        <p>This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value,
+        the values of its terminal nodes are displayed.</p>
         <input value={this.state.searchQuery} onChange={this.handleInput.bind(this)}/>
-        <ul className="trie-list">
-        {this.state.autosuggestResults.map((word, i) => <li key={i}>{word}</li>)}
+        <p></p>
+        <ul className="word-list">
+        {this.state.autosuggestResults.map((word, i) => <li className="word" key={i}>{word}</li>)}
         </ul>
-      </section>
+      </main>
     )
   }
 }

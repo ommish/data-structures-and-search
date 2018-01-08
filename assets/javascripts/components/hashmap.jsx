@@ -81,17 +81,20 @@ class HashmapDictionary extends React.Component {
     this.dictionaryHashmap.eachList((list, i) => {
       const listWords = [];
       let j = 0;
-      const bucketClass = this.state.currentBucket === list ? "bucket active" : "bucket";
+      // const bucketClass = this.state.currentBucket === list ? "bucket active" : "bucket";
+      let wordClass = this.state.currentBucket === list ? "word range" : "word";
+
       if (list.isEmpty()) {
-        listWords.push(<li className="linked-list-node" key={i}>&nbsp;</li>);
-        allWords.push(<ul className={bucketClass} key={i}>{listWords}</ul>);
+        listWords.push(<li className={`${wordClass} empty`} key={i}>empty</li>);
+        allWords.push(<ul key={i}>{listWords}</ul>);
       }
       list.eachNode((node) => {
         j++;
-        const nodeClass = this.state.currentNode === node ? "linked-list-node active" : "linked-list-node";
-        listWords.push(<li className={nodeClass} key={node.key}>{node.key}</li>);
+      let wordClass = this.state.currentBucket === list ? "word range" : "word";
+      wordClass += this.state.currentNode === node ? " active" : "";
+        listWords.push(<li className={wordClass} key={node.key}>{node.key}</li>);
         if (j === list.numNodes()) {
-          allWords.push(<ul className={bucketClass} key={node.key}>{listWords}</ul>)
+          allWords.push(<ul key={node.key}>{listWords}</ul>)
         }
       });
     });
@@ -100,10 +103,13 @@ class HashmapDictionary extends React.Component {
 
   render() {
     return (
-      <section>
-        <Link to="/">Return</Link>
+      <main>
         <h3>Hashmap</h3>
-        <p></p>
+        <p>This hashmap is built with a resizing array of linked lists.
+        Doubling of the array size is triggered when the number of stored elements reaches the number of linked lists.
+        Finding a word in this dictionary is achieved in constant time.</p>
+        <p>The list containing the element will be highlighted,
+        and the word at the node being checked will be colored red.</p>
         <input
           type="text"
           onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
@@ -115,11 +121,13 @@ class HashmapDictionary extends React.Component {
           onClick={this.handleSubmit.bind(this)}>
           Start
         </button>
-        <h4>{this.state.searching}</h4>
-        <ul className="hashmap-list">
+        <div className="search-status">
+        <p>{this.state.searching}</p>
+        </div>
+        <ul className="word-list">
           {this.createList()}
         </ul>
-      </section>
+      </main>
     );
   }
 }

@@ -6,5 +6,4 @@ import LinkedList from './util/linked_list';
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<App />, document.getElementById('root'));
-
 });

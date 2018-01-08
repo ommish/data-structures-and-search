@@ -32,6 +32,10 @@ button:hover {
   transition: background 0.5s ease;
 }
 
+button:disabled {
+  background: #f56460;
+}
+
 .search-status {
   margin: 10px 0 20px 0;
 }
@@ -42,6 +46,10 @@ button:hover {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+}
+
+.trie-list {
+  width: 700px;
 }
 
 .word {
@@ -78,8 +86,7 @@ button:hover {
   line-height: 20px;
 }
 
-
-.compressed-trie {
+.trie {
   padding-left: 50px;
   border: 1px solid #87b34d;
   margin-left: -1px;
@@ -87,11 +94,11 @@ button:hover {
   margin-right: -1px;
 }
 
-.compressed-trie:last-child {
+.trie:last-child {
   border-bottom: none;
 }
 
-.compressed-trie-list > .compressed-trie:first-child {
+.trie-list > .trie:first-child {
   padding-left: 0;
   border-bottom: 1px solid #87b34d;
 }
@@ -101,7 +108,6 @@ button:hover {
   justify-content: flex-start;
   width: 100%;
 }
-
 
 .cache-gif-container {
   width: 20%;

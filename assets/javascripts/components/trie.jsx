@@ -11,37 +11,41 @@ class Trie extends React.Component {
 
     this.state = {
       searchQuery: "",
-      autosuggestResults: [],
+      trie: null,
     }
   }
 
   handleInput(e) {
-    this.setState({searchQuery: e.target.value}, () => this.autosuggest());
+    this.setState({searchQuery: e.target.value}, () => this.findNode());
   }
 
-  autosuggest() {
+  findNode() {
     const parentNode = TrieStructure.findNodeByVal(this.trie.root, this.state.searchQuery);
-    let res;
     if (parentNode) {
-      res = parentNode.allChildWords();
+      this.setState({trie: this.toJSX(parentNode)});
     } else {
-      res = [];
+      this.setState({trie: null});
     }
-    if (this.state.searchQuery === "") {
-      res = this.trie.root.allChildWords();
-    }
-    this.setState({autosuggestResults: res});
+  }
+
+  toJSX(node) {
+    const wordClass = node.isWord && this.state.searchQuery ? "word active" : "word"
+    return (
+      <ul key={node.val} className="word-list trie">
+        {node.isRoot() ? "" : <li className={wordClass}>{node.val}</li>}
+        {node.isLeaf() ? "" : Object.values(node.children).map((child) => this.toJSX(child))}
+      </ul>
+    );
   }
 
   componentDidMount() {
     this.trie = new TrieStructure(new TreeNode(), dictionary);
-    this.autosuggest();
+    this.setState({trie: this.toJSX(this.trie.root)})
   }
-
 
   render() {
     return (
-      <main className="trie">
+      <main>
         <h3>Trie</h3>
         <h4>Autosuggest</h4>
         <p>
@@ -50,10 +54,9 @@ class Trie extends React.Component {
         <p>This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value,
         the values of its terminal nodes are displayed.</p>
         <input value={this.state.searchQuery} onChange={this.handleInput.bind(this)}/>
-        <p></p>
-        <ul className="word-list">
-        {this.state.autosuggestResults.map((word, i) => <li className="word" key={i}>{word}</li>)}
-        </ul>
+        <section className="trie-list">
+          {this.state.trie ? this.state.trie : null}
+        </section>
       </main>
     )
   }

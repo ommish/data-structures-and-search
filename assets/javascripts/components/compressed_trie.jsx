@@ -85,7 +85,7 @@ class CompressedTrie extends React.Component {
   toJSX(node) {
     const wordClass = this.state.inspecting === node.val ? "word active" : "word"
     return (
-      <ul key={node.val} className="word-list compressed-trie">
+      <ul key={node.val} className="word-list trie">
         {node.isRoot() ? "" : <li className={wordClass}>{node.val}</li>}
         {node.isLeaf() ? "" : Object.values(node.children).map((child) => this.toJSX(child))}
       </ul>
@@ -94,7 +94,7 @@ class CompressedTrie extends React.Component {
 
   render() {
     return (
-      <main className="">
+      <main>
         <h3>Compressed Trie</h3>
         <p>The compressed trie is similar to a trie, but has a reduced size.
         This is accomplished by ignoring word segments that would only lead to one other word segment,
@@ -119,7 +119,7 @@ class CompressedTrie extends React.Component {
         <p>{this.state.checked} nodes checked</p>
         <p>Looking for: {this.state.inspectingSeg}</p>
         </div>
-        <section className="compressed-trie-list">{this.root ? this.toJSX(this.root) : ""}</section>
+        <section className="trie-list">{this.root ? this.toJSX(this.root) : ""}</section>
       </main>
     );  }
 

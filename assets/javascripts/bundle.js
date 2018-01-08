@@ -24329,7 +24329,7 @@ var CompressedTrie = function (_React$Component) {
       var wordClass = this.state.inspecting === node.val ? "word active" : "word";
       return _react2.default.createElement(
         'ul',
-        { key: node.val, className: 'word-list compressed-trie' },
+        { key: node.val, className: 'word-list trie' },
         node.isRoot() ? "" : _react2.default.createElement(
           'li',
           { className: wordClass },
@@ -24347,7 +24347,7 @@ var CompressedTrie = function (_React$Component) {
 
       return _react2.default.createElement(
         'main',
-        { className: '' },
+        null,
         _react2.default.createElement(
           'h3',
           null,
@@ -24401,7 +24401,7 @@ var CompressedTrie = function (_React$Component) {
         ),
         _react2.default.createElement(
           'section',
-          { className: 'compressed-trie-list' },
+          { className: 'trie-list' },
           this.root ? this.toJSX(this.root) : ""
         )
       );
@@ -24538,7 +24538,7 @@ var Trie = function (_React$Component) {
 
     _this.state = {
       searchQuery: "",
-      autosuggestResults: []
+      trie: null
     };
     return _this;
   }
@@ -24549,36 +24549,50 @@ var Trie = function (_React$Component) {
       var _this2 = this;
 
       this.setState({ searchQuery: e.target.value }, function () {
-        return _this2.autosuggest();
+        return _this2.findNode();
       });
     }
   }, {
-    key: 'autosuggest',
-    value: function autosuggest() {
+    key: 'findNode',
+    value: function findNode() {
       var parentNode = _trie2.default.findNodeByVal(this.trie.root, this.state.searchQuery);
-      var res = void 0;
       if (parentNode) {
-        res = parentNode.allChildWords();
+        this.setState({ trie: this.toJSX(parentNode) });
       } else {
-        res = [];
+        this.setState({ trie: null });
       }
-      if (this.state.searchQuery === "") {
-        res = this.trie.root.allChildWords();
-      }
-      this.setState({ autosuggestResults: res });
+    }
+  }, {
+    key: 'toJSX',
+    value: function toJSX(node) {
+      var _this3 = this;
+
+      var wordClass = node.isWord && this.state.searchQuery ? "word active" : "word";
+      return _react2.default.createElement(
+        'ul',
+        { key: node.val, className: 'word-list trie' },
+        node.isRoot() ? "" : _react2.default.createElement(
+          'li',
+          { className: wordClass },
+          node.val
+        ),
+        node.isLeaf() ? "" : Object.values(node.children).map(function (child) {
+          return _this3.toJSX(child);
+        })
+      );
     }
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.trie = new _trie2.default(new _tree_node2.default(), _dictionary.dictionary);
-      this.autosuggest();
+      this.setState({ trie: this.toJSX(this.trie.root) });
     }
   }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'main',
-        { className: 'trie' },
+        null,
         _react2.default.createElement(
           'h3',
           null,
@@ -24600,17 +24614,10 @@ var Trie = function (_React$Component) {
           'This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value, the values of its terminal nodes are displayed.'
         ),
         _react2.default.createElement('input', { value: this.state.searchQuery, onChange: this.handleInput.bind(this) }),
-        _react2.default.createElement('p', null),
         _react2.default.createElement(
-          'ul',
-          { className: 'word-list' },
-          this.state.autosuggestResults.map(function (word, i) {
-            return _react2.default.createElement(
-              'li',
-              { className: 'word', key: i },
-              word
-            );
-          })
+          'section',
+          { className: 'trie-list' },
+          this.state.trie ? this.state.trie : null
         )
       );
     }
@@ -25112,7 +25119,7 @@ var LRUCache = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'This LRU cache is built using a hashmap and doubly linked list. The max size of the cache is set to 5 elements. Search terms are stored as keys in the hashmap with values pointing to nodes in the doubly linked list.'
+          'This LRU cache is built using a hashmap and doubly linked list. The max size of the cache is set to 5 elements. Search terms are stored as keys in the hashmap with values pointing to nodes in the doubly linked list, which store gif data.'
         ),
         _react2.default.createElement(
           'p',
@@ -25132,7 +25139,7 @@ var LRUCache = function (_React$Component) {
           {
             disabled: this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
-          'Submit'
+          'Search for Gif'
         ),
         _react2.default.createElement(
           'ul',

@@ -18,22 +18,6 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-a:hover {
-  opacity: 0.5;
-}
-
-.selected-navlink {
-  text-decoration: underline;
-  font-size: 24px;
-}
-
-
-.home-link {
-  color: #bc1a16;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 header {
   background: #e0aa27;
   display: flex;
@@ -42,7 +26,6 @@ header {
 }
 
 header > ul {
-  color: #f5622c;
   display: flex;
   align-items: center;
 }
@@ -51,6 +34,17 @@ header > ul li {
   font-size: 20px;
   font-weight: 700;
   margin-left: 10px;
+  color: #f5622c;
+  transition: color 0.3s ease;
+}
+
+header > ul li > a:hover {
+  color: #bc1a16;
+  transition: color 0.5s ease;
+}
+
+.selected-navlink {
+  font-size: 24px;
 }
 
 footer {
@@ -63,11 +57,17 @@ footer {
 footer > ul {
   display: flex;
   align-items: center;
-  color: #bc1a16;
 }
 
 footer > ul li {
   font-size: 14px;
   font-weight: 700;
   margin-left: 10px;
+  color: #bc1a16;
+}
+
+footer > ul li > a:hover {
+  color: #961411;
+  transition: color 0.5s ease;
+  text-decoration: underline;
 }

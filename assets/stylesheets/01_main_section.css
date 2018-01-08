@@ -23,11 +23,13 @@ button {
   border-radius: 7px;
   padding: 5px 10px;
   margin: 10px;
+  transition: background 0.5s ease;
 }
 
 button:hover {
   cursor: pointer;
-  opacity: 0.7;
+  background: #a91713;
+  transition: background 0.5s ease;
 }
 
 .search-status {
@@ -50,7 +52,8 @@ button:hover {
   margin: 5px 10px;
   border-radius: 7px;
   height: 27px;
-  transition: background 0.5s ease;
+  opacity: 1;
+  transition: background 0.5s ease, opacity 1s ease;
 }
 
 .word.range {

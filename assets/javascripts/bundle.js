@@ -23741,7 +23741,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(96);
+var _header = __webpack_require__(81);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -23767,10 +23767,6 @@ var _lru_cache = __webpack_require__(90);
 
 var _lru_cache2 = _interopRequireDefault(_lru_cache);
 
-var _about = __webpack_require__(95);
-
-var _about2 = _interopRequireDefault(_about);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var LandingPage = function LandingPage(props) {
@@ -23782,15 +23778,192 @@ var LandingPage = function LandingPage(props) {
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/trie', component: _trie2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/compressed-trie', component: _compressed_trie2.default }),
     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/hashmap', component: _hashmap2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lru-cache', component: _lru_cache2.default }),
-    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _about2.default })
+    _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/lru-cache', component: _lru_cache2.default })
   );
 };
 
 exports.default = LandingPage;
 
 /***/ }),
-/* 81 */,
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(6);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Header = function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header(props) {
+    _classCallCheck(this, Header);
+
+    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+  }
+
+  _createClass(Header, [{
+    key: 'render',
+    value: function render() {
+
+      if (this.props.location.pathname === "/") {
+        return _react2.default.createElement(_reactRouterDom.Redirect, { to: '/array' });
+      } else {
+        return _react2.default.createElement(
+          'section',
+          null,
+          _react2.default.createElement(
+            'header',
+            null,
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { activeClassName: 'selected-navlink', to: '/array' },
+                  'Array'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { activeClassName: 'selected-navlink', to: '/trie' },
+                  'Trie'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { activeClassName: 'selected-navlink', to: '/compressed-trie' },
+                  'Compressed Trie'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { activeClassName: 'selected-navlink', to: '/hashmap' },
+                  'Hashmap'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  _reactRouterDom.NavLink,
+                  { activeClassName: 'selected-navlink', to: '/lru-cache' },
+                  'LRU Cache'
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'footer',
+            null,
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'Ommi Shimizu: '
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: 'http://www.ommish.com', target: '_blank' },
+                  'Portfolio'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/ommish', target: '_blank' },
+                  'Github'
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                '\u2022'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://www.linkedin.com/in/ommish', target: '_blank' },
+                  'LinkedIn'
+                )
+              )
+            )
+          )
+        );
+      }
+    }
+  }]);
+
+  return Header;
+}(_react2.default.Component);
+
+exports.default = Header;
+
+/***/ }),
 /* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -42222,214 +42395,6 @@ module.exports = function(module) {
 	return module;
 };
 
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function () {
-  return _react2.default.createElement(
-    'main',
-    null,
-    'Thanks for visiting! I put together these simple visualizations of data structures and search methods using just React and CSS.'
-  );
-};
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(6);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Header = function (_React$Component) {
-  _inherits(Header, _React$Component);
-
-  function Header() {
-    _classCallCheck(this, Header);
-
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-  }
-
-  _createClass(Header, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'section',
-        null,
-        _react2.default.createElement(
-          'header',
-          null,
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { exact: true, className: 'home-link', to: '/' },
-                'Home'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\xA0\xA0\xA0\xA0'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { activeClassName: 'selected-navlink', to: '/array' },
-                'Array'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { activeClassName: 'selected-navlink', to: '/trie' },
-                'Trie'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { activeClassName: 'selected-navlink', to: '/compressed-trie' },
-                'Compressed Trie'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { activeClassName: 'selected-navlink', to: '/hashmap' },
-                'Hashmap'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                _reactRouterDom.NavLink,
-                { activeClassName: 'selected-navlink', to: '/lru-cache' },
-                'LRU Cache'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
-          'footer',
-          null,
-          _react2.default.createElement(
-            'ul',
-            null,
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'http://www.ommish.com', target: '_blank' },
-                'Portfolio'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/ommish', target: '_blank' },
-                'Github'
-              )
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              '\u2022'
-            ),
-            _react2.default.createElement(
-              'li',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'https://www.linkedin.com/in/ommish', target: '_blank' },
-                'LinkedIn'
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return Header;
-}(_react2.default.Component);
-
-exports.default = Header;
 
 /***/ })
 /******/ ]);

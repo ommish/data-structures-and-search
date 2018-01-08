@@ -6,7 +6,6 @@ import CompressedTrie from './compressed_trie';
 import Trie from './trie';
 import Hashmap from './hashmap';
 import LRUCache from './lru_cache';
-import About from './about';
 
 const LandingPage = (props) => {
   return (
@@ -17,7 +16,6 @@ const LandingPage = (props) => {
       <Route exact path="/compressed-trie" component={CompressedTrie} />
       <Route exact path="/hashmap" component={Hashmap} />
       <Route exact path="/lru-cache" component={LRUCache} />
-      <Route exact path="/" component={About} />
     </div>
   );
 };

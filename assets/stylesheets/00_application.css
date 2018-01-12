@@ -10,6 +10,10 @@ html, body, a, div, section, ol, ul, li, p, header, footer, nav, form, input, bu
   color: inherit;
 }
 
+html {
+  width: 100%;
+}
+
 body {
   background: #f8db95;
 }

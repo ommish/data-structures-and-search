@@ -1,5 +1,5 @@
 import React from 'react';
-import { dictionary } from '../dictionary';
+import { dictionary } from '../long_dictionary';
 import TreeNode from '../util/tree_node';
 import CompressedTrieStructure from '../util/compressed_trie';
 import { Link } from 'react-router-dom';

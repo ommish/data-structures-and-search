@@ -1,6 +1,6 @@
 import Hashmap from '../util/hashmap';
 import React from 'react';
-import { dictionary } from '../dictionary';
+import { dictionary } from '../long_dictionary';
 import { Link } from 'react-router-dom';
 
 class HashmapDictionary extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { dictionary } from '../dictionary';
+import { dictionary } from '../long_dictionary';
 import TreeNode from '../util/tree_node';
 import TrieStructure from '../util/trie';
 import { Link } from 'react-router-dom';
@@ -51,8 +51,8 @@ class Trie extends React.Component {
         <p>
         This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children.
         The values of the child nodes are word segments that continue from the parent node's. Searching for a word is done in O(m) time where m is the length of the target string.</p>
-        <p>This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value,
-        the values of its terminal nodes are displayed.</p>
+        <p>This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value, nodes with actual dictionary word values are found.
+        These nodes will be highlighted.</p>
         <input value={this.state.searchQuery} onChange={this.handleInput.bind(this)}/>
         <section className="trie-list">
           {this.state.trie ? this.state.trie : null}

@@ -48,6 +48,10 @@ button:disabled {
   align-items: center;
 }
 
+.word-list.trie {
+  background: rgba(135, 179, 77, 0.1);
+}
+
 .trie-list {
   width: 700px;
 }
@@ -117,4 +121,45 @@ button:disabled {
 
 .cache-gif {
   width: 100%;
+}
+
+.bst {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > .bst {
+}
+
+.lines {
+  display: flex;
+  width: 50%;
+}
+
+.line {
+  height: 1px;
+  width: 50%;
+}
+
+
+.line.hidden {
+  border-style: none;
+}
+
+.line.visible {
+  border-bottom: 1px solid green;
+}
+
+.line.visible:first-of-type {
+  border-right: 10px solid green;
+}
+
+.bst-children {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

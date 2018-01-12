@@ -1,9 +1,9 @@
 import React from 'react';
-import { dictionary } from '../dictionary';
+import { dictionary } from '../long_dictionary';
 import Word from './word';
 import { Link } from 'react-router-dom';
 
-class Binary extends React.Component {
+class ArrayComp extends React.Component {
 
   constructor(props) {
     super(props);
@@ -99,4 +99,4 @@ class Binary extends React.Component {
   }
 }
 
-export default Binary;
+export default ArrayComp;

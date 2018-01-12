@@ -20,6 +20,8 @@ class Header extends React.Component {
             <ul>
               <li><NavLink activeClassName="selected-navlink" to="/array">Array</NavLink></li>
               <li>•</li>
+              <li><NavLink activeClassName="selected-navlink" to="/binary-search-tree">Binary Search Tree</NavLink></li>
+              <li>•</li>
               <li><NavLink activeClassName="selected-navlink" to="/trie">Trie</NavLink></li>
               <li>•</li>
               <li><NavLink activeClassName="selected-navlink" to="/compressed-trie">Compressed Trie</NavLink></li>

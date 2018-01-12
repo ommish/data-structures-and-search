@@ -74,7 +74,8 @@ class LRUCache extends React.Component {
         <p>This LRU cache is built using a hashmap and doubly linked list. The max size of the cache is set to 5 elements.
         Search terms are stored as keys in the hashmap with values pointing to nodes in the doubly linked list, which store gif data.</p>
         <p>Searching for an uncached search term will result in a query with the GIPHY Api, whereas searching for a cached term will
-        result in retrieval of the corresponding cached value in the store.</p>
+        result in retrieval of the corresponding cached value in the store. This retrieval and subsequent rearrangement of the store are both achieved
+        in constant time.</p>
         <input
           type="text"
           onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}

@@ -1,4 +1,5 @@
 import TreeNode from './tree_node';
+
 class CompressedTrie {
 
   constructor(parent, words = []) {

@@ -42020,7 +42020,7 @@ var HashmapDictionary = function (_React$Component) {
           {
             disabled: this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
-          'Start'
+          'Start!'
         ),
         _react2.default.createElement(
           'div',
@@ -42463,9 +42463,16 @@ var BinaryTree = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (BinaryTree.__proto__ || Object.getPrototypeOf(BinaryTree)).call(this, props));
 
+    var words = _short_dictionary.dictionary;
+    if (window.innerWidth <= 1440) {
+      words = _short_dictionary.dictionary.filter(function (word, i) {
+        return i % 3 !== 0;
+      });
+    }
+
     _this.state = {
       input: "",
-      tree: new _binary_tree2.default(_short_dictionary.dictionary.slice(0, 60)),
+      tree: new _binary_tree2.default(words),
       inspecting: "",
       disabled: false,
       message: "Enter a word into the tree",

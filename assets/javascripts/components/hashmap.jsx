@@ -119,7 +119,7 @@ class HashmapDictionary extends React.Component {
         <button
           disabled={this.state.disabled}
           onClick={this.handleSubmit.bind(this)}>
-          Start
+          Start!
         </button>
         <div className="search-status">
         <p>{this.state.searching}</p>

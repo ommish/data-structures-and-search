@@ -7,7 +7,7 @@ class BinaryTree extends React.Component {
 
   constructor(props) {
     super(props);
-    
+
     this.state = {
       input: "",
       tree: new BinaryTreeStructure(dictionary.slice(0, window.outerWidth  / 30)),
@@ -80,7 +80,7 @@ class BinaryTree extends React.Component {
     const bstAnimation = window.setInterval(() => {
       if (funcue.length < 1) {
         window.clearInterval(bstAnimation);
-        this.setState({disabled: false, newNodeVal: "", message: "Enter a word into the tree"})
+        this.setState({disabled: false, newNodeVal: "", message: "Enter a word into the tree"});
       } else {
         funcue.shift()();
       }
@@ -111,7 +111,7 @@ class BinaryTree extends React.Component {
           {this.toJSX(node.children.high)}
         </div>
       </div>
-    )
+    );
   }
 
   render () {

@@ -19,7 +19,13 @@ class CompressedTrie extends React.Component {
     };
 
     this.root = new TreeNode();
-    CompressedTrieStructure.buildCompressedTrie(this.root, dictionary, 1);
+    const words = dictionary.filter((word, i) => {
+      for (let n = 2; n < i; n++) {
+        if (i % n === 0) return false;
+      }
+      return true;
+    });
+    CompressedTrieStructure.buildCompressedTrie(this.root, words, 1);
   }
 
   handleInput(e) {
@@ -28,7 +34,7 @@ class CompressedTrie extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, inspecting: null, checked: 0, inspectingSeg: null, found: "Searching..."});
-    this.trieSearch(this.root, this.state.searchQuery.toString().toLowerCase());
+    this.trieSearch(this.root, this.state.searchQuery.toLowerCase());
   }
 
   trieSearch(root, target) {

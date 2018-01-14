@@ -23,7 +23,7 @@ class LRUCache extends React.Component {
     const newState = merge({}, this.state);
     newState.searchQuery = "";
     this.setState({newState})
-    newState.lruCache.getVal(this.state.searchQuery).then(() => {
+    newState.lruCache.getVal(this.state.searchQuery.toLowerCase()).then(() => {
       this.setState(newState);
     });
   }

@@ -1,4 +1,4 @@
-export class BinaryTreeNode {
+class BinaryTreeNode {
   constructor(val) {
     this.val = val;
     this.parent = null;
@@ -18,28 +18,9 @@ export class BinaryTreeNode {
       }
     }
   }
-
-  // if (parent) {
-  //   if (this.val > parent.val) {
-  //     if (parent.children.high && this.val > parent.children.high) {
-  //       this.children.low = parent.children.high;
-  //       parent.children.high.parent = this;
-  //     } else if (parent.children.high && this.val < parent.children.high){
-  //       this.children.high = parent.children.high;
-  //     }
-  //     parent.high = this;
-  //   } else {
-  //     if (this.val > parent.children.low) {
-  //       this.children.low = parent.children.low;
-  //     } else {
-  //       this.children.high - parent.children.low;
-  //     }
-  //     parent.low = this;
-  //   }
-  // }
 }
 
-export class BinaryTree {
+class BinaryTree {
 
   constructor(words = []) {
     const midIdx = Math.floor(words.length / 2);

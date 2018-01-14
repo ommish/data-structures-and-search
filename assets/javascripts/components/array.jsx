@@ -24,7 +24,7 @@ class ArrayComp extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, inspecting: null, currentStart: null, currentEnd: null, checked: 0, searching: "Searching..."});
-    this.binarySearch(dictionary, this.state.searchQuery.toString().toLowerCase());
+    this.binarySearch(dictionary, this.state.searchQuery.toLowerCase());
   }
 
   binarySearch(arr, target) {

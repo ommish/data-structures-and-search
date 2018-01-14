@@ -17,8 +17,6 @@ const includeLess = (word, n) => {
 }
 
 
-
-
 const callback = (err, data) => {
   let result = "";
   data.split("\n").forEach((word, i) => {if (include(word, i)) result = result.concat(`, "${word}"`)});

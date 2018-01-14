@@ -8,6 +8,8 @@ html, body, a, div, section, ol, ul, li, p, header, footer, nav, form, input, bu
   list-style: none;
   text-decoration: none;
   color: inherit;
+  text-size-adjust: none;
+
 }
 
 html {

@@ -20,7 +20,7 @@ class Trie extends React.Component {
   }
 
   findNode() {
-    const parentNode = TrieStructure.findNodeByVal(this.trie.root, this.state.searchQuery);
+    const parentNode = TrieStructure.findNodeByVal(this.trie.root, this.state.searchQuery.toLowerCase());
     if (parentNode) {
       this.setState({trie: this.toJSX(parentNode)});
     } else {

@@ -7,9 +7,10 @@ class BinaryTree extends React.Component {
 
   constructor(props) {
     super(props);
+    
     this.state = {
       input: "",
-      tree: new BinaryTreeStructure(dictionary.slice(0, 60)),
+      tree: new BinaryTreeStructure(dictionary.slice(0, window.outerWidth  / 30)),
       inspecting: "",
       disabled: false,
       message: "Enter a word into the tree",
@@ -22,7 +23,7 @@ class BinaryTree extends React.Component {
   }
 
   handleSubmit() {
-    this.findParentFor(this.state.input);
+    this.findParentFor(this.state.input.toLowerCase());
     this.setState({disabled: true});
   }
 

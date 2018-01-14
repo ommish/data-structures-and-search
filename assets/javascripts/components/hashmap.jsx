@@ -16,7 +16,7 @@ class HashmapDictionary extends React.Component {
     }
 
     this.dictionaryHashmap = new Hashmap();
-    dictionary.forEach((word) => {
+    dictionary.filter((word, i) => i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0).forEach((word) => {
       this.dictionaryHashmap.addVal(word, true);
     });
   }
@@ -27,12 +27,12 @@ class HashmapDictionary extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, currentBucket: null, currentNode: null, searching: "Searching..."})
-    this.startHashmapSearch();
+    this.startHashmapSearch(this.state.searchQuery.toLowerCase());
   }
 
-  startHashmapSearch() {
+  startHashmapSearch(word) {
     const funcue = [];
-    let currentBucket = this.dictionaryHashmap.list(this.state.searchQuery);
+    let currentBucket = this.dictionaryHashmap.list(word);
     let searching = true;
 
     let searching1 = currentBucket ? "Searching..." : "Not found!";
@@ -51,10 +51,10 @@ class HashmapDictionary extends React.Component {
     }
     currentBucket.eachNode((currentNode) => {
       if (searching) {
-        let searching3 = currentNode.key === this.state.searchQuery ? "Found!" : "Searching...";
-        searching = currentNode.key !== this.state.searchQuery;
+        let searching3 = currentNode.key === word ? "Found!" : "Searching...";
+        searching = currentNode.key !== word;
         funcue.push(() => this.setState({currentNode, searching: searching3}));
-        if (currentNode.key === this.state.searchQuery) {
+        if (currentNode.key === word) {
           this.startHashmapAnimation(funcue);
         }
       }

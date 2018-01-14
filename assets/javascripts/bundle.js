@@ -41138,7 +41138,7 @@ var ArrayComp = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.setState({ disabled: true, inspecting: null, currentStart: null, currentEnd: null, checked: 0, searching: "Searching..." });
-      this.binarySearch(_long_dictionary.dictionary, this.state.searchQuery.toString().toLowerCase());
+      this.binarySearch(_long_dictionary.dictionary, this.state.searchQuery.toLowerCase());
     }
   }, {
     key: 'binarySearch',
@@ -41357,7 +41357,13 @@ var CompressedTrie = function (_React$Component) {
     };
 
     _this.root = new _tree_node2.default();
-    _compressed_trie2.default.buildCompressedTrie(_this.root, _long_dictionary.dictionary, 1);
+    var words = _long_dictionary.dictionary.filter(function (word, i) {
+      for (var n = 2; n < i; n++) {
+        if (i % n === 0) return false;
+      }
+      return true;
+    });
+    _compressed_trie2.default.buildCompressedTrie(_this.root, words, 1);
     return _this;
   }
 
@@ -41370,7 +41376,7 @@ var CompressedTrie = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.setState({ disabled: true, inspecting: null, checked: 0, inspectingSeg: null, found: "Searching..." });
-      this.trieSearch(this.root, this.state.searchQuery.toString().toLowerCase());
+      this.trieSearch(this.root, this.state.searchQuery.toLowerCase());
     }
   }, {
     key: 'trieSearch',
@@ -41666,7 +41672,7 @@ var Trie = function (_React$Component) {
   }, {
     key: 'findNode',
     value: function findNode() {
-      var parentNode = _trie2.default.findNodeByVal(this.trie.root, this.state.searchQuery);
+      var parentNode = _trie2.default.findNodeByVal(this.trie.root, this.state.searchQuery.toLowerCase());
       if (parentNode) {
         this.setState({ trie: this.toJSX(parentNode) });
       } else {
@@ -41863,7 +41869,9 @@ var HashmapDictionary = function (_React$Component) {
     };
 
     _this.dictionaryHashmap = new _hashmap2.default();
-    _long_dictionary.dictionary.forEach(function (word) {
+    _long_dictionary.dictionary.filter(function (word, i) {
+      return i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0;
+    }).forEach(function (word) {
       _this.dictionaryHashmap.addVal(word, true);
     });
     return _this;
@@ -41878,15 +41886,15 @@ var HashmapDictionary = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.setState({ disabled: true, currentBucket: null, currentNode: null, searching: "Searching..." });
-      this.startHashmapSearch();
+      this.startHashmapSearch(this.state.searchQuery.toLowerCase());
     }
   }, {
     key: 'startHashmapSearch',
-    value: function startHashmapSearch() {
+    value: function startHashmapSearch(word) {
       var _this2 = this;
 
       var funcue = [];
-      var currentBucket = this.dictionaryHashmap.list(this.state.searchQuery);
+      var currentBucket = this.dictionaryHashmap.list(word);
       var searching = true;
 
       var searching1 = currentBucket ? "Searching..." : "Not found!";
@@ -41909,12 +41917,12 @@ var HashmapDictionary = function (_React$Component) {
       }
       currentBucket.eachNode(function (currentNode) {
         if (searching) {
-          var searching3 = currentNode.key === _this2.state.searchQuery ? "Found!" : "Searching...";
-          searching = currentNode.key !== _this2.state.searchQuery;
+          var searching3 = currentNode.key === word ? "Found!" : "Searching...";
+          searching = currentNode.key !== word;
           funcue.push(function () {
             return _this2.setState({ currentNode: currentNode, searching: searching3 });
           });
-          if (currentNode.key === _this2.state.searchQuery) {
+          if (currentNode.key === word) {
             _this2.startHashmapAnimation(funcue);
           }
         }
@@ -42020,7 +42028,7 @@ var HashmapDictionary = function (_React$Component) {
           {
             disabled: this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
-          'Start'
+          'Start!'
         ),
         _react2.default.createElement(
           'div',
@@ -42145,7 +42153,7 @@ var LRUCache = function (_React$Component) {
       var newState = (0, _lodash.merge)({}, this.state);
       newState.searchQuery = "";
       this.setState({ newState: newState });
-      newState.lruCache.getVal(this.state.searchQuery).then(function () {
+      newState.lruCache.getVal(this.state.searchQuery.toLowerCase()).then(function () {
         _this2.setState(newState);
       });
     }
@@ -42465,7 +42473,7 @@ var BinaryTree = function (_React$Component) {
 
     _this.state = {
       input: "",
-      tree: new _binary_tree2.default(_short_dictionary.dictionary.slice(0, 60)),
+      tree: new _binary_tree2.default(_short_dictionary.dictionary.slice(0, window.outerWidth / 30)),
       inspecting: "",
       disabled: false,
       message: "Enter a word into the tree",
@@ -42482,7 +42490,7 @@ var BinaryTree = function (_React$Component) {
   }, {
     key: 'handleSubmit',
     value: function handleSubmit() {
-      this.findParentFor(this.state.input);
+      this.findParentFor(this.state.input.toLowerCase());
       this.setState({ disabled: true });
     }
   }, {
@@ -42669,7 +42677,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var BinaryTreeNode = exports.BinaryTreeNode = function () {
+var BinaryTreeNode = function () {
   function BinaryTreeNode(val) {
     _classCallCheck(this, BinaryTreeNode);
 
@@ -42693,32 +42701,12 @@ var BinaryTreeNode = exports.BinaryTreeNode = function () {
         }
       }
     }
-
-    // if (parent) {
-    //   if (this.val > parent.val) {
-    //     if (parent.children.high && this.val > parent.children.high) {
-    //       this.children.low = parent.children.high;
-    //       parent.children.high.parent = this;
-    //     } else if (parent.children.high && this.val < parent.children.high){
-    //       this.children.high = parent.children.high;
-    //     }
-    //     parent.high = this;
-    //   } else {
-    //     if (this.val > parent.children.low) {
-    //       this.children.low = parent.children.low;
-    //     } else {
-    //       this.children.high - parent.children.low;
-    //     }
-    //     parent.low = this;
-    //   }
-    // }
-
   }]);
 
   return BinaryTreeNode;
 }();
 
-var BinaryTree = exports.BinaryTree = function () {
+var BinaryTree = function () {
   function BinaryTree() {
     var words = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
 

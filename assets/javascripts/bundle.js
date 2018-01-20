@@ -1665,7 +1665,7 @@ var _linked_list = __webpack_require__(25);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
-var _hashString = __webpack_require__(90);
+var _hashString = __webpack_require__(91);
 
 var _hashString2 = _interopRequireDefault(_hashString);
 
@@ -19815,7 +19815,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(93), __webpack_require__(94)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(94), __webpack_require__(95)(module)))
 
 /***/ }),
 /* 40 */
@@ -40843,23 +40843,23 @@ var _array2 = _interopRequireDefault(_array);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _compressed_trie = __webpack_require__(85);
+var _compressed_trie = __webpack_require__(86);
 
 var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
 
-var _trie = __webpack_require__(87);
+var _trie = __webpack_require__(88);
 
 var _trie2 = _interopRequireDefault(_trie);
 
-var _hashmap = __webpack_require__(89);
+var _hashmap = __webpack_require__(90);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
-var _lru_cache = __webpack_require__(91);
+var _lru_cache = __webpack_require__(92);
 
 var _lru_cache2 = _interopRequireDefault(_lru_cache);
 
-var _binary_tree = __webpack_require__(95);
+var _binary_tree = __webpack_require__(96);
 
 var _binary_tree2 = _interopRequireDefault(_binary_tree);
 
@@ -41101,6 +41101,8 @@ var _word2 = _interopRequireDefault(_word);
 
 var _reactRouterDom = __webpack_require__(6);
 
+var _trips = __webpack_require__(85);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41126,6 +41128,7 @@ var ArrayComp = function (_React$Component) {
       checked: 0,
       searching: "Enter a word to search!"
     };
+    console.log(_trips.data);
     return _this;
   }
 
@@ -41312,6 +41315,18 @@ exports.default = Word;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+var data = exports.data = { "data": [{ "trip_id": "4118", "starttime": "2013-06-27 12:11", "stoptime": "2013-06-27 12:16", "bikeid": "480", "tripduration": "316", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "28", "to_station_name": "Larrabee St & Menomonee St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4275", "starttime": "2013-06-27 14:44", "stoptime": "2013-06-27 14:45", "bikeid": "77", "tripduration": "64", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "32", "to_station_name": "Racine Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4291", "starttime": "2013-06-27 14:58", "stoptime": "2013-06-27 15:05", "bikeid": "77", "tripduration": "433", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4316", "starttime": "2013-06-27 15:06", "stoptime": "2013-06-27 15:09", "bikeid": "77", "tripduration": "123", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4342", "starttime": "2013-06-27 15:13", "stoptime": "2013-06-27 15:27", "bikeid": "77", "tripduration": "852", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "55", "to_station_name": "Halsted St & James M Rochford St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4480", "starttime": "2013-06-27 19:40", "stoptime": "2013-06-27 22:28", "bikeid": "27", "tripduration": "10105", "from_station_id": "340", "from_station_name": "Clark St & Wrightwood Ave", "to_station_id": "46", "to_station_name": "Wells St & Walton St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4490", "starttime": "2013-06-27 18:45", "stoptime": "2013-06-27 19:03", "bikeid": "418", "tripduration": "1094", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4592", "starttime": "2013-06-27 19:34", "stoptime": "2013-06-27 19:51", "bikeid": "170", "tripduration": "1020", "from_station_id": "90", "from_station_name": "Millennium Park", "to_station_id": "75", "to_station_name": "Canal St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4602", "starttime": "2013-06-27 19:45", "stoptime": "2013-06-27 20:42", "bikeid": "353", "tripduration": "3419", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4607", "starttime": "2013-06-27 19:46", "stoptime": "2013-06-27 19:57", "bikeid": "369", "tripduration": "653", "from_station_id": "51", "from_station_name": "Clark St & Randolph St", "to_station_id": "340", "to_station_name": "Clark St & Wrightwood Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4617", "starttime": "2013-06-27 19:50", "stoptime": "2013-06-27 20:19", "bikeid": "658", "tripduration": "1738", "from_station_id": "44", "from_station_name": "State St & Randolph St", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4619", "starttime": "2013-06-27 19:52", "stoptime": "2013-06-27 20:50", "bikeid": "533", "tripduration": "3482", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4644", "starttime": "2013-06-27 20:22", "stoptime": "2013-06-27 20:50", "bikeid": "522", "tripduration": "1712", "from_station_id": "20", "from_station_name": "Sheffield Ave & Kingsbury St", "to_station_id": "46", "to_station_name": "Wells St & Walton St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4646", "starttime": "2013-06-27 20:22", "stoptime": "2013-06-27 20:39", "bikeid": "477", "tripduration": "996", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4647", "starttime": "2013-06-27 20:25", "stoptime": "2013-06-27 20:39", "bikeid": "525", "tripduration": "818", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4666", "starttime": "2013-06-27 20:33", "stoptime": "2013-06-27 21:22", "bikeid": "242", "tripduration": "2936", "from_station_id": "44", "from_station_name": "State St & Randolph St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4793", "starttime": "2013-06-27 21:39", "stoptime": "2013-06-27 21:51", "bikeid": "240", "tripduration": "730", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "29", "to_station_name": "Noble St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4863", "starttime": "2013-06-27 22:15", "stoptime": "2013-06-27 22:36", "bikeid": "381", "tripduration": "1292", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4865", "starttime": "2013-06-27 22:16", "stoptime": "2013-06-27 22:42", "bikeid": "343", "tripduration": "1511", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4866", "starttime": "2013-06-27 22:17", "stoptime": "2013-06-27 22:42", "bikeid": "220", "tripduration": "1512", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4867", "starttime": "2013-06-27 22:17", "stoptime": "2013-06-27 22:36", "bikeid": "157", "tripduration": "1125", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4869", "starttime": "2013-06-27 22:20", "stoptime": "2013-06-27 22:36", "bikeid": "239", "tripduration": "964", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4874", "starttime": "2013-06-27 22:23", "stoptime": "2013-06-27 22:39", "bikeid": "334", "tripduration": "972", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "16", "to_station_name": "Wood St & North Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4875", "starttime": "2013-06-27 22:23", "stoptime": "2013-06-27 22:39", "bikeid": "362", "tripduration": "977", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "16", "to_station_name": "Wood St & North Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4883", "starttime": "2013-06-27 22:26", "stoptime": "2013-06-27 23:04", "bikeid": "221", "tripduration": "2272", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4896", "starttime": "2013-06-27 22:33", "stoptime": "2013-06-27 23:05", "bikeid": "409", "tripduration": "1911", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4897", "starttime": "2013-06-27 22:35", "stoptime": "2013-06-27 23:04", "bikeid": "222", "tripduration": "1758", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4902", "starttime": "2013-06-27 22:41", "stoptime": "2013-06-27 22:53", "bikeid": "257", "tripduration": "730", "from_station_id": "17", "from_station_name": "Wood St & Division St", "to_station_id": "61", "to_station_name": "Wood St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4943", "starttime": "2013-06-27 23:05", "stoptime": "2013-06-27 23:37", "bikeid": "325", "tripduration": "1866", "from_station_id": "67", "from_station_name": "Sheffield Ave & Fullerton Ave", "to_station_id": "348", "to_station_name": "California Ave & 21st St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4946", "starttime": "2013-06-27 23:06", "stoptime": "2013-06-27 23:37", "bikeid": "530", "tripduration": "1856", "from_station_id": "67", "from_station_name": "Sheffield Ave & Fullerton Ave", "to_station_id": "34", "to_station_name": "Cannon Dr & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4954", "starttime": "2013-06-27 23:07", "stoptime": "2013-06-27 23:26", "bikeid": "164", "tripduration": "1117", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "30", "to_station_name": "Ashland Ave & Augusta Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4955", "starttime": "2013-06-27 23:09", "stoptime": "2013-06-27 23:26", "bikeid": "229", "tripduration": "980", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "30", "to_station_name": "Ashland Ave & Augusta Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4972", "starttime": "2013-06-27 23:24", "stoptime": "2013-06-27 23:51", "bikeid": "176", "tripduration": "1642", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4986", "starttime": "2013-06-27 23:36", "stoptime": "2013-06-28 00:34", "bikeid": "221", "tripduration": "3513", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4989", "starttime": "2013-06-27 23:43", "stoptime": "2013-06-28 00:21", "bikeid": "159", "tripduration": "2285", "from_station_id": "34", "from_station_name": "Cannon Dr & Fullerton Ave", "to_station_id": "34", "to_station_name": "Cannon Dr & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4991", "starttime": "2013-06-27 23:44", "stoptime": "2013-06-27 23:51", "bikeid": "306", "tripduration": "423", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "15", "to_station_name": "Racine Ave & 18th St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5032", "starttime": "2013-06-28 00:04", "stoptime": "2013-06-28 00:37", "bikeid": "228", "tripduration": "1995", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "73", "to_station_name": "Jefferson St & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5033", "starttime": "2013-06-28 00:04", "stoptime": "2013-06-28 00:37", "bikeid": "251", "tripduration": "1977", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "73", "to_station_name": "Jefferson St & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5035", "starttime": "2013-06-28 00:08", "stoptime": "2013-06-28 00:24", "bikeid": "141", "tripduration": "944", "from_station_id": "90", "from_station_name": "Millennium Park", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5036", "starttime": "2013-06-28 00:10", "stoptime": "2013-06-28 00:38", "bikeid": "632", "tripduration": "1656", "from_station_id": "29", "from_station_name": "Noble St & Milwaukee Ave", "to_station_id": "29", "to_station_name": "Noble St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5070", "starttime": "2013-06-28 00:23", "stoptime": "2013-06-28 00:36", "bikeid": "531", "tripduration": "736", "from_station_id": "311", "from_station_name": "Lincoln Ave & Eastwood Ave", "to_station_id": "67", "to_station_name": "Sheffield Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5100", "starttime": "2013-06-28 00:46", "stoptime": "2013-06-28 00:49", "bikeid": "411", "tripduration": "223", "from_station_id": "60", "from_station_name": "Dayton St & North Ave", "to_station_id": "20", "to_station_name": "Sheffield Ave & Kingsbury St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5125", "starttime": "2013-06-28 01:24", "stoptime": "2013-06-28 01:44", "bikeid": "460", "tripduration": "1196", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5127", "starttime": "2013-06-28 02:08", "stoptime": "2013-06-28 02:24", "bikeid": "592", "tripduration": "915", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5128", "starttime": "2013-06-28 02:29", "stoptime": "2013-06-28 18:03", "bikeid": "150", "tripduration": "56023", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "69", "to_station_name": "Damen Ave & Pierce Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5130", "starttime": "2013-06-28 03:26", "stoptime": "2013-06-28 04:11", "bikeid": "525", "tripduration": "2681", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5131", "starttime": "2013-06-28 03:30", "stoptime": "2013-06-28 04:11", "bikeid": "242", "tripduration": "2433", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5132", "starttime": "2013-06-28 05:11", "stoptime": "2013-06-28 05:26", "bikeid": "233", "tripduration": "951", "from_station_id": "72", "from_station_name": "State St & 16th St", "to_station_id": "179", "to_station_name": "Martin Luther King Dr & Oakwood Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5133", "starttime": "2013-06-28 05:48", "stoptime": "2013-06-28 06:02", "bikeid": "592", "tripduration": "857", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5136", "starttime": "2013-06-28 05:55", "stoptime": "2013-06-28 06:23", "bikeid": "418", "tripduration": "1645", "from_station_id": "76", "from_station_name": "Lake Shore Dr & Monroe St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5137", "starttime": "2013-06-28 06:01", "stoptime": "2013-06-28 06:22", "bikeid": "269", "tripduration": "1285", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5140", "starttime": "2013-06-28 06:28", "stoptime": "2013-06-28 06:35", "bikeid": "848", "tripduration": "406", "from_station_id": "42", "from_station_name": "Wabash Ave & Cermak Rd", "to_station_id": "59", "to_station_name": "Wabash Ave & Roosevelt Rd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5173", "starttime": "2013-06-28 07:13", "stoptime": "2013-06-28 07:35", "bikeid": "173", "tripduration": "1336", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "36", "to_station_name": "Franklin St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5199", "starttime": "2013-06-28 07:37", "stoptime": "2013-06-28 07:48", "bikeid": "401", "tripduration": "668", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5248", "starttime": "2013-06-28 08:17", "stoptime": "2013-06-28 09:04", "bikeid": "343", "tripduration": "2789", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5250", "starttime": "2013-06-28 08:18", "stoptime": "2013-06-28 09:21", "bikeid": "225", "tripduration": "3760", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5251", "starttime": "2013-06-28 08:19", "stoptime": "2013-06-28 08:45", "bikeid": "212", "tripduration": "1593", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "51", "to_station_name": "Clark St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5252", "starttime": "2013-06-28 08:21", "stoptime": "2013-06-28 08:33", "bikeid": "236", "tripduration": "746", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "74", "to_station_name": "Kingsbury St & Erie St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5255", "starttime": "2013-06-28 08:23", "stoptime": "2013-06-28 08:46", "bikeid": "401", "tripduration": "1368", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5256", "starttime": "2013-06-28 08:25", "stoptime": "2013-06-28 08:42", "bikeid": "314", "tripduration": "1057", "from_station_id": "29", "from_station_name": "Noble St & Milwaukee Ave", "to_station_id": "77", "to_station_name": "Clinton St & Madison St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5260", "starttime": "2013-06-28 08:28", "stoptime": "2013-06-28 11:38", "bikeid": "242", "tripduration": "11437", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "350", "to_station_name": "Ashland Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5262", "starttime": "2013-06-28 08:30", "stoptime": "2013-06-28 11:38", "bikeid": "322", "tripduration": "11321", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5284", "starttime": "2013-06-28 08:42", "stoptime": "2013-06-28 10:12", "bikeid": "172", "tripduration": "5377", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "62", "to_station_name": "McCormick Place", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5293", "starttime": "2013-06-28 08:49", "stoptime": "2013-06-28 09:20", "bikeid": "708", "tripduration": "1895", "from_station_id": "31", "from_station_name": "Franklin St & Chicago Ave", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5294", "starttime": "2013-06-28 08:49", "stoptime": "2013-06-28 09:07", "bikeid": "470", "tripduration": "1106", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5305", "starttime": "2013-06-28 08:53", "stoptime": "2013-06-28 09:09", "bikeid": "335", "tripduration": "1007", "from_station_id": "31", "from_station_name": "Franklin St & Chicago Ave", "to_station_id": "75", "to_station_name": "Canal St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5312", "starttime": "2013-06-28 08:54", "stoptime": "2013-06-28 09:17", "bikeid": "51", "tripduration": "1360", "from_station_id": "75", "from_station_name": "Canal St & Jackson Blvd", "to_station_id": "31", "to_station_name": "Franklin St & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5313", "starttime": "2013-06-28 08:55", "stoptime": "2013-06-28 09:14", "bikeid": "168", "tripduration": "1196", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "48", "to_station_name": "Larrabee St & Kingsbury St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5314", "starttime": "2013-06-28 08:55", "stoptime": "2013-06-28 09:30", "bikeid": "154", "tripduration": "2063", "from_station_id": "45", "from_station_name": "Michigan Ave & Congress Pkwy", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5319", "starttime": "2013-06-28 08:57", "stoptime": "2013-06-28 09:08", "bikeid": "236", "tripduration": "646", "from_station_id": "74", "from_station_name": "Kingsbury St & Erie St", "to_station_id": "77", "to_station_name": "Clinton St & Madison St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5327", "starttime": "2013-06-28 09:05", "stoptime": "2013-06-28 09:15", "bikeid": "524", "tripduration": "594", "from_station_id": "27", "from_station_name": "Larrabee St & North Ave", "to_station_id": "54", "to_station_name": "Ogden Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5335", "starttime": "2013-06-28 09:14", "stoptime": "2013-06-28 09:41", "bikeid": "227", "tripduration": "1670", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5346", "starttime": "2013-06-28 09:26", "stoptime": "2013-06-28 14:25", "bikeid": "118", "tripduration": "17898", "from_station_id": "74", "from_station_name": "Kingsbury St & Erie St", "to_station_id": "88", "to_station_name": "May St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5353", "starttime": "2013-06-28 09:35", "stoptime": "2013-06-28 09:50", "bikeid": "226", "tripduration": "896", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "25", "to_station_name": "Michigan Ave & Pearson St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5354", "starttime": "2013-06-28 09:36", "stoptime": "2013-06-28 10:01", "bikeid": "308", "tripduration": "1498", "from_station_id": "48", "from_station_name": "Larrabee St & Kingsbury St", "to_station_id": "66", "to_station_name": "Clinton St & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5355", "starttime": "2013-06-28 09:37", "stoptime": "2013-06-28 10:02", "bikeid": "772", "tripduration": "1465", "from_station_id": "48", "from_station_name": "Larrabee St & Kingsbury St", "to_station_id": "66", "to_station_name": "Clinton St & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5357", "starttime": "2013-06-28 09:40", "stoptime": "2013-06-28 10:07", "bikeid": "286", "tripduration": "1637", "from_station_id": "51", "from_station_name": "Clark St & Randolph St", "to_station_id": "69", "to_station_name": "Damen Ave & Pierce Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5363", "starttime": "2013-06-28 09:43", "stoptime": "2013-06-28 09:56", "bikeid": "466", "tripduration": "812", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "36", "to_station_name": "Franklin St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5370", "starttime": "2013-06-28 09:47", "stoptime": "2013-06-28 10:17", "bikeid": "527", "tripduration": "1787", "from_station_id": "88", "from_station_name": "May St & Randolph St", "to_station_id": "62", "to_station_name": "McCormick Place", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5372", "starttime": "2013-06-28 09:47", "stoptime": "2013-06-28 10:42", "bikeid": "221", "tripduration": "3270", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5374", "starttime": "2013-06-28 09:48", "stoptime": "2013-06-28 10:15", "bikeid": "407", "tripduration": "1638", "from_station_id": "54", "from_station_name": "Ogden Ave & Chicago Ave", "to_station_id": "67", "to_station_name": "Sheffield Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5378", "starttime": "2013-06-28 09:49", "stoptime": "2013-06-28 10:18", "bikeid": "465", "tripduration": "1709", "from_station_id": "341", "from_station_name": "Adler Planetarium", "to_station_id": "350", "to_station_name": "Ashland Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5380", "starttime": "2013-06-28 09:51", "stoptime": "2013-06-28 11:08", "bikeid": "229", "tripduration": "4588", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5381", "starttime": "2013-06-28 09:56", "stoptime": "2013-06-28 11:08", "bikeid": "211", "tripduration": "4315", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5383", "starttime": "2013-06-28 10:00", "stoptime": "2013-06-28 10:24", "bikeid": "449", "tripduration": "1415", "from_station_id": "127", "from_station_name": "Lincoln Ave & Fullerton Ave", "to_station_id": "127", "to_station_name": "Lincoln Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5384", "starttime": "2013-06-28 10:01", "stoptime": "2013-06-28 11:00", "bikeid": "654", "tripduration": "3514", "from_station_id": "164", "from_station_name": "Franklin St & Lake St", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5393", "starttime": "2013-06-28 10:04", "stoptime": "2013-06-28 11:27", "bikeid": "281", "tripduration": "4988", "from_station_id": "279", "from_station_name": "Halsted St & 35th St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5403", "starttime": "2013-06-28 10:11", "stoptime": "2013-06-28 10:33", "bikeid": "409", "tripduration": "1298", "from_station_id": "350", "from_station_name": "Ashland Ave & Chicago Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5406", "starttime": "2013-06-28 10:15", "stoptime": "2013-06-28 10:20", "bikeid": "526", "tripduration": "329", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "22", "to_station_name": "May St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5408", "starttime": "2013-06-28 10:17", "stoptime": "2013-06-28 10:49", "bikeid": "222", "tripduration": "1912", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5409", "starttime": "2013-06-28 10:18", "stoptime": "2013-06-28 10:42", "bikeid": "57", "tripduration": "1409", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5410", "starttime": "2013-06-28 10:19", "stoptime": "2013-06-28 10:32", "bikeid": "511", "tripduration": "780", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5412", "starttime": "2013-06-28 10:21", "stoptime": "2013-06-28 10:34", "bikeid": "38", "tripduration": "747", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5417", "starttime": "2013-06-28 10:25", "stoptime": "2013-06-28 11:00", "bikeid": "253", "tripduration": "2140", "from_station_id": "72", "from_station_name": "State St & 16th St", "to_station_id": "72", "to_station_name": "State St & 16th St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5419", "starttime": "2013-06-28 10:29", "stoptime": "2013-06-28 11:27", "bikeid": "909", "tripduration": "3472", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5421", "starttime": "2013-06-28 10:31", "stoptime": "2013-06-28 10:56", "bikeid": "333", "tripduration": "1525", "from_station_id": "21", "from_station_name": "Aberdeen St & Jackson Blvd", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5423", "starttime": "2013-06-28 10:34", "stoptime": "2013-06-28 11:05", "bikeid": "44", "tripduration": "1852", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5433", "starttime": "2013-06-28 10:43", "stoptime": "2013-06-28 11:03", "bikeid": "218", "tripduration": "1214", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5443", "starttime": "2013-06-28 10:54", "stoptime": "2013-06-28 11:20", "bikeid": "98", "tripduration": "1573", "from_station_id": "28", "from_station_name": "Larrabee St & Menomonee St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5455", "starttime": "2013-06-28 11:02", "stoptime": "2013-06-28 15:04", "bikeid": "471", "tripduration": "14517", "from_station_id": "55", "from_station_name": "Halsted St & James M Rochford St", "to_station_id": "14", "to_station_name": "Morgan St & 18th St", "usertype": "Customer", "gender": "", "birthday": "" }], "errors": [], "meta": { "delimiter": ",", "linebreak": "\r\n", "aborted": false, "truncated": true, "cursor": 11639, "fields": ["trip_id", "starttime", "stoptime", "bikeid", "tripduration", "from_station_id", "from_station_name", "to_station_id", "to_station_name", "usertype", "gender", "birthday"] } };
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -41325,7 +41340,7 @@ var _tree_node = __webpack_require__(15);
 
 var _tree_node2 = _interopRequireDefault(_tree_node);
 
-var _compressed_trie = __webpack_require__(86);
+var _compressed_trie = __webpack_require__(87);
 
 var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
 
@@ -41531,7 +41546,7 @@ var CompressedTrie = function (_React$Component) {
 exports.default = CompressedTrie;
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41609,7 +41624,7 @@ var CompressedTrie = function () {
 exports.default = CompressedTrie;
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41631,7 +41646,7 @@ var _tree_node = __webpack_require__(15);
 
 var _tree_node2 = _interopRequireDefault(_tree_node);
 
-var _trie = __webpack_require__(88);
+var _trie = __webpack_require__(89);
 
 var _trie2 = _interopRequireDefault(_trie);
 
@@ -41746,7 +41761,7 @@ var Trie = function (_React$Component) {
 exports.default = Trie;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41820,7 +41835,7 @@ var Trie = function () {
 exports.default = Trie;
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42054,7 +42069,7 @@ var HashmapDictionary = function (_React$Component) {
 exports.default = HashmapDictionary;
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function(root, factory) {
@@ -42091,7 +42106,7 @@ return hash;
 
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42109,7 +42124,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _lru_cache = __webpack_require__(92);
+var _lru_cache = __webpack_require__(93);
 
 var _lru_cache2 = _interopRequireDefault(_lru_cache);
 
@@ -42282,7 +42297,7 @@ var LRUCache = function (_React$Component) {
 exports.default = LRUCache;
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42376,7 +42391,7 @@ var LRUCache = function () {
 exports.default = LRUCache;
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports) {
 
 var g;
@@ -42403,7 +42418,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -42431,7 +42446,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42447,11 +42462,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _binary_tree = __webpack_require__(96);
+var _binary_tree = __webpack_require__(97);
 
 var _binary_tree2 = _interopRequireDefault(_binary_tree);
 
-var _short_dictionary = __webpack_require__(97);
+var _short_dictionary = __webpack_require__(98);
 
 var _lodash = __webpack_require__(39);
 
@@ -42663,7 +42678,7 @@ var BinaryTree = function (_React$Component) {
 exports.default = BinaryTree;
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42749,18 +42764,8 @@ var BinaryTree = function () {
 
 exports.default = BinaryTree;
 
-//
-//                 ball
-//
-//     around                   toy
-//
-// about     cat           roof        yellow
-//
-//
-// police
-
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

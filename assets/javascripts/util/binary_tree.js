@@ -53,13 +53,3 @@ class BinaryTree {
 }
 
 export default BinaryTree;
-
-//
-//                 ball
-//
-//     around                   toy
-//
-// about     cat           roof        yellow
-//
-//
-// police

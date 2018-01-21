@@ -78,12 +78,12 @@ class LRUCache extends React.Component {
         in constant time.</p>
         <input
           type="text"
-          onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
+          onKeyPress={(e) => {if (e.key === "Enter" && this.state.searchQuery) this.handleSubmit()}}
           onChange={this.handleInput.bind(this)}
           value={this.state.searchQuery}
           disabled={this.state.disabled}/>
         <button
-          disabled={this.state.disabled}
+          disabled={!this.state.searchQuery || this.state.disabled}
           onClick={this.handleSubmit.bind(this)}>
           Search for Gif
         </button>

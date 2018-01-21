@@ -1,6 +1,6 @@
 import React from 'react';
 import BinaryTreeStructure from '../util/binary_tree';
-import { dictionary } from '../short_dictionary';
+import { shortDictionary } from '../short_dictionary';
 import { merge } from 'lodash';
 
 class BinaryTree extends React.Component {
@@ -10,7 +10,7 @@ class BinaryTree extends React.Component {
 
     this.state = {
       input: "",
-      tree: new BinaryTreeStructure(dictionary.slice(0, window.outerWidth  / 30)),
+      tree: new BinaryTreeStructure(shortDictionary.slice(0, window.outerWidth  / 30)),
       inspecting: "",
       disabled: false,
       message: "Enter a word into the tree",
@@ -28,7 +28,7 @@ class BinaryTree extends React.Component {
   }
 
   handleEnter(e) {
-    if (e.key === "Enter" && !this.state.disabled) {
+    if (e.key === "Enter" && this.state.input) {
       this.handleSubmit();
     }
   }
@@ -131,7 +131,7 @@ class BinaryTree extends React.Component {
           disabled={this.state.disabled}
           maxLength={8}
           />
-        <button disabled={this.state.disabled} onClick={this.handleSubmit.bind(this)}>Add Word</button>
+        <button disabled={!this.state.input || this.state.disabled} onClick={this.handleSubmit.bind(this)}>Add Word</button>
         <div className="search-status">
           <p>{this.state.message}</p>
         </div>

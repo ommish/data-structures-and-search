@@ -1,5 +1,5 @@
 import React from 'react';
-import { dictionary } from '../long_dictionary';
+import { longDictionary } from '../long_dictionary';
 import Word from './word';
 import { Link } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ class ArrayComp extends React.Component {
 
   handleSubmit() {
     this.setState({disabled: true, inspecting: null, currentStart: null, currentEnd: null, checked: 0, searching: "Searching..."});
-    this.binarySearch(dictionary, this.state.searchQuery.toLowerCase());
+    this.binarySearch(longDictionary, this.state.searchQuery.toLowerCase());
   }
 
   binarySearch(arr, target) {
@@ -75,21 +75,21 @@ class ArrayComp extends React.Component {
   }
 
   render() {
-    const words = dictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
+    const words = longDictionary.map((word, i) => <Word key={i} index={i} word={word} inspecting={this.state.inspecting} startIdx={this.state.currentStart} endIdx={this.state.currentEnd}/>);
     return (
     <main className="binary">
       <h3>Array</h3>
       <h4>Binary Search</h4>
       <p>This is a demonstration of how an array would be searched using binary search. The section being searched will be highlighted, and the word at the probe index will be colored red.</p>
-      <input disabled={this.state.disabled} type="text" value={this.state.searchQuery} onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}} onChange={this.handleInput.bind(this)}/>
+      <input disabled={this.state.disabled} type="text" value={this.state.searchQuery} onKeyPress={(e) => {if (e.key === "Enter" && this.state.searchQuery) this.handleSubmit()}} onChange={this.handleInput.bind(this)}/>
       <button
-        disabled={this.state.disabled}
+        disabled={!this.state.searchQuery || this.state.disabled}
         onClick={this.handleSubmit.bind(this)}>
         Start!
       </button>
       <div className="search-status">
         <p>{this.state.searching}</p>
-        <p>{this.state.checked} / {dictionary.length} words checked</p>
+        <p>{this.state.checked} / {longDictionary.length} words checked</p>
       </div>
       <ul className="word-list">
         {words}

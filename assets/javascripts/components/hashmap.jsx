@@ -1,6 +1,6 @@
 import Hashmap from '../util/hashmap';
 import React from 'react';
-import { dictionary } from '../long_dictionary';
+import { longDictionary } from '../long_dictionary';
 import { Link } from 'react-router-dom';
 
 class HashmapDictionary extends React.Component {
@@ -16,7 +16,7 @@ class HashmapDictionary extends React.Component {
     }
 
     this.dictionaryHashmap = new Hashmap();
-    dictionary.filter((word, i) => i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0).forEach((word) => {
+    longDictionary.filter((word, i) => i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0).forEach((word) => {
       this.dictionaryHashmap.addVal(word, true);
     });
   }
@@ -112,12 +112,12 @@ class HashmapDictionary extends React.Component {
         and the word at the node being checked will be colored red.</p>
         <input
           type="text"
-          onKeyPress={(e) => {if (e.key === "Enter") this.handleSubmit()}}
+          onKeyPress={(e) => {if (e.key === "Enter" && this.state.searchQuery) this.handleSubmit()}}
           onChange={this.handleInput.bind(this)}
           value={this.state.searchQuery}
           disabled={this.state.disabled}/>
         <button
-          disabled={this.state.disabled}
+          disabled={!this.state.searchQuery || this.state.disabled}
           onClick={this.handleSubmit.bind(this)}>
           Start!
         </button>

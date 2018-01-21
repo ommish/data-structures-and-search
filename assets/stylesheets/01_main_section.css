@@ -58,10 +58,10 @@ button:disabled {
 
 .word {
   border: 1px solid #87b34d;
-  padding: 2px 5px;
+  padding: 0px 5px;
   box-sizing: border-box;
   background: white;
-  margin: 5px 10px;
+  margin: 7px 10px;
   border-radius: 7px;
   opacity: 1;
   transition: background 0.5s ease, opacity 1s ease;
@@ -77,7 +77,7 @@ button:disabled {
   background: #a5c679;
   font-size: 20px;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 6px 6px;
   box-shadow: 2px 2px #4a7017;
   height: 2em;
   transition: background 0.5s ease;
@@ -90,7 +90,7 @@ button:disabled {
 }
 
 .trie {
-  padding-left: 50px;
+  padding-left: 30px;
   border: 1px solid #87b34d;
   margin-left: -1px;
   margin-top: -1px;
@@ -104,6 +104,10 @@ button:disabled {
 .trie-list > .trie:first-child {
   padding-left: 0;
   border-bottom: 1px solid #87b34d;
+}
+
+.trie .word {
+  margin: 2px 3px;
 }
 
 .cache-gifs {

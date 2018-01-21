@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ 	return __webpack_require__(__webpack_require__.s = 39);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(41);
+  module.exports = __webpack_require__(40);
 } else {
-  module.exports = __webpack_require__(42);
+  module.exports = __webpack_require__(41);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
@@ -362,11 +362,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(54)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(53)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(55)();
+  module.exports = __webpack_require__(54)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
@@ -478,31 +478,31 @@ module.exports = emptyFunction;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(52);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(56);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(34);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(58);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(61);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(64);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(66);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(35);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(19);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(72);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(74);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(76);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(77);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
 
 
@@ -926,8 +926,8 @@ module.exports = warning;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(10);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -1005,98 +1005,10 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var dictionary = exports.dictionary = ["abaci", "aback", "abacus", "abash", "abbess", "abduct", "abhor", "ablaze", "abode", "abound", "abroad", "abrupt", "acacia", "accept", "achene", "acting", "acute", "adapt", "adder", "adieux", "adjust", "adman", "admire", "admix", "adroit", "advise", "aerial", "affair", "afford", "afghan", "agate", "agenda", "agree", "ahead", "alack", "alcove", "alibi", "allied", "allow", "allude", "aloha", "alpaca", "alumni", "always", "amide", "animus", "apish", "append", "arcade", "arena", "array", "artery", "assail", "asset", "astute", "asylum", "atlas", "atrial", "attach", "avaunt", "avowal", "award", "awoken", "axiom", "azure", "babel", "bagful", "baize", "banzai", "barely", "barman", "barred", "bases", "basics", "basin", "beacon", "beady", "beard", "bebop", "bedim", "beech", "befog", "befoul", "began", "begin", "belay", "bellow", "belted", "benign", "benumb", "beryl", "bettor", "bigwig", "bionic", "biopic", "bisque", "bitty", "blase", "blaze", "bleach", "blintz", "bloom", "blurry", "boater", "boffo", "bogie", "bombed", "borax", "border", "boron", "bounce", "bowels", "boxing", "brash", "bread", "brewer", "bridal", "bridle", "broad", "broken", "bruin", "bubbly", "buddy", "bunch", "burbs", "bushy", "butch", "buyout", "bygone", "bypass", "byplay", "calico", "caller", "callus", "canard", "canyon", "caper", "carnal", "carpi", "carrel", "cartel", "casino", "casket", "catnap", "cavil", "cayman", "cedar", "censor", "chalky", "chaps", "chary", "chaser", "cheap", "chief", "chives", "choke", "chosen", "chump", "cilium", "cinder", "civic", "clack", "clamp", "claque", "clingy", "cloaca", "close", "clout", "clumpy", "coach", "cobalt", "codify", "collie", "comfy", "copula", "costs", "coupe", "coupon", "course", "coven", "cowrie", "crank", "crave", "creche", "cried", "crises", "crook", "cruddy", "crumb", "cuddle", "cudgel", "curiae", "cutler", "cutter", "daffy", "dagger", "damask", "damper", "dangle", "dankly", "darned", "davit", "deafen", "debate", "debtor", "decode", "decor", "deepen", "defer", "deform", "defray", "degree", "delay", "demand", "denim", "denude", "desalt", "detach", "detox", "deuce", "devote", "dicey", "diesel", "differ", "dilly", "dimity", "dimply", "dingy", "dipper", "dirndl", "disarm", "dismay", "dispel", "ditto", "docile", "doings", "dongle", "doping", "dotage", "dozen", "drain", "drawl", "dream", "dreamt", "drench", "drink", "dryly", "dumdum", "duper", "durum", "dybbuk", "early", "earth", "earwig", "easily", "editor", "elate", "elder", "elixir", "enamor", "encamp", "ending", "envoy", "erupt", "evader", "event", "excite", "exotic", "exurb", "facet", "faille", "fairly", "falls", "fatal", "fauna", "fedora", "feeler", "female", "fencer", "ferule", "festal", "fettle", "fiasco", "fiche", "filch", "filly", "firmly", "fitter", "flair", "flask", "flaunt", "flesh", "fluff", "flunk", "flyway", "fodder", "foible", "forbid", "fossil", "friar", "fridge", "frolic", "fruit", "fugue", "funnel", "fuzzy", "gabble", "gaiety", "gamete", "gamine", "gawky", "geese", "genie", "ginkgo", "given", "glider", "glory", "glower", "going", "golfer", "gonad", "goober", "gorily", "grange", "grate", "grater", "gratis", "gravy", "great", "grimy", "griper", "groats", "groom", "groper", "grump", "guest", "gulper", "gunman", "gusty", "hadst", "hamper", "hands", "hanger", "hankie", "hansom", "happen", "harken", "haven", "heaver", "helium", "hereof", "hermit", "heron", "hewer", "hiatus", "hinter", "hoard", "hobby", "hogtie", "holdup", "homage", "hookah", "hoops", "hooves", "hours", "hummus", "hungry", "hybrid", "idyll", "ileum", "imbibe", "immune", "impost", "incise", "incite", "indite", "infant", "inroad", "inrush", "inset", "inside", "intake", "ireful", "isobar", "ivory", "jackal", "jacks", "jaunt", "jazzy", "jennet", "jersey", "julep", "junket", "kappa", "kebab", "kisser", "knives", "known", "labial", "lapdog", "laptop", "lariat", "latent", "laxity", "leaper", "ledger", "leery", "legit", "lemon", "lesion", "lessor", "lichee", "lieder", "linage", "linens", "lines", "liver", "lobed", "locust", "loggia", "loopy", "looter", "lucid", "lumbar", "lushly", "madam", "madman", "madras", "maize", "malice", "mambo", "manage", "maned", "manger", "mangle", "manna", "manual", "maser", "masque", "matron", "matzo", "maxima", "mayst", "meanie", "member", "memory", "merit", "midday", "middle", "milker", "millet", "mirror", "misses", "moaner", "mocha", "mocker", "modem", "modern", "moist", "moment", "monism", "mopish", "mossy", "motor", "mount", "movies", "muddy", "muffle", "mulch", "mumps", "murky", "mushy", "muster", "myopia", "nacho", "naive", "namely", "nearby", "needle", "nisei", "nodal", "noodle", "nuclei", "nurse", "oafish", "odored", "oldish", "online", "onward", "opaque", "orally", "others", "outer", "outgo", "outing", "overt", "oxbow", "oxide", "oyster", "palely", "palsy", "paltry", "pantry", "papery", "parcel", "parent", "payee", "pearl", "peony", "perish", "peyote", "phlox", "physic", "piece", "pierce", "piffle", "piper", "pistil", "pitch", "planet", "please", "pledge", "plumb", "polish", "polity", "pompon", "poorly", "potty", "prance", "prissy", "prose", "prosy", "proxy", "psyche", "pupae", "purvey", "pushup", "quake", "quick", "quiet", "quits", "radar", "radium", "radon", "raider", "rainy", "ramjet", "ranks", "ransom", "rapid", "ratio", "rattle", "raving", "react", "rebate", "rebut", "recent", "record", "redone", "refuel", "regrew", "relaid", "remelt", "remold", "remote", "rennet", "rental", "repaid", "repay", "repel", "repine", "reply", "rescue", "resist", "retake", "retest", "retire", "reuse", "revamp", "reveal", "revel", "revile", "reword", "ricer", "risque", "roads", "roast", "rocky", "rooms", "ropes", "rosily", "rotten", "rouge", "rubric", "ruling", "runny", "rupee", "russet", "sahib", "saint", "saliva", "sally", "samba", "satrap", "schmo", "scoop", "scope", "scribe", "script", "scrub", "seaman", "season", "seaway", "sedgy", "seedy", "seize", "serous", "sesame", "sexily", "sextet", "sheath", "sheeny", "shifty", "shirt", "shrink", "sickie", "sickle", "silage", "silver", "singe", "sinker", "sinus", "sisal", "skier", "skirt", "slack", "slide", "slight", "slimy", "slogan", "slough", "sludgy", "slyly", "smithy", "snarly", "sneak", "snipe", "snowy", "snugly", "solid", "sorrow", "sorter", "spare", "spark", "spear", "spent", "spewer", "sphere", "spoilt", "spoken", "spongy", "spore", "spotty", "sprat", "spread", "spring", "sprint", "squall", "stack", "stanza", "steps", "still", "stodgy", "stogy", "stoked", "stolid", "story", "street", "strewn", "strict", "strip", "stump", "stupor", "suffer", "sugar", "sumach", "sunder", "sundry", "surety", "swank", "swept", "sword", "sylvan", "taker", "talky", "tamely", "tarpon", "taster", "tasty", "tedium", "teepee", "temple", "tennis", "tenor", "tenth", "tepee", "tetra", "there", "these", "thine", "thorn", "thrift", "throe", "thrust", "thyme", "tiered", "tiling", "timber", "tingly", "titan", "today", "togaed", "tongs", "torque", "totter", "toupee", "tousle", "trash", "tribe", "trill", "troika", "tropic", "trump", "trumps", "trusty", "turban", "twelve", "twist", "ulnae", "unbind", "uncork", "undue", "unease", "unkind", "unlit", "unmade", "unseen", "unwise", "upland", "uppity", "uptake", "uptick", "uremic", "ursine", "utopia", "vagary", "vainly", "veiled", "venal", "verge", "verve", "vibes", "vicar", "vixen", "vodka", "walrus", "wander", "warped", "waste", "weensy", "weevil", "weigh", "whaler", "wharf", "wheezy", "whelm", "whiner", "wilds", "winery", "wisdom", "wobbly", "yacht", "yeast", "yokel", "yummy", "zephyr", "zygote"];
+var longDictionary = exports.longDictionary = ["abaci", "aback", "abacus", "abash", "abbess", "abduct", "abhor", "ablaze", "abode", "abound", "abroad", "abrupt", "acacia", "accept", "achene", "acting", "acute", "adapt", "adder", "adieux", "adjust", "adman", "admire", "admix", "adroit", "advise", "aerial", "affair", "afford", "afghan", "agate", "agenda", "agree", "ahead", "alack", "alcove", "alibi", "allied", "allow", "allude", "aloha", "alpaca", "alumni", "always", "amide", "animus", "apish", "append", "arcade", "arena", "array", "artery", "assail", "asset", "astute", "asylum", "atlas", "atrial", "attach", "avaunt", "avowal", "award", "awoken", "axiom", "azure", "babel", "bagful", "baize", "banzai", "barely", "barman", "barred", "bases", "basics", "basin", "beacon", "beady", "beard", "bebop", "bedim", "beech", "befog", "befoul", "began", "begin", "belay", "bellow", "belted", "benign", "benumb", "beryl", "bettor", "bigwig", "bionic", "biopic", "bisque", "bitty", "blase", "blaze", "bleach", "blintz", "bloom", "blurry", "boater", "boffo", "bogie", "bombed", "borax", "border", "boron", "bounce", "bowels", "boxing", "brash", "bread", "brewer", "bridal", "bridle", "broad", "broken", "bruin", "bubbly", "buddy", "bunch", "burbs", "bushy", "butch", "buyout", "bygone", "bypass", "byplay", "calico", "caller", "callus", "canard", "canyon", "caper", "carnal", "carpi", "carrel", "cartel", "casino", "casket", "catnap", "cavil", "cayman", "cedar", "censor", "chalky", "chaps", "chary", "chaser", "cheap", "chief", "chives", "choke", "chosen", "chump", "cilium", "cinder", "civic", "clack", "clamp", "claque", "clingy", "cloaca", "close", "clout", "clumpy", "coach", "cobalt", "codify", "collie", "comfy", "copula", "costs", "coupe", "coupon", "course", "coven", "cowrie", "crank", "crave", "creche", "cried", "crises", "crook", "cruddy", "crumb", "cuddle", "cudgel", "curiae", "cutler", "cutter", "daffy", "dagger", "damask", "damper", "dangle", "dankly", "darned", "davit", "deafen", "debate", "debtor", "decode", "decor", "deepen", "defer", "deform", "defray", "degree", "delay", "demand", "denim", "denude", "desalt", "detach", "detox", "deuce", "devote", "dicey", "diesel", "differ", "dilly", "dimity", "dimply", "dingy", "dipper", "dirndl", "disarm", "dismay", "dispel", "ditto", "docile", "doings", "dongle", "doping", "dotage", "dozen", "drain", "drawl", "dream", "dreamt", "drench", "drink", "dryly", "dumdum", "duper", "durum", "dybbuk", "early", "earth", "earwig", "easily", "editor", "elate", "elder", "elixir", "enamor", "encamp", "ending", "envoy", "erupt", "evader", "event", "excite", "exotic", "exurb", "facet", "faille", "fairly", "falls", "fatal", "fauna", "fedora", "feeler", "female", "fencer", "ferule", "festal", "fettle", "fiasco", "fiche", "filch", "filly", "firmly", "fitter", "flair", "flask", "flaunt", "flesh", "fluff", "flunk", "flyway", "fodder", "foible", "forbid", "fossil", "friar", "fridge", "frolic", "fruit", "fugue", "funnel", "fuzzy", "gabble", "gaiety", "gamete", "gamine", "gawky", "geese", "genie", "ginkgo", "given", "glider", "glory", "glower", "going", "golfer", "gonad", "goober", "gorily", "grange", "grate", "grater", "gratis", "gravy", "great", "grimy", "griper", "groats", "groom", "groper", "grump", "guest", "gulper", "gunman", "gusty", "hadst", "hamper", "hands", "hanger", "hankie", "hansom", "happen", "harken", "haven", "heaver", "helium", "hereof", "hermit", "heron", "hewer", "hiatus", "hinter", "hoard", "hobby", "hogtie", "holdup", "homage", "hookah", "hoops", "hooves", "hours", "hummus", "hungry", "hybrid", "idyll", "ileum", "imbibe", "immune", "impost", "incise", "incite", "indite", "infant", "inroad", "inrush", "inset", "inside", "intake", "ireful", "isobar", "ivory", "jackal", "jacks", "jaunt", "jazzy", "jennet", "jersey", "julep", "junket", "kappa", "kebab", "kisser", "knives", "known", "labial", "lapdog", "laptop", "lariat", "latent", "laxity", "leaper", "ledger", "leery", "legit", "lemon", "lesion", "lessor", "lichee", "lieder", "linage", "linens", "lines", "liver", "lobed", "locust", "loggia", "loopy", "looter", "lucid", "lumbar", "lushly", "madam", "madman", "madras", "maize", "malice", "mambo", "manage", "maned", "manger", "mangle", "manna", "manual", "maser", "masque", "matron", "matzo", "maxima", "mayst", "meanie", "member", "memory", "merit", "midday", "middle", "milker", "millet", "mirror", "misses", "moaner", "mocha", "mocker", "modem", "modern", "moist", "moment", "monism", "mopish", "mossy", "motor", "mount", "movies", "muddy", "muffle", "mulch", "mumps", "murky", "mushy", "muster", "myopia", "nacho", "naive", "namely", "nearby", "needle", "nisei", "nodal", "noodle", "nuclei", "nurse", "oafish", "odored", "oldish", "online", "onward", "opaque", "orally", "others", "outer", "outgo", "outing", "overt", "oxbow", "oxide", "oyster", "palely", "palsy", "paltry", "pantry", "papery", "parcel", "parent", "payee", "pearl", "peony", "perish", "peyote", "phlox", "physic", "piece", "pierce", "piffle", "piper", "pistil", "pitch", "planet", "please", "pledge", "plumb", "polish", "polity", "pompon", "poorly", "potty", "prance", "prissy", "prose", "prosy", "proxy", "psyche", "pupae", "purvey", "pushup", "quake", "quick", "quiet", "quits", "radar", "radium", "radon", "raider", "rainy", "ramjet", "ranks", "ransom", "rapid", "ratio", "rattle", "raving", "react", "rebate", "rebut", "recent", "record", "redone", "refuel", "regrew", "relaid", "remelt", "remold", "remote", "rennet", "rental", "repaid", "repay", "repel", "repine", "reply", "rescue", "resist", "retake", "retest", "retire", "reuse", "revamp", "reveal", "revel", "revile", "reword", "ricer", "risque", "roads", "roast", "rocky", "rooms", "ropes", "rosily", "rotten", "rouge", "rubric", "ruling", "runny", "rupee", "russet", "sahib", "saint", "saliva", "sally", "samba", "satrap", "schmo", "scoop", "scope", "scribe", "script", "scrub", "seaman", "season", "seaway", "sedgy", "seedy", "seize", "serous", "sesame", "sexily", "sextet", "sheath", "sheeny", "shifty", "shirt", "shrink", "sickie", "sickle", "silage", "silver", "singe", "sinker", "sinus", "sisal", "skier", "skirt", "slack", "slide", "slight", "slimy", "slogan", "slough", "sludgy", "slyly", "smithy", "snarly", "sneak", "snipe", "snowy", "snugly", "solid", "sorrow", "sorter", "spare", "spark", "spear", "spent", "spewer", "sphere", "spoilt", "spoken", "spongy", "spore", "spotty", "sprat", "spread", "spring", "sprint", "squall", "stack", "stanza", "steps", "still", "stodgy", "stogy", "stoked", "stolid", "story", "street", "strewn", "strict", "strip", "stump", "stupor", "suffer", "sugar", "sumach", "sunder", "sundry", "surety", "swank", "swept", "sword", "sylvan", "taker", "talky", "tamely", "tarpon", "taster", "tasty", "tedium", "teepee", "temple", "tennis", "tenor", "tenth", "tepee", "tetra", "there", "these", "thine", "thorn", "thrift", "throe", "thrust", "thyme", "tiered", "tiling", "timber", "tingly", "titan", "today", "togaed", "tongs", "torque", "totter", "toupee", "tousle", "trash", "tribe", "trill", "troika", "tropic", "trump", "trumps", "trusty", "turban", "twelve", "twist", "ulnae", "unbind", "uncork", "undue", "unease", "unkind", "unlit", "unmade", "unseen", "unwise", "upland", "uppity", "uptake", "uptick", "uremic", "ursine", "utopia", "vagary", "vainly", "veiled", "venal", "verge", "verve", "vibes", "vicar", "vixen", "vodka", "walrus", "wander", "warped", "waste", "weensy", "weevil", "weigh", "whaler", "wharf", "wheezy", "whelm", "whiner", "wilds", "winery", "wisdom", "wobbly", "yacht", "yeast", "yokel", "yummy", "zephyr", "zygote"];
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var TreeNode = function () {
-  function TreeNode() {
-    var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
-    var isWord = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-    _classCallCheck(this, TreeNode);
-
-    this.val = val;
-    this.parent = null;
-    this.children = {};
-    this.isWord = isWord;
-  }
-
-  _createClass(TreeNode, [{
-    key: "setParent",
-    value: function setParent(parent) {
-      if (this.parent === parent) {
-        return;
-      }
-
-      if (this.parent) delete this.parent.children[this.val];
-      this.parent = parent;
-      if (this.parent) this.parent.children[this.val] = this;
-    }
-  }, {
-    key: "addChild",
-    value: function addChild(child) {
-      child.setParent(this);
-    }
-  }, {
-    key: "removeChild",
-    value: function removeChild(val) {
-      var child = this.children[val];
-      if (child) child.setParent(null);
-    }
-  }, {
-    key: "isLeaf",
-    value: function isLeaf() {
-      return Object.keys(this.children).length < 1;
-    }
-  }, {
-    key: "isRoot",
-    value: function isRoot() {
-      return !this.parent;
-    }
-  }, {
-    key: "numChildren",
-    value: function numChildren() {
-      return Object.keys(this.children).length;
-    }
-  }, {
-    key: "allChildWords",
-    value: function allChildWords() {
-      var _this = this;
-
-      if (this.isLeaf()) {
-        return [];
-      }
-      var childrenVals = Object.keys(this.children).filter(function (key) {
-        return _this.children[key].isWord;
-      });
-      Object.values(this.children).forEach(function (child) {
-        childrenVals = childrenVals.concat(child.allChildWords());
-      });
-      return childrenVals;
-    }
-  }]);
-
-  return TreeNode;
-}();
-
-exports.default = TreeNode;
-
-/***/ }),
-/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1112,7 +1024,7 @@ exports.default = TreeNode;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(8);
   var warning = __webpack_require__(12);
-  var ReactPropTypesSecret = __webpack_require__(17);
+  var ReactPropTypesSecret = __webpack_require__(16);
   var loggedTypeFailures = {};
 }
 
@@ -1163,7 +1075,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 17 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1182,7 +1094,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 18 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1193,11 +1105,11 @@ exports.locationsAreEqual = exports.createLocation = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _resolvePathname = __webpack_require__(32);
+var _resolvePathname = __webpack_require__(31);
 
 var _resolvePathname2 = _interopRequireDefault(_resolvePathname);
 
-var _valueEqual = __webpack_require__(33);
+var _valueEqual = __webpack_require__(32);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
@@ -1266,7 +1178,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 };
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1357,18 +1269,18 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__ = __webpack_require__(20);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Router__["a" /* default */]);
 
 /***/ }),
-/* 21 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1487,11 +1399,11 @@ Router.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Router);
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -1564,7 +1476,7 @@ var matchPath = function matchPath(pathname) {
 /* harmony default export */ __webpack_exports__["a"] = (matchPath);
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1649,7 +1561,7 @@ var createTransitionManager = function createTransitionManager() {
 /* harmony default export */ __webpack_exports__["a"] = (createTransitionManager);
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1661,7 +1573,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _linked_list = __webpack_require__(25);
+var _linked_list = __webpack_require__(24);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
@@ -1756,7 +1668,7 @@ var Hashmap = function () {
 exports.default = Hashmap;
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1901,7 +1813,7 @@ var ListNode = function () {
 exports.default = LinkedList;
 
 /***/ }),
-/* 26 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1940,7 +1852,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 27 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2021,7 +1933,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2063,7 +1975,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 29 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2134,7 +2046,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 30 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2149,7 +2061,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(45);
+var isTextNode = __webpack_require__(44);
 
 /*eslint-disable no-bitwise */
 
@@ -2177,7 +2089,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 31 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2207,7 +2119,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 32 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2284,7 +2196,7 @@ function resolvePathname(to) {
 /* harmony default export */ __webpack_exports__["default"] = (resolvePathname);
 
 /***/ }),
-/* 33 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2329,7 +2241,7 @@ function valueEqual(a, b) {
 /* harmony default export */ __webpack_exports__["default"] = (valueEqual);
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2390,7 +2302,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2500,18 +2412,18 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__ = __webpack_require__(36);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Route__["a" /* default */]);
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2523,7 +2435,7 @@ Link.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(21);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2660,7 +2572,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2726,7 +2638,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -19818,7 +19730,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(94), __webpack_require__(95)(module)))
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19828,19 +19740,19 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(43);
+var _reactDom = __webpack_require__(42);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _app = __webpack_require__(52);
+var _app = __webpack_require__(51);
 
 var _app2 = _interopRequireDefault(_app);
 
-var _hashmap = __webpack_require__(24);
+var _hashmap = __webpack_require__(23);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
-var _linked_list = __webpack_require__(25);
+var _linked_list = __webpack_require__(24);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
@@ -19851,7 +19763,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19879,7 +19791,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19905,7 +19817,7 @@ var emptyObject = __webpack_require__(11);
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(12);
 var emptyFunction = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(16);
+var checkPropTypes = __webpack_require__(15);
 
 // TODO: this is special because it gets imported during build.
 
@@ -21244,7 +21156,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21282,15 +21194,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(44);
+  module.exports = __webpack_require__(43);
 } else {
-  module.exports = __webpack_require__(47);
+  module.exports = __webpack_require__(46);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21306,7 +21218,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(26),B=__webpack_require__(7),C=__webpack_require__(5),ba=__webpack_require__(27),da=__webpack_require__(28),ea=__webpack_require__(29),fa=__webpack_require__(30),ia=__webpack_require__(31),D=__webpack_require__(11);
+var aa=__webpack_require__(0),l=__webpack_require__(25),B=__webpack_require__(7),C=__webpack_require__(5),ba=__webpack_require__(26),da=__webpack_require__(27),ea=__webpack_require__(28),fa=__webpack_require__(29),ia=__webpack_require__(30),D=__webpack_require__(11);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -21526,7 +21438,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21541,7 +21453,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(46);
+var isNode = __webpack_require__(45);
 
 /**
  * @param {*} object The object to check.
@@ -21554,7 +21466,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21582,7 +21494,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21606,18 +21518,18 @@ if (process.env.NODE_ENV !== "production") {
 var React = __webpack_require__(0);
 var invariant = __webpack_require__(8);
 var warning = __webpack_require__(12);
-var ExecutionEnvironment = __webpack_require__(26);
+var ExecutionEnvironment = __webpack_require__(25);
 var _assign = __webpack_require__(7);
 var emptyFunction = __webpack_require__(5);
-var EventListener = __webpack_require__(27);
-var getActiveElement = __webpack_require__(28);
-var shallowEqual = __webpack_require__(29);
-var containsNode = __webpack_require__(30);
-var focusNode = __webpack_require__(31);
+var EventListener = __webpack_require__(26);
+var getActiveElement = __webpack_require__(27);
+var shallowEqual = __webpack_require__(28);
+var containsNode = __webpack_require__(29);
+var focusNode = __webpack_require__(30);
 var emptyObject = __webpack_require__(11);
-var checkPropTypes = __webpack_require__(16);
-var hyphenateStyleName = __webpack_require__(48);
-var camelizeStyleName = __webpack_require__(50);
+var checkPropTypes = __webpack_require__(15);
+var hyphenateStyleName = __webpack_require__(47);
+var camelizeStyleName = __webpack_require__(49);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -36984,7 +36896,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36999,7 +36911,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(49);
+var hyphenate = __webpack_require__(48);
 
 var msPattern = /^ms-/;
 
@@ -37026,7 +36938,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37062,7 +36974,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37077,7 +36989,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(51);
+var camelize = __webpack_require__(50);
 
 var msPattern = /^-ms-/;
 
@@ -37105,7 +37017,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37140,7 +37052,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37156,7 +37068,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _landing_page = __webpack_require__(81);
+var _landing_page = __webpack_require__(80);
 
 var _landing_page2 = _interopRequireDefault(_landing_page);
 
@@ -37173,7 +37085,7 @@ var App = function App() {
 exports.default = App;
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37183,9 +37095,9 @@ exports.default = App;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(19);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -37240,7 +37152,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 54 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37258,8 +37170,8 @@ var invariant = __webpack_require__(8);
 var warning = __webpack_require__(12);
 var assign = __webpack_require__(7);
 
-var ReactPropTypesSecret = __webpack_require__(17);
-var checkPropTypes = __webpack_require__(16);
+var ReactPropTypesSecret = __webpack_require__(16);
+var checkPropTypes = __webpack_require__(15);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -37790,7 +37702,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37805,7 +37717,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 var emptyFunction = __webpack_require__(5);
 var invariant = __webpack_require__(8);
-var ReactPropTypesSecret = __webpack_require__(17);
+var ReactPropTypesSecret = __webpack_require__(16);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -37855,7 +37767,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37875,15 +37787,15 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(18);
+var _LocationUtils = __webpack_require__(17);
 
 var _PathUtils = __webpack_require__(9);
 
-var _createTransitionManager = __webpack_require__(19);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(34);
+var _DOMUtils = __webpack_require__(33);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38168,7 +38080,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 57 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38178,9 +38090,9 @@ exports.default = createBrowserHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createHashHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(19);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -38234,7 +38146,7 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 58 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38252,15 +38164,15 @@ var _invariant = __webpack_require__(4);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(18);
+var _LocationUtils = __webpack_require__(17);
 
 var _PathUtils = __webpack_require__(9);
 
-var _createTransitionManager = __webpack_require__(19);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(34);
+var _DOMUtils = __webpack_require__(33);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38564,18 +38476,18 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__ = __webpack_require__(59);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_MemoryRouter__["a" /* default */]);
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38585,9 +38497,9 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(20);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -38642,7 +38554,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38660,9 +38572,9 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _PathUtils = __webpack_require__(9);
 
-var _LocationUtils = __webpack_require__(18);
+var _LocationUtils = __webpack_require__(17);
 
-var _createTransitionManager = __webpack_require__(19);
+var _createTransitionManager = __webpack_require__(18);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -38818,7 +38730,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38826,8 +38738,8 @@ exports.default = createMemoryHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Route__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(34);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -38899,10 +38811,10 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(64)
+var isarray = __webpack_require__(63)
 
 /**
  * Expose `pathToRegexp`.
@@ -39331,7 +39243,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -39340,18 +39252,18 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__ = __webpack_require__(65);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Prompt__["a" /* default */]);
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39442,18 +39354,18 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__ = __webpack_require__(67);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Redirect__["a" /* default */]);
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39465,7 +39377,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(68);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -39561,15 +39473,15 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(69);
 /* unused harmony reexport createBrowserHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(70);
 /* unused harmony reexport createHashHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(71);
 /* unused harmony reexport createMemoryHistory */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(13);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
@@ -39588,7 +39500,7 @@ Redirect.contextTypes = {
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39598,8 +39510,8 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(37);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -39892,7 +39804,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createBrowserHistory);
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -39902,8 +39814,8 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(37);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -40213,7 +40125,7 @@ var createHashHistory = function createHashHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createHashHistory);
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40221,7 +40133,7 @@ var createHashHistory = function createHashHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(22);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -40381,18 +40293,18 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createMemoryHistory);
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__ = __webpack_require__(73);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_StaticRouter__["a" /* default */]);
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40406,7 +40318,7 @@ var createMemoryHistory = function createMemoryHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(20);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -40575,18 +40487,18 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__ = __webpack_require__(75);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_Switch__["a" /* default */]);
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40598,7 +40510,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__matchPath__ = __webpack_require__(21);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -40680,29 +40592,29 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__ = __webpack_require__(21);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_matchPath__["a" /* default */]);
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__ = __webpack_require__(78);
 // Written in this round about way for babel-transform-imports
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0_react_router_es_withRouter__["a" /* default */]);
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40710,9 +40622,9 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(36);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -40747,7 +40659,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40819,7 +40731,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40833,21 +40745,21 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(82);
+var _header = __webpack_require__(81);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _array = __webpack_require__(83);
+var _array = __webpack_require__(82);
 
 var _array2 = _interopRequireDefault(_array);
 
 var _reactRouterDom = __webpack_require__(6);
 
-var _compressed_trie = __webpack_require__(86);
+var _compressed_trie = __webpack_require__(84);
 
 var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
 
-var _trie = __webpack_require__(88);
+var _trie = __webpack_require__(87);
 
 var _trie2 = _interopRequireDefault(_trie);
 
@@ -40882,7 +40794,7 @@ var LandingPage = function LandingPage(props) {
 exports.default = LandingPage;
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41075,7 +40987,7 @@ var Header = function (_React$Component) {
 exports.default = Header;
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41095,13 +41007,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _long_dictionary = __webpack_require__(14);
 
-var _word = __webpack_require__(84);
+var _word = __webpack_require__(83);
 
 var _word2 = _interopRequireDefault(_word);
 
 var _reactRouterDom = __webpack_require__(6);
-
-var _trips = __webpack_require__(85);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41128,7 +41038,6 @@ var ArrayComp = function (_React$Component) {
       checked: 0,
       searching: "Enter a word to search!"
     };
-    console.log(_trips.data);
     return _this;
   }
 
@@ -41141,7 +41050,7 @@ var ArrayComp = function (_React$Component) {
     key: 'handleSubmit',
     value: function handleSubmit() {
       this.setState({ disabled: true, inspecting: null, currentStart: null, currentEnd: null, checked: 0, searching: "Searching..." });
-      this.binarySearch(_long_dictionary.dictionary, this.state.searchQuery.toLowerCase());
+      this.binarySearch(_long_dictionary.longDictionary, this.state.searchQuery.toLowerCase());
     }
   }, {
     key: 'binarySearch',
@@ -41209,7 +41118,7 @@ var ArrayComp = function (_React$Component) {
     value: function render() {
       var _this4 = this;
 
-      var words = _long_dictionary.dictionary.map(function (word, i) {
+      var words = _long_dictionary.longDictionary.map(function (word, i) {
         return _react2.default.createElement(_word2.default, { key: i, index: i, word: word, inspecting: _this4.state.inspecting, startIdx: _this4.state.currentStart, endIdx: _this4.state.currentEnd });
       });
       return _react2.default.createElement(
@@ -41231,12 +41140,12 @@ var ArrayComp = function (_React$Component) {
           'This is a demonstration of how an array would be searched using binary search. The section being searched will be highlighted, and the word at the probe index will be colored red.'
         ),
         _react2.default.createElement('input', { disabled: this.state.disabled, type: 'text', value: this.state.searchQuery, onKeyPress: function onKeyPress(e) {
-            if (e.key === "Enter") _this4.handleSubmit();
+            if (e.key === "Enter" && _this4.state.searchQuery) _this4.handleSubmit();
           }, onChange: this.handleInput.bind(this) }),
         _react2.default.createElement(
           'button',
           {
-            disabled: this.state.disabled,
+            disabled: !this.state.searchQuery || this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Start!'
         ),
@@ -41253,7 +41162,7 @@ var ArrayComp = function (_React$Component) {
             null,
             this.state.checked,
             ' / ',
-            _long_dictionary.dictionary.length,
+            _long_dictionary.longDictionary.length,
             ' words checked'
           )
         ),
@@ -41272,7 +41181,7 @@ var ArrayComp = function (_React$Component) {
 exports.default = ArrayComp;
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41306,19 +41215,7 @@ var Word = function Word(props) {
 exports.default = Word;
 
 /***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var data = exports.data = { "data": [{ "trip_id": "4118", "starttime": "2013-06-27 12:11", "stoptime": "2013-06-27 12:16", "bikeid": "480", "tripduration": "316", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "28", "to_station_name": "Larrabee St & Menomonee St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4275", "starttime": "2013-06-27 14:44", "stoptime": "2013-06-27 14:45", "bikeid": "77", "tripduration": "64", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "32", "to_station_name": "Racine Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4291", "starttime": "2013-06-27 14:58", "stoptime": "2013-06-27 15:05", "bikeid": "77", "tripduration": "433", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4316", "starttime": "2013-06-27 15:06", "stoptime": "2013-06-27 15:09", "bikeid": "77", "tripduration": "123", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4342", "starttime": "2013-06-27 15:13", "stoptime": "2013-06-27 15:27", "bikeid": "77", "tripduration": "852", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "55", "to_station_name": "Halsted St & James M Rochford St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4480", "starttime": "2013-06-27 19:40", "stoptime": "2013-06-27 22:28", "bikeid": "27", "tripduration": "10105", "from_station_id": "340", "from_station_name": "Clark St & Wrightwood Ave", "to_station_id": "46", "to_station_name": "Wells St & Walton St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4490", "starttime": "2013-06-27 18:45", "stoptime": "2013-06-27 19:03", "bikeid": "418", "tripduration": "1094", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4592", "starttime": "2013-06-27 19:34", "stoptime": "2013-06-27 19:51", "bikeid": "170", "tripduration": "1020", "from_station_id": "90", "from_station_name": "Millennium Park", "to_station_id": "75", "to_station_name": "Canal St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4602", "starttime": "2013-06-27 19:45", "stoptime": "2013-06-27 20:42", "bikeid": "353", "tripduration": "3419", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4607", "starttime": "2013-06-27 19:46", "stoptime": "2013-06-27 19:57", "bikeid": "369", "tripduration": "653", "from_station_id": "51", "from_station_name": "Clark St & Randolph St", "to_station_id": "340", "to_station_name": "Clark St & Wrightwood Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4617", "starttime": "2013-06-27 19:50", "stoptime": "2013-06-27 20:19", "bikeid": "658", "tripduration": "1738", "from_station_id": "44", "from_station_name": "State St & Randolph St", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4619", "starttime": "2013-06-27 19:52", "stoptime": "2013-06-27 20:50", "bikeid": "533", "tripduration": "3482", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4644", "starttime": "2013-06-27 20:22", "stoptime": "2013-06-27 20:50", "bikeid": "522", "tripduration": "1712", "from_station_id": "20", "from_station_name": "Sheffield Ave & Kingsbury St", "to_station_id": "46", "to_station_name": "Wells St & Walton St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4646", "starttime": "2013-06-27 20:22", "stoptime": "2013-06-27 20:39", "bikeid": "477", "tripduration": "996", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4647", "starttime": "2013-06-27 20:25", "stoptime": "2013-06-27 20:39", "bikeid": "525", "tripduration": "818", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4666", "starttime": "2013-06-27 20:33", "stoptime": "2013-06-27 21:22", "bikeid": "242", "tripduration": "2936", "from_station_id": "44", "from_station_name": "State St & Randolph St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4793", "starttime": "2013-06-27 21:39", "stoptime": "2013-06-27 21:51", "bikeid": "240", "tripduration": "730", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "29", "to_station_name": "Noble St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4863", "starttime": "2013-06-27 22:15", "stoptime": "2013-06-27 22:36", "bikeid": "381", "tripduration": "1292", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4865", "starttime": "2013-06-27 22:16", "stoptime": "2013-06-27 22:42", "bikeid": "343", "tripduration": "1511", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4866", "starttime": "2013-06-27 22:17", "stoptime": "2013-06-27 22:42", "bikeid": "220", "tripduration": "1512", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4867", "starttime": "2013-06-27 22:17", "stoptime": "2013-06-27 22:36", "bikeid": "157", "tripduration": "1125", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4869", "starttime": "2013-06-27 22:20", "stoptime": "2013-06-27 22:36", "bikeid": "239", "tripduration": "964", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "17", "to_station_name": "Wood St & Division St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4874", "starttime": "2013-06-27 22:23", "stoptime": "2013-06-27 22:39", "bikeid": "334", "tripduration": "972", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "16", "to_station_name": "Wood St & North Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4875", "starttime": "2013-06-27 22:23", "stoptime": "2013-06-27 22:39", "bikeid": "362", "tripduration": "977", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "16", "to_station_name": "Wood St & North Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4883", "starttime": "2013-06-27 22:26", "stoptime": "2013-06-27 23:04", "bikeid": "221", "tripduration": "2272", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4896", "starttime": "2013-06-27 22:33", "stoptime": "2013-06-27 23:05", "bikeid": "409", "tripduration": "1911", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4897", "starttime": "2013-06-27 22:35", "stoptime": "2013-06-27 23:04", "bikeid": "222", "tripduration": "1758", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4902", "starttime": "2013-06-27 22:41", "stoptime": "2013-06-27 22:53", "bikeid": "257", "tripduration": "730", "from_station_id": "17", "from_station_name": "Wood St & Division St", "to_station_id": "61", "to_station_name": "Wood St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4943", "starttime": "2013-06-27 23:05", "stoptime": "2013-06-27 23:37", "bikeid": "325", "tripduration": "1866", "from_station_id": "67", "from_station_name": "Sheffield Ave & Fullerton Ave", "to_station_id": "348", "to_station_name": "California Ave & 21st St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4946", "starttime": "2013-06-27 23:06", "stoptime": "2013-06-27 23:37", "bikeid": "530", "tripduration": "1856", "from_station_id": "67", "from_station_name": "Sheffield Ave & Fullerton Ave", "to_station_id": "34", "to_station_name": "Cannon Dr & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4954", "starttime": "2013-06-27 23:07", "stoptime": "2013-06-27 23:26", "bikeid": "164", "tripduration": "1117", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "30", "to_station_name": "Ashland Ave & Augusta Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4955", "starttime": "2013-06-27 23:09", "stoptime": "2013-06-27 23:26", "bikeid": "229", "tripduration": "980", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "30", "to_station_name": "Ashland Ave & Augusta Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4972", "starttime": "2013-06-27 23:24", "stoptime": "2013-06-27 23:51", "bikeid": "176", "tripduration": "1642", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4986", "starttime": "2013-06-27 23:36", "stoptime": "2013-06-28 00:34", "bikeid": "221", "tripduration": "3513", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4989", "starttime": "2013-06-27 23:43", "stoptime": "2013-06-28 00:21", "bikeid": "159", "tripduration": "2285", "from_station_id": "34", "from_station_name": "Cannon Dr & Fullerton Ave", "to_station_id": "34", "to_station_name": "Cannon Dr & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "4991", "starttime": "2013-06-27 23:44", "stoptime": "2013-06-27 23:51", "bikeid": "306", "tripduration": "423", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "15", "to_station_name": "Racine Ave & 18th St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5032", "starttime": "2013-06-28 00:04", "stoptime": "2013-06-28 00:37", "bikeid": "228", "tripduration": "1995", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "73", "to_station_name": "Jefferson St & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5033", "starttime": "2013-06-28 00:04", "stoptime": "2013-06-28 00:37", "bikeid": "251", "tripduration": "1977", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "73", "to_station_name": "Jefferson St & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5035", "starttime": "2013-06-28 00:08", "stoptime": "2013-06-28 00:24", "bikeid": "141", "tripduration": "944", "from_station_id": "90", "from_station_name": "Millennium Park", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5036", "starttime": "2013-06-28 00:10", "stoptime": "2013-06-28 00:38", "bikeid": "632", "tripduration": "1656", "from_station_id": "29", "from_station_name": "Noble St & Milwaukee Ave", "to_station_id": "29", "to_station_name": "Noble St & Milwaukee Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5070", "starttime": "2013-06-28 00:23", "stoptime": "2013-06-28 00:36", "bikeid": "531", "tripduration": "736", "from_station_id": "311", "from_station_name": "Lincoln Ave & Eastwood Ave", "to_station_id": "67", "to_station_name": "Sheffield Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5100", "starttime": "2013-06-28 00:46", "stoptime": "2013-06-28 00:49", "bikeid": "411", "tripduration": "223", "from_station_id": "60", "from_station_name": "Dayton St & North Ave", "to_station_id": "20", "to_station_name": "Sheffield Ave & Kingsbury St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5125", "starttime": "2013-06-28 01:24", "stoptime": "2013-06-28 01:44", "bikeid": "460", "tripduration": "1196", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5127", "starttime": "2013-06-28 02:08", "stoptime": "2013-06-28 02:24", "bikeid": "592", "tripduration": "915", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5128", "starttime": "2013-06-28 02:29", "stoptime": "2013-06-28 18:03", "bikeid": "150", "tripduration": "56023", "from_station_id": "69", "from_station_name": "Damen Ave & Pierce Ave", "to_station_id": "69", "to_station_name": "Damen Ave & Pierce Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5130", "starttime": "2013-06-28 03:26", "stoptime": "2013-06-28 04:11", "bikeid": "525", "tripduration": "2681", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5131", "starttime": "2013-06-28 03:30", "stoptime": "2013-06-28 04:11", "bikeid": "242", "tripduration": "2433", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5132", "starttime": "2013-06-28 05:11", "stoptime": "2013-06-28 05:26", "bikeid": "233", "tripduration": "951", "from_station_id": "72", "from_station_name": "State St & 16th St", "to_station_id": "179", "to_station_name": "Martin Luther King Dr & Oakwood Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5133", "starttime": "2013-06-28 05:48", "stoptime": "2013-06-28 06:02", "bikeid": "592", "tripduration": "857", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5136", "starttime": "2013-06-28 05:55", "stoptime": "2013-06-28 06:23", "bikeid": "418", "tripduration": "1645", "from_station_id": "76", "from_station_name": "Lake Shore Dr & Monroe St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5137", "starttime": "2013-06-28 06:01", "stoptime": "2013-06-28 06:22", "bikeid": "269", "tripduration": "1285", "from_station_id": "61", "from_station_name": "Wood St & Milwaukee Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5140", "starttime": "2013-06-28 06:28", "stoptime": "2013-06-28 06:35", "bikeid": "848", "tripduration": "406", "from_station_id": "42", "from_station_name": "Wabash Ave & Cermak Rd", "to_station_id": "59", "to_station_name": "Wabash Ave & Roosevelt Rd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5173", "starttime": "2013-06-28 07:13", "stoptime": "2013-06-28 07:35", "bikeid": "173", "tripduration": "1336", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "36", "to_station_name": "Franklin St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5199", "starttime": "2013-06-28 07:37", "stoptime": "2013-06-28 07:48", "bikeid": "401", "tripduration": "668", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5248", "starttime": "2013-06-28 08:17", "stoptime": "2013-06-28 09:04", "bikeid": "343", "tripduration": "2789", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5250", "starttime": "2013-06-28 08:18", "stoptime": "2013-06-28 09:21", "bikeid": "225", "tripduration": "3760", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5251", "starttime": "2013-06-28 08:19", "stoptime": "2013-06-28 08:45", "bikeid": "212", "tripduration": "1593", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "51", "to_station_name": "Clark St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5252", "starttime": "2013-06-28 08:21", "stoptime": "2013-06-28 08:33", "bikeid": "236", "tripduration": "746", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "74", "to_station_name": "Kingsbury St & Erie St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5255", "starttime": "2013-06-28 08:23", "stoptime": "2013-06-28 08:46", "bikeid": "401", "tripduration": "1368", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5256", "starttime": "2013-06-28 08:25", "stoptime": "2013-06-28 08:42", "bikeid": "314", "tripduration": "1057", "from_station_id": "29", "from_station_name": "Noble St & Milwaukee Ave", "to_station_id": "77", "to_station_name": "Clinton St & Madison St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5260", "starttime": "2013-06-28 08:28", "stoptime": "2013-06-28 11:38", "bikeid": "242", "tripduration": "11437", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "350", "to_station_name": "Ashland Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5262", "starttime": "2013-06-28 08:30", "stoptime": "2013-06-28 11:38", "bikeid": "322", "tripduration": "11321", "from_station_id": "52", "from_station_name": "Michigan Ave & Lake St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5284", "starttime": "2013-06-28 08:42", "stoptime": "2013-06-28 10:12", "bikeid": "172", "tripduration": "5377", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "62", "to_station_name": "McCormick Place", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5293", "starttime": "2013-06-28 08:49", "stoptime": "2013-06-28 09:20", "bikeid": "708", "tripduration": "1895", "from_station_id": "31", "from_station_name": "Franklin St & Chicago Ave", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5294", "starttime": "2013-06-28 08:49", "stoptime": "2013-06-28 09:07", "bikeid": "470", "tripduration": "1106", "from_station_id": "91", "from_station_name": "Clinton St & Washington Blvd", "to_station_id": "19", "to_station_name": "Loomis St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5305", "starttime": "2013-06-28 08:53", "stoptime": "2013-06-28 09:09", "bikeid": "335", "tripduration": "1007", "from_station_id": "31", "from_station_name": "Franklin St & Chicago Ave", "to_station_id": "75", "to_station_name": "Canal St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5312", "starttime": "2013-06-28 08:54", "stoptime": "2013-06-28 09:17", "bikeid": "51", "tripduration": "1360", "from_station_id": "75", "from_station_name": "Canal St & Jackson Blvd", "to_station_id": "31", "to_station_name": "Franklin St & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5313", "starttime": "2013-06-28 08:55", "stoptime": "2013-06-28 09:14", "bikeid": "168", "tripduration": "1196", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "48", "to_station_name": "Larrabee St & Kingsbury St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5314", "starttime": "2013-06-28 08:55", "stoptime": "2013-06-28 09:30", "bikeid": "154", "tripduration": "2063", "from_station_id": "45", "from_station_name": "Michigan Ave & Congress Pkwy", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5319", "starttime": "2013-06-28 08:57", "stoptime": "2013-06-28 09:08", "bikeid": "236", "tripduration": "646", "from_station_id": "74", "from_station_name": "Kingsbury St & Erie St", "to_station_id": "77", "to_station_name": "Clinton St & Madison St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5327", "starttime": "2013-06-28 09:05", "stoptime": "2013-06-28 09:15", "bikeid": "524", "tripduration": "594", "from_station_id": "27", "from_station_name": "Larrabee St & North Ave", "to_station_id": "54", "to_station_name": "Ogden Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5335", "starttime": "2013-06-28 09:14", "stoptime": "2013-06-28 09:41", "bikeid": "227", "tripduration": "1670", "from_station_id": "26", "from_station_name": "McClurg Ct & Illinois St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5346", "starttime": "2013-06-28 09:26", "stoptime": "2013-06-28 14:25", "bikeid": "118", "tripduration": "17898", "from_station_id": "74", "from_station_name": "Kingsbury St & Erie St", "to_station_id": "88", "to_station_name": "May St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5353", "starttime": "2013-06-28 09:35", "stoptime": "2013-06-28 09:50", "bikeid": "226", "tripduration": "896", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "25", "to_station_name": "Michigan Ave & Pearson St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5354", "starttime": "2013-06-28 09:36", "stoptime": "2013-06-28 10:01", "bikeid": "308", "tripduration": "1498", "from_station_id": "48", "from_station_name": "Larrabee St & Kingsbury St", "to_station_id": "66", "to_station_name": "Clinton St & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5355", "starttime": "2013-06-28 09:37", "stoptime": "2013-06-28 10:02", "bikeid": "772", "tripduration": "1465", "from_station_id": "48", "from_station_name": "Larrabee St & Kingsbury St", "to_station_id": "66", "to_station_name": "Clinton St & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5357", "starttime": "2013-06-28 09:40", "stoptime": "2013-06-28 10:07", "bikeid": "286", "tripduration": "1637", "from_station_id": "51", "from_station_name": "Clark St & Randolph St", "to_station_id": "69", "to_station_name": "Damen Ave & Pierce Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5363", "starttime": "2013-06-28 09:43", "stoptime": "2013-06-28 09:56", "bikeid": "466", "tripduration": "812", "from_station_id": "32", "from_station_name": "Racine Ave & Congress Pkwy", "to_station_id": "36", "to_station_name": "Franklin St & Jackson Blvd", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5370", "starttime": "2013-06-28 09:47", "stoptime": "2013-06-28 10:17", "bikeid": "527", "tripduration": "1787", "from_station_id": "88", "from_station_name": "May St & Randolph St", "to_station_id": "62", "to_station_name": "McCormick Place", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5372", "starttime": "2013-06-28 09:47", "stoptime": "2013-06-28 10:42", "bikeid": "221", "tripduration": "3270", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5374", "starttime": "2013-06-28 09:48", "stoptime": "2013-06-28 10:15", "bikeid": "407", "tripduration": "1638", "from_station_id": "54", "from_station_name": "Ogden Ave & Chicago Ave", "to_station_id": "67", "to_station_name": "Sheffield Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5378", "starttime": "2013-06-28 09:49", "stoptime": "2013-06-28 10:18", "bikeid": "465", "tripduration": "1709", "from_station_id": "341", "from_station_name": "Adler Planetarium", "to_station_id": "350", "to_station_name": "Ashland Ave & Chicago Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5380", "starttime": "2013-06-28 09:51", "stoptime": "2013-06-28 11:08", "bikeid": "229", "tripduration": "4588", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5381", "starttime": "2013-06-28 09:56", "stoptime": "2013-06-28 11:08", "bikeid": "211", "tripduration": "4315", "from_station_id": "30", "from_station_name": "Ashland Ave & Augusta Blvd", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5383", "starttime": "2013-06-28 10:00", "stoptime": "2013-06-28 10:24", "bikeid": "449", "tripduration": "1415", "from_station_id": "127", "from_station_name": "Lincoln Ave & Fullerton Ave", "to_station_id": "127", "to_station_name": "Lincoln Ave & Fullerton Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5384", "starttime": "2013-06-28 10:01", "stoptime": "2013-06-28 11:00", "bikeid": "654", "tripduration": "3514", "from_station_id": "164", "from_station_name": "Franklin St & Lake St", "to_station_id": "90", "to_station_name": "Millennium Park", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5393", "starttime": "2013-06-28 10:04", "stoptime": "2013-06-28 11:27", "bikeid": "281", "tripduration": "4988", "from_station_id": "279", "from_station_name": "Halsted St & 35th St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5403", "starttime": "2013-06-28 10:11", "stoptime": "2013-06-28 10:33", "bikeid": "409", "tripduration": "1298", "from_station_id": "350", "from_station_name": "Ashland Ave & Chicago Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5406", "starttime": "2013-06-28 10:15", "stoptime": "2013-06-28 10:20", "bikeid": "526", "tripduration": "329", "from_station_id": "19", "from_station_name": "Loomis St & Taylor St", "to_station_id": "22", "to_station_name": "May St & Taylor St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5408", "starttime": "2013-06-28 10:17", "stoptime": "2013-06-28 10:49", "bikeid": "222", "tripduration": "1912", "from_station_id": "85", "from_station_name": "Michigan Ave & Oak St", "to_station_id": "76", "to_station_name": "Lake Shore Dr & Monroe St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5409", "starttime": "2013-06-28 10:18", "stoptime": "2013-06-28 10:42", "bikeid": "57", "tripduration": "1409", "from_station_id": "37", "from_station_name": "Dearborn St & Adams St", "to_station_id": "37", "to_station_name": "Dearborn St & Adams St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5410", "starttime": "2013-06-28 10:19", "stoptime": "2013-06-28 10:32", "bikeid": "511", "tripduration": "780", "from_station_id": "73", "from_station_name": "Jefferson St & Monroe St", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5412", "starttime": "2013-06-28 10:21", "stoptime": "2013-06-28 10:34", "bikeid": "38", "tripduration": "747", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "52", "to_station_name": "Michigan Ave & Lake St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5417", "starttime": "2013-06-28 10:25", "stoptime": "2013-06-28 11:00", "bikeid": "253", "tripduration": "2140", "from_station_id": "72", "from_station_name": "State St & 16th St", "to_station_id": "72", "to_station_name": "State St & 16th St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5419", "starttime": "2013-06-28 10:29", "stoptime": "2013-06-28 11:27", "bikeid": "909", "tripduration": "3472", "from_station_id": "24", "from_station_name": "Fairbanks Ct & Grand Ave", "to_station_id": "24", "to_station_name": "Fairbanks Ct & Grand Ave", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5421", "starttime": "2013-06-28 10:31", "stoptime": "2013-06-28 10:56", "bikeid": "333", "tripduration": "1525", "from_station_id": "21", "from_station_name": "Aberdeen St & Jackson Blvd", "to_station_id": "45", "to_station_name": "Michigan Ave & Congress Pkwy", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5423", "starttime": "2013-06-28 10:34", "stoptime": "2013-06-28 11:05", "bikeid": "44", "tripduration": "1852", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "26", "to_station_name": "McClurg Ct & Illinois St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5433", "starttime": "2013-06-28 10:43", "stoptime": "2013-06-28 11:03", "bikeid": "218", "tripduration": "1214", "from_station_id": "25", "from_station_name": "Michigan Ave & Pearson St", "to_station_id": "44", "to_station_name": "State St & Randolph St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5443", "starttime": "2013-06-28 10:54", "stoptime": "2013-06-28 11:20", "bikeid": "98", "tripduration": "1573", "from_station_id": "28", "from_station_name": "Larrabee St & Menomonee St", "to_station_id": "85", "to_station_name": "Michigan Ave & Oak St", "usertype": "Customer", "gender": "", "birthday": "" }, { "trip_id": "5455", "starttime": "2013-06-28 11:02", "stoptime": "2013-06-28 15:04", "bikeid": "471", "tripduration": "14517", "from_station_id": "55", "from_station_name": "Halsted St & James M Rochford St", "to_station_id": "14", "to_station_name": "Morgan St & 18th St", "usertype": "Customer", "gender": "", "birthday": "" }], "errors": [], "meta": { "delimiter": ",", "linebreak": "\r\n", "aborted": false, "truncated": true, "cursor": 11639, "fields": ["trip_id", "starttime", "stoptime", "bikeid", "tripduration", "from_station_id", "from_station_name", "to_station_id", "to_station_name", "usertype", "gender", "birthday"] } };
-
-/***/ }),
-/* 86 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41336,13 +41233,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _long_dictionary = __webpack_require__(14);
 
-var _tree_node = __webpack_require__(15);
+var _compressed_trie_node = __webpack_require__(85);
 
-var _tree_node2 = _interopRequireDefault(_tree_node);
-
-var _compressed_trie = __webpack_require__(87);
-
-var _compressed_trie2 = _interopRequireDefault(_compressed_trie);
+var _compressed_trie_node2 = _interopRequireDefault(_compressed_trie_node);
 
 var _reactRouterDom = __webpack_require__(6);
 
@@ -41371,18 +41264,27 @@ var CompressedTrie = function (_React$Component) {
       inspectingSeg: null
     };
 
-    _this.root = new _tree_node2.default();
-    var words = _long_dictionary.dictionary.filter(function (word, i) {
-      for (var n = 2; n < i; n++) {
-        if (i % n === 0) return false;
-      }
-      return true;
-    });
-    _compressed_trie2.default.buildCompressedTrie(_this.root, words, 1);
+    _this.buildCompressedTrie();
     return _this;
   }
 
   _createClass(CompressedTrie, [{
+    key: 'buildCompressedTrie',
+    value: function buildCompressedTrie() {
+      var _this2 = this;
+
+      this.root = new _compressed_trie_node2.default();
+      var words = _long_dictionary.longDictionary.filter(function (word, i) {
+        for (var n = 2; n < i; n++) {
+          if (i % n === 0) return false;
+        }
+        return true;
+      });
+      words.forEach(function (word) {
+        _this2.root.addWord(word);
+      });
+    }
+  }, {
     key: 'handleInput',
     value: function handleInput(e) {
       this.setState({ searchQuery: e.target.value, inspecting: null, inspectingSeg: null, checked: 0, found: "Enter a word to search!" });
@@ -41390,30 +41292,32 @@ var CompressedTrie = function (_React$Component) {
   }, {
     key: 'handleSubmit',
     value: function handleSubmit() {
-      this.setState({ disabled: true, inspecting: null, checked: 0, inspectingSeg: null, found: "Searching..." });
-      this.trieSearch(this.root, this.state.searchQuery.toLowerCase());
+      this.setState({ disabled: true, inspecting: null, checked: 0, found: "Searching..." });
+      this.trieSearch(this.state.searchQuery.toLowerCase());
     }
   }, {
     key: 'trieSearch',
-    value: function trieSearch(root, target) {
-      var _this2 = this;
+    value: function trieSearch(target) {
+      var _this3 = this;
 
       var funcue = [];
+      var currentParent = this.root;
       var searching = true;
       var i = 1;
       var checked = 1;
-      var currentParent = root;
-      var inspecting = currentParent.children[target.slice(0, i)];
+      var inspecting = currentParent.children[target.slice(0, 1)];
 
       var _loop = function _loop() {
         var val = void 0;
         var numChecked = void 0;
         var found = "Searching...";
-        var inspectingSeg = target.slice(0, i);
+        var inspectingSeg = currentParent.val ? currentParent.getWord().concat('-' + target.slice(0, i)) : target.slice(0, 1);
         if (i < target.length) {
           if (inspecting) {
-            val = inspecting.val;
+            val = inspecting.getWord();
+            target = target.slice(i);
             currentParent = inspecting;
+            i = 0;
           }
           i++;
           numChecked = checked;
@@ -41426,12 +41330,12 @@ var CompressedTrie = function (_React$Component) {
           found = "Not Found!";
         } else {
           searching = false;
-          val = inspecting.val;
+          val = inspecting.getWord();
           numChecked = checked;
           found = "Found!";
         }
         funcue.push(function () {
-          _this2.setState({ inspecting: val, checked: numChecked, found: found, inspectingSeg: inspectingSeg });
+          _this3.setState({ inspecting: val, checked: numChecked, inspectingSeg: inspectingSeg, found: found });
         });
       };
 
@@ -41443,39 +41347,40 @@ var CompressedTrie = function (_React$Component) {
   }, {
     key: 'startTrieSearchAnimation',
     value: function startTrieSearchAnimation(queue) {
-      var _this3 = this;
+      var _this4 = this;
 
       var trieSearchInterval = window.setInterval(function () {
         queue.shift()();
         if (queue.length < 1) {
           window.clearInterval(trieSearchInterval);
-          _this3.setState({ disabled: false });
+          _this4.setState({ disabled: false });
         }
       }, 1000);
     }
   }, {
     key: 'toJSX',
     value: function toJSX(node) {
-      var _this4 = this;
+      var _this5 = this;
 
-      var wordClass = this.state.inspecting === node.val ? "word active" : "word";
+      var wordClass = this.state.inspecting === node.getWord() ? "word active" : "word";
+      var word = node.isWord ? node.val.concat(' (' + node.getWord() + ')') : node.val;
       return _react2.default.createElement(
         'ul',
-        { key: node.val, className: 'word-list trie' },
+        { key: node.getWord(), className: 'word-list trie' },
         node.isRoot() ? "" : _react2.default.createElement(
           'li',
           { className: wordClass },
-          node.val
+          word
         ),
-        node.isLeaf() ? "" : Object.values(node.children).map(function (child) {
-          return _this4.toJSX(child);
+        Object.values(node.children).map(function (child) {
+          return _this5.toJSX(child);
         })
       );
     }
   }, {
     key: 'render',
     value: function render() {
-      var _this5 = this;
+      var _this6 = this;
 
       return _react2.default.createElement(
         'main',
@@ -41488,25 +41393,30 @@ var CompressedTrie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'The compressed trie is similar to a trie, but has a reduced size. This is accomplished by ignoring word segments that would only lead to one other word segment, essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function, or built from scratch like the one below. While the space requirement can be greatly reduced, the time complexity for building a compressed trie is higher. The time complexity for search remains O(m) where m is the length of the target string.'
+          'The compressed trie is similar to a trie, but has a reduced size. This is accomplished by ignoring word segments that would only lead to one other word segment, essentially combining two (or more) nodes into one. A compressed trie can be built from an existing trie with a compressor function, or built from scratch like the one below. The time complexity for search remains O(m) where m is the length of the target string.'
         ),
         _react2.default.createElement(
           'p',
           null,
           'This is a demonstration of how a compressed trie would be traversed to locate a node.'
         ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '(Nodes representing dictionary words have the full word displayed rather than just the node value in order to better visualize the words stored.)'
+        ),
         _react2.default.createElement('input', {
           disabled: this.state.disabled,
           type: 'text',
           value: this.state.searchQuery,
           onKeyPress: function onKeyPress(e) {
-            if (e.key === "Enter") _this5.handleSubmit();
+            if (e.key === "Enter" && _this6.state.searchQuery) _this6.handleSubmit();
           },
           onChange: this.handleInput.bind(this) }),
         _react2.default.createElement(
           'button',
           {
-            disabled: this.state.disabled,
+            disabled: !this.state.searchQuery || this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Start!'
         ),
@@ -41522,12 +41432,12 @@ var CompressedTrie = function (_React$Component) {
             'p',
             null,
             this.state.checked,
-            ' nodes checked'
+            ' checks'
           ),
           _react2.default.createElement(
             'p',
             null,
-            'Looking for: ',
+            'Currently searching for: ',
             this.state.inspectingSeg
           )
         ),
@@ -41546,7 +41456,7 @@ var CompressedTrie = function (_React$Component) {
 exports.default = CompressedTrie;
 
 /***/ }),
-/* 87 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41556,75 +41466,110 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _tree_node = __webpack_require__(15);
+var _trie_node = __webpack_require__(88);
 
-var _tree_node2 = _interopRequireDefault(_tree_node);
+var _trie_node2 = _interopRequireDefault(_trie_node);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var CompressedTrie = function () {
-  function CompressedTrie(parent) {
-    var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-    _classCallCheck(this, CompressedTrie);
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-    this.root = parent;
+var CompressedTrieNode = function (_TrieNode) {
+  _inherits(CompressedTrieNode, _TrieNode);
 
-    CompressedTrie.buildCompressedTrie(this.root, words, 1);
+  function CompressedTrieNode() {
+    _classCallCheck(this, CompressedTrieNode);
+
+    return _possibleConstructorReturn(this, (CompressedTrieNode.__proto__ || Object.getPrototypeOf(CompressedTrieNode)).apply(this, arguments));
   }
 
-  _createClass(CompressedTrie, null, [{
-    key: 'buildCompressedTrie',
-    value: function buildCompressedTrie(parent, words, segLength) {
+  _createClass(CompressedTrieNode, [{
+    key: 'getWord',
+    value: function getWord() {
+      if (this.isRoot() || this.parent.isRoot()) {
+        return this.val;
+      }
+      return this.parent.getWord().concat('-' + this.val);
+    }
+  }, {
+    key: 'findParentFor',
+    value: function findParentFor(val) {
+      var _this2 = this;
 
-      var queue = [];
-      var newParent = void 0;
+      var res = {};
+      var children = Object.values(this.children);
 
-      for (var i = 0; i < words.length; i++) {
-        // if we're at the first word or the previous word had the same initial segment, add the word to the queue
-        if (queue.length < 1 || words[i].slice(0, segLength) === words[i - 1].slice(0, segLength)) {
-          queue.push(words[i]);
-        }
-        // if we're at the last word or the next word has a different initial segment
-        if (i + 1 === words.length || words[i].slice(0, segLength) !== words[i + 1].slice(0, segLength)) {
-          // and if we only have one word in the queue
-          if (queue.length < 2) {
-            // add a new node with value = word and append to parent
-            var newChild = new _tree_node2.default(queue[0].slice(0));
-            parent.addChild(newChild);
-            queue = [];
-          } else {
-            // otherwise, if the queue doesn't have any words whose shared segments are longer than the current segment length
-            if (queue.some(function (word) {
-              return word.slice(0, segLength + 1) !== queue[0].slice(0, segLength + 1);
-            })) {
-              // append a new node with value = segment of the word and make that the new parent
-              newParent = new _tree_node2.default(words[i].slice(0, segLength));
-              parent.addChild(newParent);
-            } else {
-              // otherwise, keep the same parent
-              newParent = parent;
-            }
-            // build tree for the words in queue
-            this.buildCompressedTrie(newParent, queue, segLength + 1);
-            queue = [];
-          }
-        }
+      if (children.length < 1) return res;
+
+      var _loop = function _loop(i) {
+        var target = val.slice(0, i);
+
+        res.parent = _this2.children[target];
+        if (res.parent) return {
+            v: res
+          };
+
+        res.sibling = children.filter(function (node) {
+          return node.val.startsWith(target);
+        })[0];
+        res.sharedChars = i;
+        if (res.sibling) return {
+            v: res
+          };
+      };
+
+      for (var i = val.length; i > 0; i--) {
+        var _ret = _loop(i);
+
+        if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+      }
+
+      return res;
+    }
+  }, {
+    key: 'addWord',
+    value: function addWord(val) {
+      if (this.children[val]) {
+        this.children[val].isWord = true;
+        return;
+      }
+
+      var _findParentFor = this.findParentFor(val),
+          parent = _findParentFor.parent,
+          sibling = _findParentFor.sibling,
+          sharedChars = _findParentFor.sharedChars;
+
+      if (parent) {
+        parent.addWord(val.slice(parent.val.length));
+      } else if (!parent && !sibling) {
+        this.addChild(new CompressedTrieNode(val, true));
+      } else {
+        var newParent = new CompressedTrieNode(val.slice(0, sharedChars), false);
+        this.removeChild(sibling.val);
+        sibling.val = sibling.val.slice(sharedChars);
+        newParent.addChild(sibling);
+        newParent.addChild(new CompressedTrieNode(val.slice(sharedChars), true));
+        this.addChild(newParent);
       }
     }
   }]);
 
-  return CompressedTrie;
-}();
+  return CompressedTrieNode;
+}(_trie_node2.default);
 
-exports.default = CompressedTrie;
+exports.default = CompressedTrieNode;
 
 /***/ }),
-/* 88 */
+/* 86 */,
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41642,9 +41587,9 @@ var _react2 = _interopRequireDefault(_react);
 
 var _long_dictionary = __webpack_require__(14);
 
-var _tree_node = __webpack_require__(15);
+var _trie_node = __webpack_require__(88);
 
-var _tree_node2 = _interopRequireDefault(_tree_node);
+var _trie_node2 = _interopRequireDefault(_trie_node);
 
 var _trie = __webpack_require__(89);
 
@@ -41687,7 +41632,7 @@ var Trie = function (_React$Component) {
   }, {
     key: 'findNode',
     value: function findNode() {
-      var parentNode = _trie2.default.findNodeByVal(this.trie.root, this.state.searchQuery.toLowerCase());
+      var parentNode = this.trie.root.findChildNodeByWord(this.state.searchQuery.toLowerCase());
       if (parentNode) {
         this.setState({ trie: this.toJSX(parentNode) });
       } else {
@@ -41700,15 +41645,16 @@ var Trie = function (_React$Component) {
       var _this3 = this;
 
       var wordClass = node.isWord && this.state.searchQuery ? "word active" : "word";
+      var word = node.isWord ? node.val.concat(' (' + node.getWord() + ')') : node.val;
       return _react2.default.createElement(
         'ul',
         { key: node.val, className: 'word-list trie' },
         node.isRoot() ? "" : _react2.default.createElement(
           'li',
           { className: wordClass },
-          node.val
+          word
         ),
-        node.isLeaf() ? "" : Object.values(node.children).map(function (child) {
+        Object.values(node.children).map(function (child) {
           return _this3.toJSX(child);
         })
       );
@@ -41716,7 +41662,7 @@ var Trie = function (_React$Component) {
   }, {
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.trie = new _trie2.default(new _tree_node2.default(), _long_dictionary.dictionary);
+      this.trie = new _trie2.default(new _trie_node2.default(), _long_dictionary.longDictionary);
       this.setState({ trie: this.toJSX(this.trie.root) });
     }
   }, {
@@ -41738,12 +41684,17 @@ var Trie = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
-          'This trie is built with nodes that each hold a value (beginning segment of a word) and an object containing references to its children. The values of the child nodes are word segments that continue from the parent node\'s. Searching for a word is done in O(m) time where m is the length of the target string.'
+          'This trie is used to store a dictionary. Each character in a word is stored as a child node of its preceding character. Searching for a string is done in O(m) time where m is the length of the target string.'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'This is a demonstration of how a trie can be used to implement autosuggest. After finding the node with the target value, nodes with actual dictionary word values are found. These nodes will be highlighted.'
+          'This is a demonstration of how a trie can be used to implement autosuggest. The trie is first searched using the input to find the target node, then its child nodes are searched to find nodes that represent actual dictionary words. For example, if the search term is "ab", we check if the root has any child nodes with the value "a". If it does, we check that node\'s children for a node with value "b". If this node exists, we then recursively search through its children for nodes with an isWord property value of true. These nodes will be highlighted.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '(Nodes representing dictionary words have the full word (rather than just the node value) displayed in order to help visualize the autosuggest results.)'
         ),
         _react2.default.createElement('input', { value: this.state.searchQuery, onChange: this.handleInput.bind(this) }),
         _react2.default.createElement(
@@ -41761,6 +41712,133 @@ var Trie = function (_React$Component) {
 exports.default = Trie;
 
 /***/ }),
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TrieNode = function () {
+  function TrieNode() {
+    var val = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+    var isWord = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+    _classCallCheck(this, TrieNode);
+
+    this.val = val;
+    this.parent = null;
+    this.children = {};
+    this.isWord = isWord;
+  }
+
+  _createClass(TrieNode, [{
+    key: "setParent",
+    value: function setParent(parent) {
+      if (this.parent === parent) {
+        return;
+      }
+
+      if (this.parent) delete this.parent.children[this.val];
+      this.parent = parent;
+      if (this.parent) this.parent.children[this.val] = this;
+    }
+  }, {
+    key: "addChild",
+    value: function addChild(child) {
+      child.setParent(this);
+    }
+  }, {
+    key: "removeChild",
+    value: function removeChild(val) {
+      var child = this.children[val];
+      if (child) child.setParent(null);
+    }
+  }, {
+    key: "getWord",
+    value: function getWord() {
+      if (this.isRoot() || this.parent.isRoot()) {
+        return this.val;
+      }
+      return this.parent.getWord().concat(this.val);
+    }
+  }, {
+    key: "addWord",
+    value: function addWord(val) {
+      if (val.length === 1) {
+        if (this.children[val]) {
+          this.children[val].isWord = true;
+          return;
+        } else {
+          this.addChild(new TrieNode(val, true));
+          return;
+        }
+      }
+      var child = this.children[val.slice(0, 1)];
+      if (!child) {
+        child = new TrieNode(val.slice(0, 1));
+        this.addChild(child);
+      }
+      child.addWord(val.slice(1));
+    }
+  }, {
+    key: "findChildNodeByWord",
+    value: function findChildNodeByWord(target) {
+      if (!target) return this;
+      if (target.length === 1) {
+        if (this.children[target]) return this.children[target];
+        return null;
+      }
+      var nextNode = this.children[target.slice(0, 1)];
+      if (!nextNode) return null;
+      return nextNode.findChildNodeByWord(target.slice(1));
+    }
+  }, {
+    key: "isLeaf",
+    value: function isLeaf() {
+      return Object.keys(this.children).length < 1;
+    }
+  }, {
+    key: "isRoot",
+    value: function isRoot() {
+      return !this.parent;
+    }
+  }, {
+    key: "numChildren",
+    value: function numChildren() {
+      return Object.keys(this.children).length;
+    }
+  }, {
+    key: "allChildWords",
+    value: function allChildWords() {
+      var _this = this;
+
+      if (this.isLeaf()) {
+        return [];
+      }
+      var childrenVals = Object.keys(this.children).filter(function (key) {
+        return _this.children[key].isWord;
+      });
+      Object.values(this.children).forEach(function (child) {
+        childrenVals = childrenVals.concat(child.allChildWords());
+      });
+      return childrenVals;
+    }
+  }]);
+
+  return TrieNode;
+}();
+
+exports.default = TrieNode;
+
+/***/ }),
 /* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41773,9 +41851,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _tree_node = __webpack_require__(15);
+var _trie_node = __webpack_require__(88);
 
-var _tree_node2 = _interopRequireDefault(_tree_node);
+var _trie_node2 = _interopRequireDefault(_trie_node);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41792,39 +41870,10 @@ var Trie = function () {
   }
 
   _createClass(Trie, null, [{
-    key: 'findNodeByVal',
-    value: function findNodeByVal(node, target) {
-      if (node.val === target) return node;
-      if (node.isLeaf()) return null;
-      var childrenToCheck = Object.values(node.children).filter(function (child) {
-        return target.startsWith(child.val);
-      });
-      for (var i = 0; i < childrenToCheck.length; i++) {
-        var res = Trie.findNodeByVal(childrenToCheck[i], target);
-        if (res) return res;
-      }
-      return null;
-    }
-  }, {
     key: 'buildTrie',
     value: function buildTrie(parent, words) {
-
       words.forEach(function (word) {
-        var currentParent = parent;
-        for (var i = 1; i <= word.length; i++) {
-          var isWord = i === word.length;
-          if (!currentParent.children[word.slice(0, i)]) {
-            var newParent = new _tree_node2.default(word.slice(0, i), isWord);
-            currentParent.addChild(newParent);
-            currentParent = newParent;
-          } else {
-            if (isWord) {
-              currentParent.children[word.slice(0, i)].isWord = true;
-            } else {
-              currentParent = currentParent.children[word.slice(0, i)];
-            }
-          }
-        }
+        parent.addWord(word);
       });
     }
   }]);
@@ -41847,7 +41896,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _hashmap = __webpack_require__(24);
+var _hashmap = __webpack_require__(23);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
@@ -41884,7 +41933,7 @@ var HashmapDictionary = function (_React$Component) {
     };
 
     _this.dictionaryHashmap = new _hashmap2.default();
-    _long_dictionary.dictionary.filter(function (word, i) {
+    _long_dictionary.longDictionary.filter(function (word, i) {
       return i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0;
     }).forEach(function (word) {
       _this.dictionaryHashmap.addVal(word, true);
@@ -42033,7 +42082,7 @@ var HashmapDictionary = function (_React$Component) {
         _react2.default.createElement('input', {
           type: 'text',
           onKeyPress: function onKeyPress(e) {
-            if (e.key === "Enter") _this5.handleSubmit();
+            if (e.key === "Enter" && _this5.state.searchQuery) _this5.handleSubmit();
           },
           onChange: this.handleInput.bind(this),
           value: this.state.searchQuery,
@@ -42041,7 +42090,7 @@ var HashmapDictionary = function (_React$Component) {
         _react2.default.createElement(
           'button',
           {
-            disabled: this.state.disabled,
+            disabled: !this.state.searchQuery || this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Start!'
         ),
@@ -42128,7 +42177,7 @@ var _lru_cache = __webpack_require__(93);
 
 var _lru_cache2 = _interopRequireDefault(_lru_cache);
 
-var _lodash = __webpack_require__(39);
+var _lodash = __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42263,7 +42312,7 @@ var LRUCache = function (_React$Component) {
         _react2.default.createElement('input', {
           type: 'text',
           onKeyPress: function onKeyPress(e) {
-            if (e.key === "Enter") _this3.handleSubmit();
+            if (e.key === "Enter" && _this3.state.searchQuery) _this3.handleSubmit();
           },
           onChange: this.handleInput.bind(this),
           value: this.state.searchQuery,
@@ -42271,7 +42320,7 @@ var LRUCache = function (_React$Component) {
         _react2.default.createElement(
           'button',
           {
-            disabled: this.state.disabled,
+            disabled: !this.state.searchQuery || this.state.disabled,
             onClick: this.handleSubmit.bind(this) },
           'Search for Gif'
         ),
@@ -42309,11 +42358,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _hashmap = __webpack_require__(24);
+var _hashmap = __webpack_require__(23);
 
 var _hashmap2 = _interopRequireDefault(_hashmap);
 
-var _linked_list = __webpack_require__(25);
+var _linked_list = __webpack_require__(24);
 
 var _linked_list2 = _interopRequireDefault(_linked_list);
 
@@ -42468,7 +42517,7 @@ var _binary_tree2 = _interopRequireDefault(_binary_tree);
 
 var _short_dictionary = __webpack_require__(98);
 
-var _lodash = __webpack_require__(39);
+var _lodash = __webpack_require__(38);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42488,7 +42537,7 @@ var BinaryTree = function (_React$Component) {
 
     _this.state = {
       input: "",
-      tree: new _binary_tree2.default(_short_dictionary.dictionary.slice(0, window.outerWidth / 30)),
+      tree: new _binary_tree2.default(_short_dictionary.shortDictionary.slice(0, window.outerWidth / 30)),
       inspecting: "",
       disabled: false,
       message: "Enter a word into the tree",
@@ -42511,7 +42560,7 @@ var BinaryTree = function (_React$Component) {
   }, {
     key: 'handleEnter',
     value: function handleEnter(e) {
-      if (e.key === "Enter" && !this.state.disabled) {
+      if (e.key === "Enter" && this.state.input) {
         this.handleSubmit();
       }
     }
@@ -42655,7 +42704,7 @@ var BinaryTree = function (_React$Component) {
         }),
         _react2.default.createElement(
           'button',
-          { disabled: this.state.disabled, onClick: this.handleSubmit.bind(this) },
+          { disabled: !this.state.input || this.state.disabled, onClick: this.handleSubmit.bind(this) },
           'Add Word'
         ),
         _react2.default.createElement(
@@ -42774,7 +42823,7 @@ exports.default = BinaryTree;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var dictionary = exports.dictionary = ["ace", "ale", "and", "ant", "ape", "ban", "bid", "bod", "bow", "bug", "cad", "con", "cow", "dub", "eel", "ell", "few", "fly", "for", "gas", "gym", "has", "haw", "hid", "hub", "ilk", "its", "jam", "lea", "leg", "mar", "maw", "max", "may", "mew", "odd", "out", "pat", "pis", "pox", "pyx", "rat", "rec", "rho", "rip", "roe", "sec", "sod", "soy", "spa", "spy", "ssh", "tad", "tan", "the", "ton", "ugh", "vet", "vow", "wan", "war", "wax", "wee", "why", "woo", "yep", "yuk"];
+var shortDictionary = exports.shortDictionary = ["ace", "ale", "and", "ant", "ape", "ban", "bid", "bod", "bow", "bug", "cad", "con", "cow", "dub", "eel", "ell", "few", "fly", "for", "gas", "gym", "has", "haw", "hid", "hub", "ilk", "its", "jam", "lea", "leg", "mar", "maw", "max", "may", "mew", "odd", "out", "pat", "pis", "pox", "pyx", "rat", "rec", "rho", "rip", "roe", "sec", "sod", "soy", "spa", "spy", "ssh", "tad", "tan", "the", "ton", "ugh", "vet", "vow", "wan", "war", "wax", "wee", "why", "woo", "yep", "yuk"];
 
 /***/ })
 /******/ ]);

@@ -1,5 +1,5 @@
 
-class TreeNode {
+class TrieNode {
   constructor(val = "", isWord = false) {
     this.val = val;
     this.parent = null;
@@ -24,6 +24,42 @@ class TreeNode {
   removeChild(val) {
     const child = this.children[val];
     if (child) child.setParent(null);
+  }
+
+  getWord() {
+    if (this.isRoot() || this.parent.isRoot()) {
+      return this.val;
+    }
+    return this.parent.getWord().concat(this.val);
+  }
+
+  addWord(val) {
+    if (val.length === 1) {
+      if (this.children[val]) {
+        this.children[val].isWord = true;
+        return;
+      } else {
+        this.addChild(new TrieNode(val, true));
+        return;
+      }
+    }
+    let child = this.children[val.slice(0, 1)];
+    if (!child) {
+      child = new TrieNode(val.slice(0, 1));
+      this.addChild(child);
+    }
+    child.addWord(val.slice(1));
+  }
+
+  findChildNodeByWord(target) {
+    if (!target) return this;
+    if (target.length === 1) {
+      if (this.children[target]) return this.children[target];
+      return null;
+    }
+    const nextNode = this.children[target.slice(0, 1)];
+    if (!nextNode) return null;
+    return nextNode.findChildNodeByWord(target.slice(1));
   }
 
   isLeaf() {
@@ -52,4 +88,4 @@ class TreeNode {
 
 }
 
-export default TreeNode;
+export default TrieNode;

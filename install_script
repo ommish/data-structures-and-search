@@ -1,6 +1,0 @@
-#!/bin/bash
-npm install babel-core
-npm install babel-loader
-npm install babel-preset-env
-npm install babel-preset-react
-npm install webpack

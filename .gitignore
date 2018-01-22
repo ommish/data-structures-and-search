@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+dictionary.txt
+webpack.config.js
+assets/javascripts/bundle.js.map

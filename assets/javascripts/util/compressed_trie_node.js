@@ -46,8 +46,12 @@ class CompressedTrieNode extends TrieNode {
       this.removeChild(sibling.val);
       sibling.val = sibling.val.slice(sharedChars);
       newParent.addChild(sibling);
-      newParent.addChild(new CompressedTrieNode(val.slice(sharedChars), true));
       this.addChild(newParent);
+      if (sharedChars === val.length) {
+        newParent.isWord = true;
+      } else {
+        newParent.addChild(new CompressedTrieNode(val.slice(sharedChars), true));
+      }
     }
   }
 

@@ -17,12 +17,12 @@ class CompressedTrieNode extends TrieNode {
 
     for (let i = val.length; i > 0; i--) {
       const target = val.slice(0, i);
+      res.sharedChars = i;
 
       res.parent = this.children[target];
       if (res.parent) return res;
 
       res.sibling = children.filter((node) => node.val.startsWith(target))[0];
-      res.sharedChars = i;
       if (res.sibling) return res;
     }
 
@@ -38,7 +38,7 @@ class CompressedTrieNode extends TrieNode {
     const {parent, sibling, sharedChars} = this.findParentFor(val);
 
     if (parent) {
-      parent.addWord(val.slice(parent.val.length));
+      parent.addWord(val.slice(res.sharedChars));
     } else if (!parent && !sibling) {
       this.addChild(new CompressedTrieNode(val, true));
     } else {

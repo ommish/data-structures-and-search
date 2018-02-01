@@ -41638,6 +41638,7 @@ var CompressedTrieNode = function (_TrieNode) {
 
       var _loop = function _loop(i) {
         var target = val.slice(0, i);
+        res.sharedChars = i;
 
         res.parent = _this2.children[target];
         if (res.parent) return {
@@ -41647,7 +41648,6 @@ var CompressedTrieNode = function (_TrieNode) {
         res.sibling = children.filter(function (node) {
           return node.val.startsWith(target);
         })[0];
-        res.sharedChars = i;
         if (res.sibling) return {
             v: res
           };
@@ -41675,7 +41675,7 @@ var CompressedTrieNode = function (_TrieNode) {
           sharedChars = _findParentFor.sharedChars;
 
       if (parent) {
-        parent.addWord(val.slice(parent.val.length));
+        parent.addWord(val.slice(sharedChars));
       } else if (!parent && !sibling) {
         this.addChild(new CompressedTrieNode(val, true));
       } else {

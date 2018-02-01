@@ -38,7 +38,7 @@ class CompressedTrieNode extends TrieNode {
     const {parent, sibling, sharedChars} = this.findParentFor(val);
 
     if (parent) {
-      parent.addWord(val.slice(res.sharedChars));
+      parent.addWord(val.slice(sharedChars));
     } else if (!parent && !sibling) {
       this.addChild(new CompressedTrieNode(val, true));
     } else {
